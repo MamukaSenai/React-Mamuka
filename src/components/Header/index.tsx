@@ -5,9 +5,9 @@ export default function Header(){
         <>
             <header className="topo">
   <div className="logo">
-    <a href="../administrador_home/administrador_home.html">
+    {/* <a href="../administrador_home/administrador_home.html"> */}
       <div className="teste"></div>
-    </a>
+    {/* </a> */}
   </div>
   <div className="pesquisa">
     {/*<i class="fa-solid fa-magnifying-glass" id="lupa"></i>*/}
@@ -24,11 +24,12 @@ export default function Header(){
     <input className="campotexto" type="text" placeholder="Pesquisa" />
   </div>
   <div className="ricardo">
-    <img src="../img/Ricardo.png" alt="" />
-    {/*<p>Ricardo Souza</p>*/}
-    <a href="../perfil_administrador/perfil_administrador.html">
-      Ricardo Souza
-    </a>
+    {/* <img src="../../assets/Ricardo.png" alt="" /> */}
+      <div className="ricardoimg">
+      </div>
+    <p>Ricardo Souza</p>
+    {/* <a href="../perfil_administrador/perfil_administrador.html"> */}
+    {/* </a> */}
     <i>
       <svg
         xmlns="http://www.w3.org/2000/svg"
