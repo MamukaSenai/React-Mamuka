@@ -13,7 +13,8 @@
 
 
 
-.logo img {
+.logo .teste {
+    background-image: url("../../assets/Logo.png");
     width: 180px;
     padding: 15px;
 } 
