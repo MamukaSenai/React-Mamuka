@@ -1,0 +1,33 @@
+#teste {
+
+    background: var(--cinza);
+    width: 8vw;
+    height: 10vh;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 900;
+
+}
+
+.botaoHamburguer {
+    color: aqua;
+}
+
+
+.py-1{
+    height: 100vh;
+    background-color: var(--cinza);
+}
+
+#testedeconteudo a {
+    background-color: var(--cinza);
+    color: var(--branco);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
