@@ -6,7 +6,7 @@ export default function Header(){
             <header className="topo">
   <div className="logo">
     <a href="../administrador_home/administrador_home.html">
-      <img src="../img/Logo.png" alt="logo" />
+      <img src="../assets/Logo.png" alt="logo" />
     </a>
   </div>
   <div className="pesquisa">
