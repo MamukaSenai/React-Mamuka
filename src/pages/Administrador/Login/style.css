@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+:root{
+    --azulescuro: #405189;
+    --branco: #fff;
+    --azulbotao:#0073ea;
+    --azul_sinza:#2c233e;
+    
+
+}
+.mamuca{
+    width: 250px;
+    
+    margin: 50px;
+
+}
+.direita{
+    background-color: #405189;
+    width: 40%;
+    font-family: sans-serif;
+    margin-bottom: -30px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.esquerda{
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    text-transform: none;
+}
+
+.posicionamento{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+}
+
+.login{
+    color: #ffffff;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.betume{
+    font-size: 22px;
+    color: #ffffff;
+    width: 400px;
+}
+
+.amor{
+    width: 400px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.esquerda p{
+    font-size: 80px;
+    color:#405189;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    
+    
+    
+    
+     
+}
+
+.esquerda img{
+    height: 500px;
+    margin-top: 50px;
+
+}
+
+.pedro{
+    font-size: 22px;
+    color: #ffffff;
+    padding-left: 80px;
+    padding-top: 15px;
+    display: flex;
+    margin-top: 0 auto;
+    text-align: center;
+    
+}
+
+.btn_login{
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #0073ea;
+    text-decoration: none;
+    padding: 10px 60px;
+    border-radius: 15px;
+    margin-top: 50px;
+
+}
+.registre-se{
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 30px;
+    
+
+}
+.barata{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+@media screen and (max-width:900px){
+    .esquerda{
+        display: none;
+        
+    }
+    .posicionamento{
+        align-items: center;
+        justify-content: center;
+        background: var(--azulescuro);
+
+    }
+    .pedro{
+        align-items: center;
+        padding: 15px 0;
+
+
+    }
+}
+
+@media screen and (min-width:900PX){
+    .betume, .amor{
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width:450px){
+    .barata{
+        width: 80vw;
+
+    }
+    .betume, .amor{
+        width: 100%;
+
+    }
+}
+
+
