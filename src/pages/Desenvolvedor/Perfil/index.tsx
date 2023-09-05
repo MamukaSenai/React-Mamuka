@@ -10,8 +10,10 @@ import "./style.css";
 
 
 //import imagens
-import MENU from "../../../assets/MENU.png";
+import MENU from "../../../";
 import PessoaPerfil from "../../../assets/PessoaPerfil.png";
+import React from "react";
+
 
 
 function PerfilUsuario() {
