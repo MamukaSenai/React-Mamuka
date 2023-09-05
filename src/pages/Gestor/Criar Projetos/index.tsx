@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 
 
-function gestorCriarProjetos() {
+function GestorCriarProjetos() {
     // useEffect(() => {
     //     //Inserindo o título da guia de endereço da página atual.
     //     document.title = "Mamuka - Lista de projetos";
@@ -21,20 +21,20 @@ function gestorCriarProjetos() {
 
 
 
-    function cadastrarServico(event: any) {
-        event.preventDefault();
+    // function cadastrarServico(event: any) {
+    //     event.preventDefault();
 
-        formata.append("nome", nome)
-        formdata.append("status", status)
-        formdata.append("id", id)
-        formdata.append("grupo", grupo)
-        formdata.append("nome", nome)
-        formdata.append("inicio", inicio)
-        formdata.append("conclusao", conclusao)
-        formdata.append("descricao", descricao)
-        formdata.append("gestor", gestor)
+    //     formata.append("nome", nome)
+    //     formdata.append("status", status)
+    //     formdata.append("id", id)
+    //     formdata.append("grupo", grupo)
+    //     formdata.append("nome", nome)
+    //     formdata.append("inicio", inicio)
+    //     formdata.append("conclusao", conclusao)
+    //     formdata.append("descricao", descricao)
+    //     formdata.append("gestor", gestor)
 
-    }
+    // }
 
 
 
@@ -43,14 +43,14 @@ function gestorCriarProjetos() {
             <span className="gestor">Gestor/Criar Projetos</span>
             <section className="right">
                 <div className="container">
-                    <form className="formulario" onSubmit={cadastrarServico}>
+                    <form className="formulario" /* onSubmit={cadastrarServico}*/>
                         <section>
                             <div className="input-box">
                                 <label htmlFor="firstname">Nome:</label>
                                 <input
                                     type="text"
                                     name="firstname"
-                                    onChange={ (event) => {setNome(event.target.value)}}
+                                    /*onChange={ (event) => {setNome(event.target.value)}}*/
                                     placeholder=" Laboratório 1"
                                     required
                                 />
@@ -61,7 +61,7 @@ function gestorCriarProjetos() {
                                     <input
                                         type="password"
                                         name="ID_do_projeto"
-                                        onChange={ (event) => {setStatus(event.target.value)}}
+                                        /*onChange={ (event) => {setStatus(event.target.value)}}*/
                                         placeholder=" Andamento"
                                         required
                                     />
@@ -71,7 +71,7 @@ function gestorCriarProjetos() {
                                     <input
                                         type="text"
                                         name="Status:"
-                                        onChange={ (event) => {setId(event.target.value)}}
+                                        // onChange={ (event) => {setId(event.target.value)}}
                                         placeholder=" 100/23"
                                         required
                                     />
@@ -81,7 +81,7 @@ function gestorCriarProjetos() {
                                     <input
                                         type="text"
                                         name="Fase:"
-                                        onChange={ (event) => {setGrupo(event.target.value)}}
+                                        // onChange={ (event) => {setGrupo(event.target.value)}}
                                         placeholder=" São Caetano 1.34"
                                         required
                                     />
@@ -93,7 +93,7 @@ function gestorCriarProjetos() {
                                     <input
                                         type="date"
                                         name="Inicio:"
-                                        onChange={ (event) => {setInicio(event.target.value)}}
+                                        // onChange={ (event) => {setInicio(event.target.value)}}
                                         placeholder=" 28/11/2023"
                                         required
                                     />
@@ -103,7 +103,7 @@ function gestorCriarProjetos() {
                                     <input
                                         type="date"
                                         name="Conclusão"
-                                        onChange={ (event) => {setConclusao(event.target.value)}}
+                                        // onChange={ (event) => {setConclusao(event.target.value)}}
                                         placeholder=" 28/11/2023"
                                         required
                                     />
@@ -113,7 +113,7 @@ function gestorCriarProjetos() {
                                     <input
                                         type="text"
                                         name="Gestor do projeto"
-                                        onChange={ (event) => {setGestor(event.target.value)}}
+                                        // onChange={ (event) => {setGestor(event.target.value)}}
                                         placeholder=" Ricardo Souza"
                                         required
                                     />
@@ -125,7 +125,7 @@ function gestorCriarProjetos() {
                                     name="text"
                                     cols={20}
                                     rows={8}
-                                    onChange={ (event) => {setDescricao(event.target.value)}}
+                                    // onChange={ (event) => {setDescricao(event.target.value)}}
                                     placeholder=" Este projeto consistiu no desenvolvimento de uma aplicação mobile Android e iOS, para gestão de estacionamentos,em tecnologia C# .Net OutSystems (plataforma de low-code), bem como de BackEnd em tecnologia PHP WordPress, para suporte as operações."
                                     required
                                     defaultValue={""}
@@ -145,4 +145,4 @@ function gestorCriarProjetos() {
 
 }
 
-export default gestorCriarProjetos;
+export default GestorCriarProjetos;

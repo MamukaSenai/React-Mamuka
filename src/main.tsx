@@ -2,9 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Route, BrowserRouter, Routes } from 'react-router-dom'
 
-import gestorCriarProjetos from './pages/Gestor/Criar Projetos'
+
 
 import './index.css'
+import GestorCriarProjetos from './pages/Gestor/Criar Projetos'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -12,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
       <Routes>
         <Route/>
-          <Route path='gestorCriarProjetos' element={ < gestorCriarProjetos/> } />
+          <Route path='gestorCriarProjetos' element={ <GestorCriarProjetos/> } />
       </Routes>
 
     </BrowserRouter>
