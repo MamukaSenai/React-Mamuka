@@ -1,33 +1,57 @@
-#teste {
-
+#menuGeral {
+    position: fixed;
+    top: 0;
+    left: 0;
     background: var(--cinza);
     width: 8vw;
-    height: 10vh;
+    height: 12vh;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     font-weight: 900;
-
+    font-family: var(--font);
+    
 }
 
-.botaoHamburguer {
-    color: aqua;
-}
-
-
-.py-1{
+.menuItens{
     height: 100vh;
-    background-color: var(--cinza);
+    width: 100vw;
+    /* background-color: rgba(0,0,0,0.65);
+    backdrop-filter: blur(20px); */
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
-#testedeconteudo a {
-    background-color: var(--cinza);
+/* .menuItens a {
+    width: 8vw;
+    height: 10vh;
+    background-color: rgba(0,0,0,0.35);
+    border: 2px solid #fff;
+} */
+#conteudoMenu a {
+    width: 8vw;
+    /* height: 5vh; */
+    background-color: rgba(0,0,0,0.35);
+    border: #fff solid 2px;
     color: var(--branco);
+    padding-bottom: 15%;
+    padding-top: 25%;
+    font-size: 18px;
     text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#conteudoMenu {
+    position: fixed;
+    background-color: rgba(0,0,0,0.35);
+    backdrop-filter: blur(10px);
+}
+
+#testeA{
+
 }

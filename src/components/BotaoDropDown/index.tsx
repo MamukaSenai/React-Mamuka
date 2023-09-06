@@ -10,14 +10,35 @@ function classNames(...classes:any) {
 }
 
 export default function BotaoDropDown() {
+    // let menu = document.getElementById("menu_links") as HTMLCanvasElement; // Obtém o elemento do menu pelo ID
+    // let sombra: any = document.getElementById("sombra"); // Obtém o elemento da sombra pelo ID
+    // let menu_barras: any = document.getElementById("menu_barras"); // Obtém o elemento do botão do menu pelo ID
+
+    // let body: any = document.getElementsByTagName("body")[0]; // Obtém o elemento body (primeiro elemento)
+
+    // if (window.getComputedStyle(menu).left != "10px") { // Verifica se a propriedade 'left' do estilo computado do elemento do menu é diferente de 10px
+    //   menu.style.left = "10px"; // Define a posição 'left' do menu como 10px movendo ele para direita
+    //   sombra.style.right = "-10vw"; // Move a sombra para a direita
+    //   menu_barras.setAttribute("aria-expanded", "true"); // Atualiza o atributo 'aria-expanded' para 'true'
+    //   menu_barras.setAttribute("aria-label", "fechar menu"); // Atualiza o atributo 'aria-label' para 'fechar menu'
+    //   body.style.overflow = "hidden"; // Define o overflow do body como "hidden" para evitar a rolagem da página
+    // } else {
+    //   menu.style.left = "-300px"; // Esconde o menu deslocando-o para esquerda
+    //   sombra.style.right = "110vw"; // Move a sombra para a esquerda para ocultá-la
+    //   menu_barras.setAttribute("aria-expanded", "false"); // Atualiza o atributo 'aria-expanded' para 'false'
+    //   menu_barras.setAttribute("aria-label", "abrir menu"); // Atualiza o atributo 'aria-label' para 'abrir menu'
+    //   body.style.overflow = "auto"; // Restaura o overflow do body para o valor padrão (auto)
+    // }
+    // menu_barras.classList.toggle("ativo"); // Alterna a classe 'ativo' no botão do menu
+  
   return (
+    
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button id="teste" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+        <Menu.Button id="menuGeral" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
         <span>
-               {/* <FaBars className="botaoHamburguer" aria-hidden="true" /> */}
+               <FaBars className="botaoHamburguer" size={28} aria-hidden="true" />
                {/* <i className="fa-solid fa-bars"></i> */}
-               teste
             </span>
           {/* <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" /> */}
         </Menu.Button>
@@ -33,12 +54,12 @@ export default function BotaoDropDown() {
         leaveTo="transform opacity-0 scale-95"
       >
                 
-        <Menu.Items id="testedeconteudo" className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-          <div className="py-1">
+        <Menu.Items id="conteudoMenu" className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <div className="menuItens" >
             <Menu.Item>
               {({ active }) => (
                 <a 
-                
+                  id="testeA"
                   href="#"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
@@ -96,3 +117,4 @@ export default function BotaoDropDown() {
     </Menu>
       )
     }
+
