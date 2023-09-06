@@ -1,6 +1,6 @@
 import "./style.css"
 
-function CadastroInfosConclusao(){
+function CadastroInfosCorporativas(){
 
     return(
         <main>
@@ -51,4 +51,4 @@ function CadastroInfosConclusao(){
     )
 }
 
-export default CadastroInfosConclusao;
+export default CadastroInfosCorporativas;
