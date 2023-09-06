@@ -1,17 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Header from './components/Gestor/Header'
-import gestorCriarDemandas from './pages/Gestor/Criar Demandas'
-import gestorCriarProjetos from './pages/Gestor/Criar Projetos'
+import GestorCriarDemandas from './pages/Gestor/Criar Demandas'
+
 
 import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Routes>
-      <Route path='gestorCriarDemandas' element={<gestorCriarDemandas/>}/>
-      <Route path='gestorCriarProjetos' element={< gestorCriarProjetos />} />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path='gestorCriarDemandas' element={<GestorCriarDemandas/>}/>
+      
+      </Routes>
+    
+    </BrowserRouter>
+
   </React.StrictMode>,
 )

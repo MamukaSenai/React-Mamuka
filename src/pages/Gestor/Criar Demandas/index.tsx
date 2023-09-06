@@ -1,7 +1,7 @@
 import  "./style.css";
 
 
-function criarDemandas() {
+function GestorcriarDemandas() {
     return (
         <>
             <main>
@@ -102,4 +102,4 @@ function criarDemandas() {
     )
 }
 
-export default criarDemandas;
+export default GestorcriarDemandas;
