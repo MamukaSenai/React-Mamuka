@@ -10,7 +10,7 @@ import "./style.css";
 
 
 //import imagens
-import MENU from "../../../";
+import MENU from "../../../assets/MENU.png";
 import PessoaPerfil from "../../../assets/PessoaPerfil.png";
 import React from "react";
 
@@ -25,8 +25,6 @@ function PerfilUsuario() {
 
   return (
       <>
-        {/* https://www.youtube.com/watch?v=wEfaoAa99XY tempo 4.39*/}
-        {/* boxincons.com  Link */}
         {/* corpo da pagina*/}
         <aside>
           {/* BARRA LATERAL */}
@@ -46,14 +44,14 @@ function PerfilUsuario() {
               <li>
                 <a href="#">
                   {/* <i class="bx bx-grid-alt"></i> */}
-                  <span className="link_name">Criar Projetos</span>
+                  {/* <span className="link_name">Criar Projetos</span> */}
                 </a>
                 {/* <span class="tooltip">dashboard</span> */}
               </li>
               <li>
                 <a href="#">
                   {/* <i class="bx bx-grid-alt"></i> */}
-                  <span className="link_name">Criar Demandas</span>
+                  {/* <span className="link_name">Criar Demandas</span> */}
                 </a>
                 {/* <span class="tooltip">dashboard</span> */}
               </li>
@@ -67,14 +65,14 @@ function PerfilUsuario() {
             <form className="formulario">
               <div className="top_linha1">
                 <div className="imgfoto">
-                  <img className={PessoaPerfil} alt="PessoaPerfil" />
+                  <img src={PessoaPerfil} className="pessoaperfil" alt="PessoaPerfil" />
                 </div>
                 <div className="ladodireito">
                   <div className="top1">
                     <div className="inputbox tamanhoNomeEmail">
                       <label htmlFor="firstname">Nome do projeto:</label>
                       <input
-                        className="widthh"
+                        className="width"
                         type="text"
                         name="firstname"
                         placeholder="Laboratório 1"
@@ -84,7 +82,7 @@ function PerfilUsuario() {
                     <div className="inputbox">
                       <label htmlFor="ID_do_projeto">ID do projeto:</label>
                       <input
-                        className="widthh"
+                        className="width"
                         type="password"
                         name="ID_do_projeto"
                         placeholder="100/23"
@@ -96,7 +94,7 @@ function PerfilUsuario() {
                     <div className="inputbox tamanhoNomeEmail">
                       <label htmlFor="e-mail:">E-mail:</label>
                       <input
-                        className="widthh"
+                        className="width"
                         type="text"
                         name="e-mail:"
                         placeholder="e-mail"
@@ -106,7 +104,7 @@ function PerfilUsuario() {
                     <div className="inputbox tamanhoIdStatus">
                       <label htmlFor="Status:">Status:</label>
                       <input
-                        className="widthh"
+                        className="width"
                         type="text"
                         name="Status:"
                         placeholder="Ativo"
@@ -120,7 +118,7 @@ function PerfilUsuario() {
                 <div className="inputbox">
                   <label htmlFor="Cargo:">Cargo:</label>
                   <input
-                    className="widthh"
+                    className="width"
                     type="text"
                     name="Cargo:"
                     placeholder="Gerente"
@@ -130,7 +128,7 @@ function PerfilUsuario() {
                 <div className="inputbox">
                   <label htmlFor="Departamento:">Departamento:</label>
                   <input
-                    className="widthh"
+                    className="width"
                     type="text"
                     name="Departamento:"
                     placeholder="Financeiro"
@@ -140,7 +138,7 @@ function PerfilUsuario() {
                 <div className="inputbox tamanhoResponsavel">
                   <label htmlFor="Responsavel:">Responsavel:</label>
                   <input
-                    className="widthh"
+                    className="width"
                     type="text"
                     name="Responsavel:"
                     placeholder="Eduardo Matos"
@@ -152,7 +150,7 @@ function PerfilUsuario() {
                 <div className="inputbox">
                   <label htmlFor="Perfil:">Perfil:</label>
                   <input
-                    className="widthh"
+                    className="width"
                     type="text"
                     name="Perfil:"
                     placeholder=" Administrador"
@@ -162,7 +160,7 @@ function PerfilUsuario() {
                 <div className="inputbox">
                   <label htmlFor="Conclusão">Data Integração</label>
                   <input
-                    className="widthh"
+                    className="width"
                     type="date"
                     name="Inicio:"
                     placeholder="28/11/2023"
@@ -172,7 +170,7 @@ function PerfilUsuario() {
                 <div className="inputbox">
                   <label htmlFor="Pais:">Pais:</label>
                   <input
-                    className="widthh"
+                    className="width"
                     type="text"
                     name="Pais:"
                     placeholder="Brasil"
@@ -182,7 +180,7 @@ function PerfilUsuario() {
                 <div className="inputbox">
                   <label htmlFor="Cidade:">Cidade:</label>
                   <input
-                    className="widthh"
+                    className="width"
                     type="text"
                     name="Cidade:"
                     placeholder="São Paulo"
@@ -194,7 +192,7 @@ function PerfilUsuario() {
                 <div className="inputbox">
                   <label htmlFor="Estado:">Estado:</label>
                   <input
-                    className="widthh"
+                    className="width"
                     type="text"
                     name="Estado:"
                     placeholder="São Paulo"
@@ -204,7 +202,7 @@ function PerfilUsuario() {
                 <div className="inputbox">
                   <label htmlFor="Localização:">Localização:</label>
                   <input
-                    className="widthh"
+                    className="width"
                     type="text"
                     name="Localização:"
                     placeholder="Filial"

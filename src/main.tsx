@@ -7,13 +7,14 @@ import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Perfil from '../src/pages/Desenvolvedor/Perfil/index'
 
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
 
 
       <Routes>
-        <Route path='perfil/:idUsuario' element={<Perfil />} />
+        <Route path='perfil' element={<Perfil />} />
 
       </Routes>
     </BrowserRouter>

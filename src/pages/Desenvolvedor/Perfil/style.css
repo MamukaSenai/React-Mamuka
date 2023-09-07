@@ -135,15 +135,15 @@ main {
 }
 
 .formulario {
-    height: 340px;
-    width: 50%;
+    height: 380px;
+    width: 65%;
     border-radius: 10px;
     border-width: 5px 1px;
     border-color: #0073EA #7c7c7c;
     border-style: solid;
     display: flex;
     flex-direction: column;
-
+    padding: 5vh;
 
 }
 
@@ -151,7 +151,7 @@ input {
     border-radius: 4px;
 }
 
-.widthh {
+.width {
     width: 100%;
 }
 
@@ -179,22 +179,23 @@ input {
 }
 
 
-.pessoaerfil {
-    width: 80%;
-    border: solid 2px red;
+.pessoaperfil {
+    width: 90%;
     margin: 10px;
+
+
 
 }
 
 .imgfoto {
     width: 20%;
-    margin-left: 45px;
+    
+   
 }
 
 .ladodireito {
 
     width: 75%;
-
 
 }
 
