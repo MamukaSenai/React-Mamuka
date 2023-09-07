@@ -1,0 +1,172 @@
+
+.right  {
+
+    display: flex;
+    flex-direction:column-reverse;
+    width: 93.8vw; 
+    
+}
+
+
+.formi {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    width: 450px;
+    display: flex;
+    
+    border-top: 10px solid var(--azulClaro);
+    border-bottom: 10px solid var(--azulClaro);
+    border-left: 2px solid var(--cinzaclaro);
+    border-right:  2px solid var(--cinzaclaro);
+    justify-content: center;
+    border-radius: 10px;
+}
+/* 
+.formi img {
+    height: 100px;
+    margin-top: 15px;
+    margin-right: 15px;
+} */
+
+.perfil_img {
+    background-image: url("../../../assets/PessoaCadastro.png") no-repeat ;
+    /* height: 100px; */
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.formulario1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 450px;
+    height: 230px;
+    
+    border-top: 10px solid var(--azulClaro);
+    border-bottom: 10px solid var(--azulClaro);
+    border-left: 2px solid var(--cinzaclaro);
+    border-right:  2px solid var(--cinzaclaro);
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+
+
+.formulario button
+{
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: var(--branco);
+    background-color: var(--azulescuro); 
+    padding-left: 7px;
+    padding-right: 7px;
+    
+    display: flex;
+    flex-direction:column;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+
+  
+.formulario1 button{
+    border-radius: 5px;
+    font-size: 20px;
+    color: var(--branco);
+    background-color: var(--azulescuro); 
+    margin-top: 20px;
+    margin-left: 250px;
+    padding-left: 7px;
+    padding-right: 7px;
+    display: flex;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+
+
+.label_mail
+    {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    color: var(--branco);
+    }
+
+.label_mail1 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    color: var(--branco);
+}    
+
+.label_mail2 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    color: var(--branco);
+} 
+
+.label_mail label 
+    {
+    color: var(--cinzaclaro);
+    font-size: 15px;
+    }
+
+.label_mail input 
+    {
+    height: 30px;
+    width: 250px;
+    border-radius: 7px;
+    border: solid 1px;
+    text-indent: 5px;
+    font-size: 15px;
+    background-color: var(--branco);
+    /* color: var(branco); */
+    }
+
+.label_mail1 input {
+    height: 30px;
+    width: 350px;
+    border-radius: 7px;
+    border: solid 1px;
+    text-indent: 5px;
+    font-size: 15px;
+    background-color: var(--branco);
+    /* color: var(branco); */
+}
+
+.label_mail2 input {
+    height: 30px;
+    width: 200px;
+    margin-right: 150px;
+    border-radius: 7px;
+    border: solid 1px;
+    text-indent: 5px;
+    font-size: 15px;
+    background-color: var(--branco);
+    /* color: var(branco); */
+}
+
+
+.historico {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    color: var(--cinzaclaro);
+}
