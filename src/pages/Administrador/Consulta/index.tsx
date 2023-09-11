@@ -1,12 +1,13 @@
 import "./style.css"
-
+import PessoaCadastro from "../../../assets/PessoaCadastro.png"
 export default function AdministradorConsulta() {
     return (
             <main>
                 <section className="right">
                     <form className="formi">
                         <div className="perfil_img">
-                            {/* <img src="../img/PessoaCadastro.png" alt="#" /> */}
+                            <img src={PessoaCadastro} alt="#" />
+                            
                         </div>
                         <div className="formulario">
                             <div className="label_mail">
