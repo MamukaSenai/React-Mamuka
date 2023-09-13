@@ -275,8 +275,13 @@ att x3{
 
 .x3 {
     width: 15vw;
-    padding-left: 30px;
+    /* padding-left: 30px; */
 
+}
+
+.att x5{
+
+    margin: 64px;
 }
 
 #pais{
@@ -317,16 +322,23 @@ att x3{
 #cargo,
 #perfil,
 #datai,
-#pais,
-#cidade,
 #estado,
 #local {
     padding: 8px;
 }
 
+#cidade{
+
+}
+
+#pais{
+    /* margin-left: 64px; */
+
+}
+
 #resp{
     padding: 8px;
-    width: 20vw;
+    width: 33vw;
 }
 
 #depart{

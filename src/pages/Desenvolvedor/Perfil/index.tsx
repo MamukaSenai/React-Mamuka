@@ -27,7 +27,7 @@ function Perfil() {
 
     <main>
   <div className="sinalizacao">
-    <p>Administrador/perfil</p>
+    <p>Desenvolvedor/perfil</p>
   </div>
   <section className="perfil_geral configconteudo">
     <div className="conteudo_topo">
@@ -118,7 +118,7 @@ function Perfil() {
         </div>
       </div>
       <div className="input4 input_style padrao_input">
-        <div className="att x3perfil">
+        <div className="att x4perfil">
           <label className="textos" htmlFor="perfil">
             Perfil:
           </label>
@@ -130,7 +130,7 @@ function Perfil() {
             placeholder="Administrador"
           />
         </div>
-        <div className="att x3 integ">
+        <div className="att x4 integ">
           <label className="textos" htmlFor="datai">
             Data integração:
           </label>
@@ -142,7 +142,7 @@ function Perfil() {
             placeholder="23/02/2023"
           />
         </div>
-        <div className="att x3 pc">
+        <div className="att x5">
           <label className="textos" htmlFor="pais">
             País:
           </label>
@@ -154,7 +154,7 @@ function Perfil() {
             placeholder="Brasil"
           />
         </div>
-        <div className="att x3">
+        <div className="att x4">
           <label className="textos" htmlFor="cidade">
             Cidade:
           </label>
