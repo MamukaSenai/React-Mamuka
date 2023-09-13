@@ -16,7 +16,7 @@ import React from "react";
 
 
 
-function PerfilUsuario() {
+function Perfil() {
 
   // const [] = useState<>("")
   // const [] = useState<>("")
@@ -24,199 +24,184 @@ function PerfilUsuario() {
   // const [] = useState<>("")
 
   return (
-      <>
-        {/* corpo da pagina*/}
-        <aside>
-          {/* BARRA LATERAL */}
-          <div className="sidebar">
-            <div className="logo_content">
-              <img src={MENU} alt="MENU" />
-              {/* <i class="bx bx-menu" id="btn"></i> */}
+
+    <main>
+  <div className="sinalizacao">
+    <p>Administrador/perfil</p>
+  </div>
+  <section className="perfil_geral configconteudo">
+    <div className="conteudo_topo">
+      <img src={PessoaPerfil} />
+      <div className="input1 input_style">
+        <div className="att">
+          <div className="s1 padrao_input">
+            <div className="att">
+              <label htmlFor="name">Nome:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Ricardo Souza"
+              />
             </div>
-            <ul className="nav_list">
-              <li>
-                <a href="#">
-                  {/* <i class="bx bx-grid-alt"></i> */}
-                  <span className="link_name">Projetos</span>
-                </a>
-                {/* <span class="tooltip">dashboard</span> */}
-              </li>
-              <li>
-                <a href="#">
-                  {/* <i class="bx bx-grid-alt"></i> */}
-                  {/* <span className="link_name">Criar Projetos</span> */}
-                </a>
-                {/* <span class="tooltip">dashboard</span> */}
-              </li>
-              <li>
-                <a href="#">
-                  {/* <i class="bx bx-grid-alt"></i> */}
-                  {/* <span className="link_name">Criar Demandas</span> */}
-                </a>
-                {/* <span class="tooltip">dashboard</span> */}
-              </li>
-            </ul>
+            <div className="att x1">
+              <label htmlFor="id">ID:</label>
+              <input type="text" name="id" id="id" placeholder="899878321" />
+            </div>
           </div>
-          {/* BARRA LATERAL FIM */}
-        </aside>
-        <main>
-          <span className="Gestor">Gestor/Criar Demandas</span>
-          <div className="container">
-            <form className="formulario">
-              <div className="top_linha1">
-                <div className="imgfoto">
-                  <img src={PessoaPerfil} className="pessoaperfil" alt="PessoaPerfil" />
-                </div>
-                <div className="ladodireito">
-                  <div className="top1">
-                    <div className="inputbox tamanhoNomeEmail">
-                      <label htmlFor="firstname">Nome do projeto:</label>
-                      <input
-                        className="width"
-                        type="text"
-                        name="firstname"
-                        placeholder="Laboratório 1"
-                        required
-                      />
-                    </div>
-                    <div className="inputbox">
-                      <label htmlFor="ID_do_projeto">ID do projeto:</label>
-                      <input
-                        className="width"
-                        type="password"
-                        name="ID_do_projeto"
-                        placeholder="100/23"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="top2">
-                    <div className="inputbox tamanhoNomeEmail">
-                      <label htmlFor="e-mail:">E-mail:</label>
-                      <input
-                        className="width"
-                        type="text"
-                        name="e-mail:"
-                        placeholder="e-mail"
-                        required
-                      />
-                    </div>
-                    <div className="inputbox tamanhoIdStatus">
-                      <label htmlFor="Status:">Status:</label>
-                      <input
-                        className="width"
-                        type="text"
-                        name="Status:"
-                        placeholder="Ativo"
-                        required
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="linha1">
-                <div className="inputbox">
-                  <label htmlFor="Cargo:">Cargo:</label>
-                  <input
-                    className="width"
-                    type="text"
-                    name="Cargo:"
-                    placeholder="Gerente"
-                    required
-                  />
-                </div>
-                <div className="inputbox">
-                  <label htmlFor="Departamento:">Departamento:</label>
-                  <input
-                    className="width"
-                    type="text"
-                    name="Departamento:"
-                    placeholder="Financeiro"
-                    required
-                  />
-                </div>
-                <div className="inputbox tamanhoResponsavel">
-                  <label htmlFor="Responsavel:">Responsavel:</label>
-                  <input
-                    className="width"
-                    type="text"
-                    name="Responsavel:"
-                    placeholder="Eduardo Matos"
-                    required
-                  />
-                </div>
-              </div>
-              <div className="linha2">
-                <div className="inputbox">
-                  <label htmlFor="Perfil:">Perfil:</label>
-                  <input
-                    className="width"
-                    type="text"
-                    name="Perfil:"
-                    placeholder=" Administrador"
-                    required
-                  />
-                </div>
-                <div className="inputbox">
-                  <label htmlFor="Conclusão">Data Integração</label>
-                  <input
-                    className="width"
-                    type="date"
-                    name="Inicio:"
-                    placeholder="28/11/2023"
-                    required
-                  />
-                </div>
-                <div className="inputbox">
-                  <label htmlFor="Pais:">Pais:</label>
-                  <input
-                    className="width"
-                    type="text"
-                    name="Pais:"
-                    placeholder="Brasil"
-                    required
-                  />
-                </div>
-                <div className="inputbox">
-                  <label htmlFor="Cidade:">Cidade:</label>
-                  <input
-                    className="width"
-                    type="text"
-                    name="Cidade:"
-                    placeholder="São Paulo"
-                    required
-                  />
-                </div>
-              </div>
-              <div className="top3">
-                <div className="inputbox">
-                  <label htmlFor="Estado:">Estado:</label>
-                  <input
-                    className="width"
-                    type="text"
-                    name="Estado:"
-                    placeholder="São Paulo"
-                    required
-                  />
-                </div>
-                <div className="inputbox">
-                  <label htmlFor="Localização:">Localização:</label>
-                  <input
-                    className="width"
-                    type="text"
-                    name="Localização:"
-                    placeholder="Filial"
-                    required
-                  />
-                </div>
-              </div>
-            </form>
+          <div className="s2 padrao_input">
+            <div className="att">
+              <label htmlFor="email">E-mail:</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="ricardosouza1980@gmail.com"
+              />
+            </div>
+            <div className="att x1">
+              <label htmlFor="status">Status:</label>
+              <input
+                type="text"
+                name="status"
+                id="status"
+                placeholder="Ativo"
+              />
+            </div>
           </div>
-        </main>
-      </>
+        </div>
+        {/* <div class="input2 input_style">
+              <label for="email">E-mail:</label>
+              <input type="text" name="email" id="email" placeholder="ricardosouza1980@gmail.com">
+
+              <label for="status">Status:</label>
+              <input type="text" name="status" id="status" placeholder="Ativo"> */}
+      </div>
+    </div>
+    <div className="conteudo">
+      <div className="input3 input_style padrao_input">
+        <div className="att">
+          <label className="textos" htmlFor="cargo">
+            Cargo:
+          </label>
+          <input
+            className="alinhamento"
+            type="text"
+            name="cargo"
+            id="cargo"
+            placeholder="Gerente"
+          />
+        </div>
+        <div className="att x2">
+          <label className="textos" htmlFor="depart">
+            Departamento:
+          </label>
+          <input
+            className="alinhamento"
+            type="text"
+            name="depart"
+            id="depart"
+            placeholder="Financeiro"
+          />
+        </div>
+        <div className="att x3">
+          <label className="textos" htmlFor="resp">
+            Responsável:
+          </label>
+          <input
+            className="alinhamento"
+            type="text"
+            name="resp"
+            id="resp"
+            placeholder="Eduardo Matos"
+          />
+        </div>
+      </div>
+      <div className="input4 input_style padrao_input">
+        <div className="att x3perfil">
+          <label className="textos" htmlFor="perfil">
+            Perfil:
+          </label>
+          <input
+            className="alinhamento"
+            type="text"
+            name="perfil"
+            id="perfil"
+            placeholder="Administrador"
+          />
+        </div>
+        <div className="att x3 integ">
+          <label className="textos" htmlFor="datai">
+            Data integração:
+          </label>
+          <input
+            className="alinhamento"
+            type="text"
+            name="datai"
+            id="datai"
+            placeholder="23/02/2023"
+          />
+        </div>
+        <div className="att x3 pc">
+          <label className="textos" htmlFor="pais">
+            País:
+          </label>
+          <input
+            className="alinhamento"
+            type="text"
+            name="pais"
+            id="pais"
+            placeholder="Brasil"
+          />
+        </div>
+        <div className="att x3">
+          <label className="textos" htmlFor="cidade">
+            Cidade:
+          </label>
+          <input
+            className="alinhamento"
+            type="text"
+            name="cidade"
+            id="cidade"
+            placeholder="São Paulo"
+          />
+        </div>
+      </div>
+      <div className="input5 input_style padrao_input">
+        <div className="att x4">
+          <label className="textos" htmlFor="estado">
+            Estado:
+          </label>
+          <input
+            className="alinhamento"
+            type="text"
+            name="estado"
+            id="estado"
+            placeholder="São Paulo"
+          />
+        </div>
+        <div className="att x4local">
+          <label className="textos" htmlFor="local">
+            Localização:
+          </label>
+          <input
+            className="alinhamento"
+            type="text"
+            name="local"
+            id="local"
+            placeholder="Filial"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+   
+      
   )
 
 }
 
-export default PerfilUsuario;
+export default Perfil;
 
