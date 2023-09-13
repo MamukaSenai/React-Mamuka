@@ -1,22 +1,30 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Header from './components/Header'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import './index.css'
+import Login from './pages/Administrador/Login'
 
-import Login from './pagens/login'
 
-ReactDOM.createRoot(document.getElementById('root')!).render{}
-  <React.StrictMode>
-     <BrowserRouter>
-     </Header>
-     <Routes>
-        < Route path='Login' element={<Login/>}/>
-//         <Footer/>
-//       </BrowserRouter>
-// </React.strictMode>
-   
-   
+
+
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+      <React.StrictMode>
+            <BrowserRouter>
+
+
+                  <Routes>
+                        <Route path='Login' element={<Login />} />
+
+                  </Routes>
+
+
+            </BrowserRouter>
+      </React.StrictMode>
+)
+
+
 
 
 
