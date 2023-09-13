@@ -78,7 +78,7 @@ var data = {
     datasets: [
         {
             label: 'Projetos',
-            data: [35, 20, 15, 10],
+            data: [3, 43, 10, 13],
             backgroundColor: [
                 '#E44358',
                 '#FFCB00',
