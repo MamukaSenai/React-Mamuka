@@ -13,7 +13,7 @@ import mamuca from "../src/assets/Logo.png"
 
 
 
-function Login() {
+function AdministradorLogin() {
     return (
 
         <>
@@ -62,4 +62,4 @@ function Login() {
 }
 
 
-export default Login;
+export default AdministradorLogin;

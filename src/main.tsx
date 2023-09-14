@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import './index.css'
-import Login from './pages/Administrador/Login'
+import AdministradorLogin from './pages/Administrador/Login'
 
 
 
@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
 
                   <Routes>
-                        <Route path='/' element={<Login />} />
+                        <Route path='administradorLogin' element={<AdministradorLogin />} />
 
                   </Routes>
 
