@@ -1,65 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    resize: none;
-}
-
-:root{
-    --azulescuro: #405189;
-    --branco: #ffffff;
-    --azulClaro: #0073EA;
-    --cinza: #2C2E3E;
-    --cinzaclaro: #7C7C7C;
-    --font: "Core Sans G";
-    --vermelho: #F22D2D;
-    --laranja: #F9784F;
-    --verde: #26CB7B;
-}
-/* 
-body {
-    width: 100vw;  
-    height: 100vh;
-    display: flex;
-    font-family: var(--font);
-    overflow-x: hidden; 
-    overflow-y: hidden;
-
-}
-
-
-aside {
-    display: flex;
-    height: 50vh;
-    width: 3w;
-    
-}
-
-.menu {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--cinza);
-    color: #fff;
-    fill: #fff;
-} 
-
-.menu svg{
-    height: 5vh;
-    width: 5vw;
-    margin-top: 15px;
-}
-
-.menu p {
-    padding-top: 50%;
-    padding-right: 5%;
-    padding-left: 5%;
-    font-weight: 800;
-    font-size:large;
-}
-
 .right {
 
     display: flex;
@@ -69,92 +7,12 @@ aside {
     
 }
 
-.topo {
-    height: 12vh;
-    width: vw;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--azulescuro);
-
-    align-items: center;
-}
-
-
-
-.logo img {
-    width: 180px;
-    padding: 15px;
-}  */
-
-/*
-.campotexto{
-    width: 25vw;
-    height: 30px;
-    border-radius: 10px;
-    padding-left: 40px;
-}
-
-#lupa {
-    padding: 10px;
-    position: absolute;
-    color: var(--cinza);
-    
-}
-
-.pesquisa {
-    display: flex;
-    align-items: center;
-}
-*/
-/* 
-.pesquisa svg {
-    
-    position: absolute;
-    color: var(--cinza);
-    margin-left: 7px;
-    margin-top: 7px;
-    fill: var(--cinzaclaro);
-}
-.campotexto{
-    width: 25vw;
-    height: 30px;
-    border-radius: 10px;
-    padding-left: 40px;
-    border: none;
-} */
-/* 
-.ricardo {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    color: var(--branco);
-    fill: var(--branco);
-}
-
-.ricardo img {
-    padding: 10px;
-}
-
-
-
-.ricardo p {
-    padding-right: 9px;
-    font-weight: 600;
-    
-
-} */
-
 main {
-    height: 150vh;
+    height: 88vh;
     width: 100vw;  
     display: flex;
     
 }
-
-
-
 
 
 .conteudo {
@@ -162,21 +20,16 @@ main {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    /* margin-left: 121px;
-    margin-right: 131px; */
-    justify-content: center;
-    /* margin-left: 30px; */
-    
+    margin-left: 121px;
+    margin-right: 131px;
 }
 
-
-.Cadastro {
+.cadastro,
+.consulta {
     width: 40%;
     display: flex;
     align-items: center;
-    text-align: center;
     flex-direction: column;
-    margin: 30px;
 
 
 }
@@ -184,10 +37,11 @@ main {
 
 .button {
     background-color: var(--azulescuro);
-    margin: 10px auto;
+    margin: 50px auto;
+    border-radius: 10px;
     font-family: Core Sans G, sans-serif;
     height: 3vh;
-    padding: 10px;
+    padding: 15px;
     color: #ffffff;
     text-align: center;
     text-decoration: none;
