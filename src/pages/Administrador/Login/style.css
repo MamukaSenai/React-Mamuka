@@ -1,147 +1,144 @@
-/* /* *{
-    padding: 0;
-    margin: 0;
-    border: 0;
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left-login {
+    width: 65vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.left-login img{
+    max-width: 500%;
+    width: 50%;
+    max-height: 500%;
+    height: 50%;
+}
+
+.left-login h1 {
+    
+    color: #405189;
+    text-transform: uppercase;
+    font-size: 70px;
+}
+
+.right-login {
+    width: 35vw;
+    height: 100vh;
+    background: #405189;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-login {
+    width: 70%;
+    height: 100vh;
+    display: flex;  
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.card-login img {
+    width: 180px;
+    padding: 15px 0px 50px 0px;
+    
+}
+
+.card-login a {
+    color: #ffff;
+    font-size: 14px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+
+
+.card-login h1 {
+    color: #ffff;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding: 20px 0px 0px 0px;
+}
+
+.unlearn a {
+    padding: 0px 0px 0px 200px;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+    font-size: 23px;
+}
+
+.textfield a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 16px;
+    padding: 15px;
+    color: #f0ffffde;
+    font-size: 12pt;
     box-sizing: border-box;
 }
-:root{
-    --azulescuro: #405189;
-    --branco: #fff;
-    --azulbotao:#0073ea;
-    --azul_sinza:#2c233e; */
-    
 
-/* } */ */
-
-.mamuca{
-    width: 400px;
-    
-    margin: 80px;
-    /* font-family:"Core Sans G" */
-
-    
-
-}
-.direita{
-    background-color: #405189;
-    width: 40%;
-    /* font-family: "Core Sans G"; */
-    margin-bottom: -30px;
-    padding-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.esquerda{
-    
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1000px;
-    text-transform: none;
+.textfield > label {
+    color: #ffff;
+    margin-bottom: 3px;
 }
 
-.posicionamento{
-    display: flex;
-    flex-direction: row-reverse;
-    height: 100vh;
+.textfield > input::placeholder {
+    color: #7C7C7C;
 }
 
-.login{
-    color: #ffffff;
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: 500px;
-}
 
-.betume{
-    font-size: 20px;
-    color: #ffffff;
-    width: 300px;
-    padding-top: 10pv;
-    /* font-family: "Core Sans G"; */
-    
-}
-
-.amor{
-    width: 300px;
-    height: 25px;
-    border-radius: 10px;
-}
-
-.esquerda p{
-    font-size: 60px;
-    color:#405189;
-    text-transform: uppercase;
-    /* font-family: "Core Sans G"; */
-        height: 1000px;
-    
-    
-    
-    
-     
-}
-
-.esquerda img{
-    height: 70vh;
-    margin-top: 50px;
-    
-    
-
-}
-
-.pedro{
-    font-size: 22px;
-    color: #ffffff;
-    padding-left: 80px;
-    padding-top: 15px;
-    display: flex;
-    margin-top: 0 auto;
-    text-align: center;
-    
-}
-
-.btn_login{
-    font-size: 30px;
-    color: #ffffff;
-    font-weight: 600;
-    background-color: #0073ea;
-    text-decoration: none;
-    padding: 10px 60px;
+.btn-login {
+    width: 50%;
+    padding: 8px 0px;
+    margin: 50px;
+    border: none;
     border-radius: 15px;
-    margin-top: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #ffff;
+    background: #0073EA;
+    cursor: pointer;
+    font-size: 19px;
+}
 
-}
-.registre-se{
-    font-size: 18px;
-    color: #ffffff;
-    text-decoration: none;
-    margin: 30px;
-    /* font-family: "Core Sans G"; */
-    
 
-}
-.barata{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 15px;
-}
 
 @media screen and (max-width:900px){
-    .esquerda{
+    .left-login{
         display: none;
         
     }
-    .posicionamento{
+    .geral{
         align-items: center;
         justify-content: center;
         background: var(--azulescuro);
 
     }
-    .pedro{
+    .unlearn{
         align-items: center;
         padding: 15px 0;
 
@@ -149,22 +146,22 @@
     }
 }
 
-@media screen and (min-width:900PX){
-    .betume, .amor{
+@media screen and (min-width:900px){
+    .label, .input{
         width: 100%;
 
     }
 }
 
+
+
 @media screen and (max-width:450px){
-    .barata{
+    .textfield{
         width: 80vw;
 
     }
-    .betume, .amor{
+    .label, .input{
         width: 100%;
 
     }
 }
-
-
