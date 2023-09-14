@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    resize: none;
+
+}
+
+
+:root {
+    --azulescuro: #405189;
+    --branco: #ffffff;
+    --azulClaro: #0073EA;
+    --cinza: #2C2E3E;
+    --cinzaclaro: #7C7C7C;
+    --fonte1: 'Raleway', san;
+
+
+}
