@@ -5,7 +5,7 @@ import './index.css'
 
 // import App from './App'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Perfil from '../src/pages/Desenvolvedor/Perfil/index'
+import Desenvolvedorperfil from '../src/pages/Desenvolvedor/Perfil/index'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
 
       <Routes>
-        <Route path='perfil' element={<Perfil />} />
+        <Route path='Desenvolvedorperfil' element={<Desenvolvedorperfil />} />
 
       </Routes>
     </BrowserRouter>

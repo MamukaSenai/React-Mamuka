@@ -1,7 +1,3 @@
-@font-face {
-    font-family: "Core Sans G";
-    src: url(fonts\CoreSansG\CoreSansG-Regular.ttf);
-}
 
 * {
     padding: 0;
@@ -286,6 +282,7 @@ att x3{
 
 #pais{
 
+    margin-left: 65px;
     
 }
 
