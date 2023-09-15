@@ -5,9 +5,15 @@ export default function Header(){
         <>
             <header className="topo">
   <div className="logo">
+<<<<<<< HEAD
     <a href="../administrador_home/administrador_home.html">
       <img src="../img/Logo.png" alt="logo" />
     </a>
+=======
+    {/* <a href="../administrador_home/administrador_home.html"> */}
+      <div className="teste"></div>
+    {/* </a> */}
+>>>>>>> aside
   </div>
   <div className="pesquisa">
     {/*<i class="fa-solid fa-magnifying-glass" id="lupa"></i>*/}
@@ -24,21 +30,39 @@ export default function Header(){
     <input className="campotexto" type="text" placeholder="Pesquisa" />
   </div>
   <div className="ricardo">
+<<<<<<< HEAD
     <img src="../img/Ricardo.png" alt="" />
     {/*<p>Ricardo Souza</p>*/}
     <a href="../perfil_administrador/perfil_administrador.html">
       Ricardo Souza
     </a>
     <i>
+=======
+    {/* <img src="../../assets/Ricardo.png" alt="" /> */}
+      <div className="ricardoimg">
+      </div>
+    <p>Ricardo Souza</p>
+    {/* <a href="../perfil_administrador/perfil_administrador.html"> */}
+    {/* </a> */}
+    {/* <i>
+>>>>>>> aside
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="1em"
         viewBox="0 0 320 512"
+<<<<<<< HEAD
       >
         {/*! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}
         <path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
       </svg>
     </i>
+=======
+      > */}
+        {/*! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}
+        {/* <path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z" />
+      </svg>
+    </i> */}
+>>>>>>> aside
   </div>
 </header>
 
