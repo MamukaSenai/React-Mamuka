@@ -55,23 +55,57 @@ body {
   
   .table_wrap ul li .item .id,
   .table_wrap ul li .item .grupo {
-    width: 20%;
-    padding: 0 15px;
+    width: 40%;
+    padding: 0 20px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center; */
   }
   
-  .table_wrap ul li .item .status {
-    width: 15%;
-    padding: 0 15px;
+  .table_wrap ul li .item .grupo {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* text-align: center; */
   }
+
+  .grupo span {
+
+    
+  }
+  .table_wrap ul li .item .status {
+    width: 20%;
+    padding: 0 20px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+  }
+
+  .table_wrap ul li .item .responsavel {
+    width: 20%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
   
   .table_wrap ul li .item .nome {
     width: 45%;
-    padding: 0 15px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
   }
   
   .table_wrap ul li .item .cronograma {
     width: 45%;
-    padding: 0 15px;
+    padding: 0 20px;
   }
   .table_wrap ul li .item .nome span,
   .table_wrap ul li .item .id span {
@@ -97,6 +131,15 @@ body {
   }
   
   .table_body ul li .item .status span {
+    padding: 5px 20px;
+    border-radius: 25px;
+    max-width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+
+  .table_body ul li .item .responsavel span {
     padding: 5px 20px;
     border-radius: 25px;
     max-width: 115px;

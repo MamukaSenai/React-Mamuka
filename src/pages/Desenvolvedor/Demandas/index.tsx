@@ -163,7 +163,7 @@ export default function DesenvolvedorDemandas() {
                                         <span className="prazo">Fev/23 - Nov/23</span>
                                     </div>
                                     <div className="status">
-                                        <span className="andamento">Em Andamento</span>
+                                        <span className="andamento">Andamento</span>
                                     </div>
                                     <div className="responsavel">
                                         <span>Hugo Ramos</span>
@@ -229,7 +229,7 @@ export default function DesenvolvedorDemandas() {
                                         <span className="teste">Set/22 - Out/22</span>
                                     </div>
                                     <div className="status">
-                                    <span className="andamento">Em Andamento</span>
+                                    <span className="andamento">Andamento</span>
                                     </div>
                                     <div className="responsavel">
                                         <span>Moacir Lima</span>
