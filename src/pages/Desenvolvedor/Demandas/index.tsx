@@ -97,7 +97,7 @@ export default function DesenvolvedorDemandas() {
                                         <span className="prazo">Abril/23 - Nov/23</span>
                                     </div>
                                     <div className="status">
-                                        <span className="open">Open</span>
+                                    <span className="concluido">Concluído</span>
                                     </div>
                                     <div className="responsavel">
                                         <span>Ricardo Souza</span>
@@ -119,7 +119,7 @@ export default function DesenvolvedorDemandas() {
                                         <span className="prazo">Jan/22 - Jun/22</span>
                                     </div>
                                     <div className="status">
-                                        <span className="fixed">Fixed</span>
+                                        <span className="concluido">Concluído</span>
                                     </div>
                                     <div className="responsavel">
                                         <span>Rodrigo Amaro</span>
@@ -141,7 +141,7 @@ export default function DesenvolvedorDemandas() {
                                         <span className="prazo">Jan/23 - Fev/23</span>
                                     </div>
                                     <div className="status">
-                                        <span className="closed">Closed</span>
+                                        <span className="cancelado">Cancelado</span>
                                     </div>
                                     <div className="responsavel">
                                         <span>Paulo Pereira</span>
@@ -163,7 +163,7 @@ export default function DesenvolvedorDemandas() {
                                         <span className="prazo">Fev/23 - Nov/23</span>
                                     </div>
                                     <div className="status">
-                                        <span className="hold">Hold</span>
+                                        <span className="andamento">Em Andamento</span>
                                     </div>
                                     <div className="responsavel">
                                         <span>Hugo Ramos</span>
@@ -185,7 +185,7 @@ export default function DesenvolvedorDemandas() {
                                         <span className="prazo">Jun/22 - Dez/22</span>
                                     </div>
                                     <div className="status">
-                                        <span className="reopened">Reopened</span>
+                                    <span className="concluido">Concluído</span>
                                     </div>
                                     <div className="responsavel">
                                         <span>Vagner Barros</span>
@@ -207,7 +207,7 @@ export default function DesenvolvedorDemandas() {
                                         <span className="prazo">Fev/23 - Set/23</span>
                                     </div>
                                     <div className="status">
-                                        <span className="canceled">Canceled</span>
+                                    <span className="cancelado">Cancelado</span>
                                     </div>
                                     <div className="responsavel">
                                         <span>Moises Amparo</span>
@@ -229,7 +229,7 @@ export default function DesenvolvedorDemandas() {
                                         <span className="teste">Set/22 - Out/22</span>
                                     </div>
                                     <div className="status">
-                                        <span className="reopened">Reopened</span>
+                                    <span className="andamento">Em Andamento</span>
                                     </div>
                                     <div className="responsavel">
                                         <span>Moacir Lima</span>

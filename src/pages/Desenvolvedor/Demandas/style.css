@@ -108,17 +108,17 @@ body {
     color: #5a8ee4;
   }
   
-  .table_body ul li .item .fixed {
+  .table_body ul li .item .concluido {
     background: #cff1f0;
     color: #0dbeb6;
   }
   
-  .table_body ul li .item .closed {
+  .table_body ul li .item .cancelado {
     background: #fedfe5;
     color: #ff89a0;
   }
   
-  .table_body ul li .item .hold {
+  .table_body ul li .item .andamento {
     background: #fff0db;
     color: #f59d39;
   }
