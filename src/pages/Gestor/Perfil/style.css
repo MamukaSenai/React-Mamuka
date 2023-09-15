@@ -1,7 +1,3 @@
-@font-face {
-    font-family: "Core Sans G";
-    src: url(fonts\CoreSansG\CoreSansG-Regular.ttf);
-}
 
 * {
     padding: 0;
@@ -13,6 +9,7 @@
 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 :root {
     --azulescuro: #405189;
@@ -37,6 +34,38 @@ body {
 
 }
 
+
+aside {
+    display: flex;
+    height: 100vh;
+    width: 6.5vw;
+
+}
+
+.menu {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cinza);
+    color: #fff;
+    fill: #fff;
+}
+
+.menu svg {
+    height: 5vh;
+    width: 5vw;
+    margin-top: 15px;
+}
+
+.menu p {
+    padding-top: 50%;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-weight: 700;
+    /* font-size: large; */
+}
 
 .right {
 
@@ -92,6 +121,19 @@ body {
     padding: 15px;
     color: var(--branco);
     fill: var(--branco);
+}
+
+.ricardo img {
+    padding: 10px;
+}
+
+
+
+.ricardo p {
+    padding-right: 9px;
+    font-weight: 600;
+
+
 }
 
 main {

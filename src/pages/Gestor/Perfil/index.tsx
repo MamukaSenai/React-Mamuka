@@ -16,7 +16,7 @@ import React from "react";
 
 
 
-function Perfil() {
+function Gestor_Perfil() {
 
   // const [] = useState<>("")
   // const [] = useState<>("")
