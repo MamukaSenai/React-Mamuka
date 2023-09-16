@@ -1,12 +1,21 @@
+<<<<<<< HEAD
+=======
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+>>>>>>> aside
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     resize: none;
+<<<<<<< HEAD
+}
+@font-face {
+    font-family: "Core Sans G";
+    src: url(../fonts/CoreSansG-Regular.ttf);
+=======
     font-family:"Core Sans G"
 
 }
@@ -14,6 +23,7 @@
     font-family: "Core Sans G";
     src: url(../src/assets/fonts/CoreSansG-Regular.ttf);
 
+>>>>>>> aside
 }
 
 
@@ -28,6 +38,8 @@
     --laranja: #F9784F;
     --verde: #26CB7B;
 }
+<<<<<<< HEAD
+=======
 
 body {
     width: 100vw;  
@@ -38,3 +50,4 @@ body {
     overflow-y: hidden;
 
 }
+>>>>>>> aside

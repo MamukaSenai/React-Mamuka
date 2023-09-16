@@ -1,5 +1,10 @@
 
 .topo {
+<<<<<<< HEAD
+    height: 12vh;
+    width: 93.5vw;
+    
+=======
     /* position: fixed; */
     /* top: 0;
     left: 0; */
@@ -7,19 +12,31 @@
     /* width: 93.5vw; */
     width: 100vw;
     /* z-index: 1; */
+>>>>>>> aside
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--azulescuro);
+<<<<<<< HEAD
+
+    align-items: center;
+=======
+>>>>>>> aside
 }
 
 
 
+<<<<<<< HEAD
+.logo img {
+    width: 180px;
+    padding: 15px;
+=======
 .logo .teste {
     background: url("../../assets/Logo.png") no-repeat;
     width: 18vw;
     height: 5vw;
     margin-left: 150px;
+>>>>>>> aside
 } 
 
 .pesquisa svg {
@@ -47,11 +64,16 @@
     fill: var(--branco);
 }
 
+<<<<<<< HEAD
+.ricardo img {
+    padding: 10px;
+=======
 .ricardoimg {
     background: url("../../assets/Ricardo.png") no-repeat;
     padding: 10px;
     width: 5vw;
     height: 8vh;
+>>>>>>> aside
 }
 
 
@@ -66,4 +88,8 @@
     font-weight: 600;
     color: var(--branco);
     text-decoration: none;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> aside
