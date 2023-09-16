@@ -1,12 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     resize: none;
+    font-family:"Core Sans G"
+
 }
 @font-face {
     font-family: "Core Sans G";
-    src: url(../fonts/CoreSansG-Regular.ttf);
+    src: url(../src/assets/fonts/CoreSansG-Regular.ttf);
+
 }
 
 
@@ -20,4 +27,14 @@
     --vermelho: #F22D2D;
     --laranja: #F9784F;
     --verde: #26CB7B;
+}
+
+body {
+    width: 100vw;  
+    height: 100vh;
+    display: flex;
+    font-family: var(--font);
+    overflow-x: hidden; 
+    overflow-y: hidden;
+
 }
