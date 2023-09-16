@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
 
       <Routes>
-        <Route path='Desenvolvedorperfil' element={<Desenvolvedorperfil />} />
+        <Route path='desenvolvedorperfil' element={<Desenvolvedorperfil />} />
 
       </Routes>
     </BrowserRouter>

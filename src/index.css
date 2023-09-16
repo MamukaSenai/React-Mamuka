@@ -1,4 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    resize: none;
+    font-family: sans-serif;
+
+}
+
+
 @font-face {
     font-family: "Core Sans G";
-    src: url(fonts\CoreSansG\CoreSansG-Regular.ttf);
+    src: url(./assets/fonts/CoreSansG-Regular.ttf);
 }
+
+/* Declaracao geral */
+:root
+    {
+    --azulC: #0073EA;
+    --azulM: #405189;
+    --azulE: #2C2E3E;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --verde: #07f60b;
+    --vermelho: #f60707;
+    --cinza: #2C2E3E;
+    --cinzaclaro: #7C7C7C;
+
+    --font1: 'Titillium Web', sans-serif;
+    --font2: 'Righteous', cursive;
+    }
+
+
+
+    
+/* body */
+body
+    {
+        position: relative;
+        min-height: 100vh;
+        width: 100vw;
+    }
+/* body */
