@@ -1,25 +1,21 @@
 
 .topo {
-    /* position: fixed; */
-    /* top: 0;
-    left: 0; */
     height: 12vh;
-    /* width: 93.5vw; */
-    width: 100vw;
-    /* z-index: 1; */
+    width: 93.5vw;
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--azulescuro);
+
+    align-items: center;
 }
 
 
 
-.logo .teste {
-    background: url("../../assets/Logo.png") no-repeat;
-    width: 18vw;
-    height: 5vw;
-    margin-left: 150px;
+.logo img {
+    width: 180px;
+    padding: 15px;
 } 
 
 .pesquisa svg {
@@ -47,11 +43,8 @@
     fill: var(--branco);
 }
 
-.ricardoimg {
-    background: url("../../assets/Ricardo.png") no-repeat;
+.ricardo img {
     padding: 10px;
-    width: 5vw;
-    height: 8vh;
 }
 
 
