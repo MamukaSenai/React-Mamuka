@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import AdministradorConsulta from './pages/Administrador/Consulta'import { BrowserRouter } from 'react-router-dom'
 import Aside from './components/Aside'
 import Header from './components/Header'
 import './index.css'
