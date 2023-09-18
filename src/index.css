@@ -1,20 +1,12 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
->>>>>>> aside
-=======
->>>>>>> administrador_cadastro_infos_conclusao
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     resize: none;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 }
 /* @font-face {
     font-family: "Core Sans G";
@@ -27,8 +19,6 @@
     font-family: "Core Sans G";
     src: url(../src/assets/fonts/CoreSansG-Regular.ttf);
 
->>>>>>> aside
-=======
 }
 /* @font-face {
     font-family: "Core Sans G";
@@ -48,28 +38,15 @@
     --laranja: #F9784F;
     --verde: #26CB7B;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 
 body {
-=======
-
-body 
-{
->>>>>>> administrador_cadastro_infos_conclusao
     width: 100vw;  
     height: 100vh;
     display: flex;
     font-family: var(--font);
     overflow-x: hidden; 
     overflow-y: hidden;
+}
 
-<<<<<<< HEAD
-}
->>>>>>> aside
-=======
-}
->>>>>>> administrador_cadastro_infos_conclusao
 
-}

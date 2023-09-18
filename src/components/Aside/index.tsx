@@ -12,7 +12,6 @@ import "./style.css"
 
 export default function Aside() {
     return (
-        <>
             <aside>
                 <nav className="menu">
                     {/* <div onClick={BotaoDropDown()}></div> */}
@@ -26,7 +25,6 @@ export default function Aside() {
                     Teste
                 </div> */}
             </aside>
-        </>
     );
 }
 
@@ -37,7 +35,7 @@ export default function Aside() {
                     Teste
                     Teste
                 </div> */}
-            </aside>
-        </>
-    );
-}
+//             </aside>
+//         </>
+//     );
+// }
