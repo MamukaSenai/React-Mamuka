@@ -8,6 +8,11 @@ import AdministradorConsulta from './pages/Administrador/Consulta'import { Brows
 import Aside from './components/Aside'
 import Header from './components/Header'
 import './index.css'
+import AdministradorLogin from './pages/Administrador/Login'
+
+
+
+
 import CadastroInfosPessoais from './pages/Administrador/CadastroInfosPessoais'
 import CadastroInfosCorporativas from './pages/Administrador/CadastroInfosCorporativas'
 

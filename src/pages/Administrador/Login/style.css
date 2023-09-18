@@ -1,0 +1,167 @@
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left-login {
+    width: 65vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.left-login img{
+    max-width: 500%;
+    width: 50%;
+    max-height: 500%;
+    height: 50%;
+}
+
+.left-login h1 {
+    
+    color: #405189;
+    text-transform: uppercase;
+    font-size: 70px;
+}
+
+.right-login {
+    width: 35vw;
+    height: 100vh;
+    background: #405189;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-login {
+    width: 70%;
+    height: 100vh;
+    display: flex;  
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.card-login img {
+    width: 180px;
+    padding: 15px 0px 50px 0px;
+    
+}
+
+.card-login a {
+    color: #ffff;
+    font-size: 14px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+
+
+.card-login h1 {
+    color: #ffff;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding: 20px 0px 0px 0px;
+}
+
+.unlearn a {
+    padding: 0px 0px 0px 200px;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+    font-size: 23px;
+}
+
+.textfield a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 16px;
+    padding: 15px;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: #ffff;
+    margin-bottom: 3px;
+}
+
+.textfield > input::placeholder {
+    color: #7C7C7C;
+}
+
+
+.btn-login {
+    width: 50%;
+    padding: 8px 0px;
+    margin: 50px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #ffff;
+    background: #0073EA;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+
+
+@media screen and (max-width:900px){
+    .left-login{
+        display: none;
+        
+    }
+    .geral{
+        align-items: center;
+        justify-content: center;
+        background: var(--azulescuro);
+
+    }
+    .unlearn{
+        align-items: center;
+        padding: 15px 0;
+
+
+    }
+}
+
+@media screen and (min-width:900px){
+    .label, .input{
+        width: 100%;
+
+    }
+}
+
+
+
+@media screen and (max-width:450px){
+    .textfield{
+        width: 80vw;
+
+    }
+    .label, .input{
+        width: 100%;
+
+    }
+}
