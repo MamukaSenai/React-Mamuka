@@ -8,6 +8,11 @@ import AdministradorConsulta from './pages/Administrador/Consulta'import { Brows
 import Aside from './components/Aside'
 import Header from './components/Header'
 import './index.css'
+import DesenvolvedorLogin from './pages/Desenvolvedor/Login'
+
+
+
+
 import Dashboard from './pages/Gestor/Dashboard'
 import AdministradorLogin from './pages/Administrador/Login'
 

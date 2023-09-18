@@ -1,7 +1,7 @@
 import "./style.css"
 
 
-import Logo from "../../../assets/logo.png"
+import Logo from "../../../assets/Logo.png"
 import LoginLateralEsquerda from "../../../assets/LoginLateralEsquerda.png"
 import mamuca from "../src/assets/Logo.png"
 
@@ -13,38 +13,47 @@ import mamuca from "../src/assets/Logo.png"
 
 
 
-function Login() {
+function DesenvolvedorLogin() {
     return (
 
         <>
-            <section className="posicionamento">
+            <section className="geral">
+                <div>
+                    <div className="main-login">
+                        <div className="left-login">
+                            <img
+                                src={LoginLateralEsquerda}
+                                alt="Imagem pessoa em frente a um quadro de projetos"
+                            />
+                            <h1> Bem vindo </h1>
 
-                <div className="direita">
-                    <img className="mamuca" src="../src/assets/Logo.png" alt="" />
-                    <p className="login">login</p>
-                    <div className="barata">
-                        <p className="betume">email</p>
-                        <input className="amor" type="text" />
-                        <p className="betume">senha</p>
-                        <input className="amor" type="text" />
-                        <p className="pedro">esqueceu sua senha</p>
-                        <a className="btn_login" href="#">
-                            login
-                        </a>
-                        <a className="registre-se" href="#">
-                            registre-se
-                        </a>
+                        </div>
+
+                        <div className="right-login">
+                            <div className="card-login">
+                                <img src={Logo} alt="Logo mamuka" />
+                                <h1>Login</h1>
+                                <div className="textfield">
+                                    <label htmlFor="usuario">Usuario</label>
+                                    <input type="text" name="usuario" placeholder="Usuario" />
+                                </div>
+                                <div className="textfield">
+                                    <label htmlFor="senha">Senha</label>
+                                    <input type="password" name="senha" placeholder="Senha" />
+                                </div>
+                                <div className="unlearn">
+                                    <a href="#">Esqueceu sua senha</a>
+                                </div>
+                                <button className="btn-login">Login</button>
+                                <a className="registro" href="#">
+                                Registre-se
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-
-                <div className="esquerda">
-                    <img src="../src/assets/LoginLateralEsquerda.png" alt="" />
-                    <p>Bem Vindo</p>
-                </div>
-
-
             </section>
+
 
 
         </>
@@ -53,4 +62,4 @@ function Login() {
 }
 
 
-export default Login;
+export default DesenvolvedorLogin;
