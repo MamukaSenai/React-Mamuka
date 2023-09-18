@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import GestorCriarDemandas from './pages/Gestor/Criar Demandas'
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from '../src/pages/Administrador/Home'
 
