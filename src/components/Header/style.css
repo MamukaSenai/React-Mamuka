@@ -1,7 +1,7 @@
 
 .topo {
     height: 12vh;
-    width: 93.5vw;
+    /* width: 93.5vw; */
     
     display: flex;
     align-items: center;
@@ -13,9 +13,11 @@
 
 
 
-.logo img {
-    width: 180px;
-    padding: 15px;
+.logo .teste {
+    background: url("../../assets/Logo.png") no-repeat;
+    width: 18vw;
+    height: 5vw;
+    /* padding: 15px; */
 } 
 
 .pesquisa svg {
@@ -43,8 +45,11 @@
     fill: var(--branco);
 }
 
-.ricardo img {
+.ricardoimg {
+    background: url("../../assets/Ricardo.png") no-repeat;
     padding: 10px;
+    width: 5vw;
+    height: 8vh;
 }
 
 
