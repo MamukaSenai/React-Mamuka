@@ -10,6 +10,11 @@ import AdministradorConsulta from './pages/Administrador/Consulta'import { Brows
 import Aside from './components/Aside'
 import Header from './components/Header'
 import './index.css'
+
+// import App from './App'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Gestorperfil from '../src/pages/Gestor/Perfil'
+
 import GestorLogin from './pages/Gestor/Login'
 
 
