@@ -8,6 +8,7 @@ import AdministradorConsulta from './pages/Administrador/Consulta'import { Brows
 import Aside from './components/Aside'
 import Header from './components/Header'
 import './index.css'
+import Dashboard from './pages/Gestor/Dashboard'
 import AdministradorLogin from './pages/Administrador/Login'
 
 
@@ -20,6 +21,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Header />
+    <Routes>
+      <Route path="dashboard" element = {<Dashboard />}/>
+    </Routes>
     <Aside />
     </BrowserRouter>
   </React.StrictMode>,
