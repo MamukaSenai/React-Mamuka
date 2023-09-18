@@ -10,6 +10,11 @@ import AdministradorConsulta from './pages/Administrador/Consulta'import { Brows
 import Aside from './components/Aside'
 import Header from './components/Header'
 import './index.css'
+import GestorLogin from './pages/Gestor/Login'
+
+
+
+
 import GestorCriarProjetos from './pages/Gestor/Criar Projetos'
 
 // import App from './App'
