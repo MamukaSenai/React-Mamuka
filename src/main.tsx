@@ -8,6 +8,11 @@ import AdministradorConsulta from './pages/Administrador/Consulta'import { Brows
 import Aside from './components/Aside'
 import Header from './components/Header'
 import './index.css'
+
+// import App from './App'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Desenvolvedorperfil from '../src/pages/Desenvolvedor/Perfil/index'
+
 import DesenvolvedorLogin from './pages/Desenvolvedor/Login'
 
 
