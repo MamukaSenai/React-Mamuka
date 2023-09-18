@@ -60,13 +60,12 @@ main
 
 .fotoNovoUsuario img
     {
-        width: 10vw; /*define o tamanho do formulario 2% maior que os campo*/
-        height: 20vh;
+        width: 12vw; /*define o tamanho do formulario 2% maior que os campo*/
+        height: 22vh;
         display: flex;
         align-items: center;
         margin: 0 auto;
     }    
-
 
 
 .linha1 , /*coloca os campos input em linha*/
@@ -196,8 +195,8 @@ main
 
     .fotoNovoUsuario img
     {
-        width: 30vw; /*define o tamanho do formulario 2% maior que os campo*/
-        height: 38vh;
+        width: 18vw; /*define o tamanho do formulario 2% maior que os campo*/
+        height: 20vh;
         display: flex;
         align-items: center;
         margin: 0 auto;
@@ -215,7 +214,7 @@ main
     .fotoNovoUsuario img
     {
         width: 18vw; /*define o tamanho do formulario 2% maior que os campo*/
-        height: 19vh;
+        height: 20vh;
         display: flex;
         align-items: center;
         margin: 0 auto;
@@ -227,6 +226,17 @@ main
 /* Quando a resolução for menor que 408px esconde o campo de busca */
 @media screen and (max-width: 408px) 
 {
+
+    .fotoNovoUsuario img
+    {
+        width: 18vw; /*define o tamanho do formulario 2% maior que os campo*/
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    } 
+
+
     
 }
 
