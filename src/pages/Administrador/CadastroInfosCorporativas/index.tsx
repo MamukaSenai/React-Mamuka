@@ -1,6 +1,7 @@
+import "./style.css"
 
+function CadastroInfosCorporativas(){
 
-function CadastroInfosCorporativas (){
     return(
         <main>
             {/* <section class="right"> */}
