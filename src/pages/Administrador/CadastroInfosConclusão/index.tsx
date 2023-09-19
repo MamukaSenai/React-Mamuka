@@ -1,9 +1,11 @@
 import "./style.css"
+import PessoaCadastro  from "../../../assets/PessoaCadastro.png"
 
 function CadastroInfosConclusao() {
 
     return (
-        <main id="CadastroConclusao">
+        <main id="rightConclusao">
+            <section id="CadastroConclusao">
             {/* <section class="right"> */}
             <div className="linha_sup_status">
                 <div className="linha_sup_esq">
@@ -24,7 +26,7 @@ function CadastroInfosConclusao() {
             </div>
             <form className="formulario">
                 <div>
-                    <img src="../img/PessoaCadastro.png" alt="" />
+                    <img src={PessoaCadastro} alt="" />
                 </div>
                 <div className="label_mail">
                     <label htmlFor="campo-usuario">Perfil:</label>
@@ -46,7 +48,9 @@ function CadastroInfosConclusao() {
                 </div>
             </form>
             {/* </section> */}
+            </section>
         </main>
+        
 
     )
 }

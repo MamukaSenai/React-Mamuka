@@ -27,28 +27,28 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Header />
       <Aside />
-    <Routes>
-      {/* As paginas de login vao ter header e aside? - Se nao, como retirar o aside e o header? */}
-      {/* PAGINAS DE ADM */}
-      <Route path="/" element = {<Home />}/>
-      <Route path="admconclusao" element = {<CadastroInfosConclusao />}/>
-      <Route path="admcorporativas" element = {<CadastroInfosCorporativas />}/>
-      <Route path="admpessoais" element = {<CadastroInfosPessoais />}/>
-      <Route path="admlogin" element = {<AdministradorLogin />}/> 
-      <Route path="admconsulta" element = {<AdministradorConsulta />}/>
-      {/* <Route path="admperfil" element = {<AdministradorConsulta />}/> */}
-      {/* PAGINAS DE DEV */}
-      <Route path="devdemandas" element = {< DesenvolvedorDemandas />}/>
-      <Route path="devlogin" element = {<DesenvolvedorLogin />}/>
-      <Route path="devperfil" element = {<DesenvolvedorPerfil />}/> 
-      {/* PAGINAS DE GESTOR */} 
-      <Route path="gestorcriardemandas" element = {<GestorCriarDemandas />}/>
-      <Route path="gestorcriarprojetos" element = {<GestorCriarProjetos />}/>
-      <Route path="dashboard" element = {<Dashboard />}/>
-      <Route path="gestorlogin" element = {<GestorLogin />}/>
-      {/* <Route path="gestorperfil" element = {<GestorPerfil />}/> */}
-      <Route path="gestorprojetos" element = {<GestorProjetos />}/>
-    </Routes>
+      <Routes>
+        {/* As paginas de login vao ter header e aside? - Se nao, como retirar o aside e o header? */}
+        {/* PAGINAS DE ADM */}
+        <Route path="/" element = {<Home />}/>
+        <Route path="admconclusao" element = {<CadastroInfosConclusao />}/>
+        <Route path="admcorporativas" element = {<CadastroInfosCorporativas />}/>
+        <Route path="admpessoais" element = {<CadastroInfosPessoais />}/>
+        <Route path="admlogin" element = {<AdministradorLogin />}/> 
+        <Route path="admconsulta" element = {<AdministradorConsulta />}/>
+        {/* <Route path="admperfil" element = {<AdministradorConsulta />}/> */}
+        {/* PAGINAS DE DEV */}
+        <Route path="devdemandas" element = {< DesenvolvedorDemandas />}/>
+        <Route path="devlogin" element = {<DesenvolvedorLogin />}/>
+        <Route path="devperfil" element = {<DesenvolvedorPerfil />}/> 
+        {/* PAGINAS DE GESTOR */} 
+        <Route path="gestorcriardemandas" element = {<GestorCriarDemandas />}/>
+        <Route path="gestorcriarprojetos" element = {<GestorCriarProjetos />}/>
+        <Route path="dashboard" element = {<Dashboard />}/>
+        <Route path="gestorlogin" element = {<GestorLogin />}/>
+        {/* <Route path="gestorperfil" element = {<GestorPerfil />}/> */}
+        <Route path="gestorprojetos" element = {<GestorProjetos />}/>
+      </Routes>
     </BrowserRouter>
   </React.StrictMode>
 )
