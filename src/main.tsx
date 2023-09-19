@@ -10,6 +10,7 @@ import GestorProjetos from './pages/Gestor/Projetos'
 import GestorPerfil from '../src/pages/Gestor/Perfil'
 import GestorLogin from './pages/Gestor/Login'
 import GestorCriarProjetos from './pages/Gestor/Criar Projetos'
+// falta admperfil
 import AdministradorConsulta from './pages/Administrador/Consulta'
 import AdministradorLogin from './pages/Administrador/Login'
 import CadastroInfosPessoais from './pages/Administrador/CadastroInfosPessoais'
@@ -17,7 +18,9 @@ import CadastroInfosCorporativas from './pages/Administrador/CadastroInfosCorpor
 import CadastroInfosConclusao from './pages/Administrador/CadastroInfosConclusão'
 import Desenvolvedorperfil from '../src/pages/Desenvolvedor/Perfil/index'
 import DesenvolvedorLogin from './pages/Desenvolvedor/Login'
+import DesenvolvedorDemandas from './pages/Desenvolvedor/Demandas'
 import Dashboard from './pages/Gestor/Dashboard'
+
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -33,7 +36,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Route path="admlogin" element = {<AdministradorLogin />}/> 
       <Route path="admconsulta" element = {<AdministradorConsulta />}/>
       {/* <Route path="admperfil" element = {<AdministradorConsulta />}/> */}
-      {/* <Route path="devdemandas" element = {<Dashboard />}/> */}
+      <Route path="devdemandas" element = {< DesenvolvedorDemandas />}/>
       <Route path="devlogin" element = {<DesenvolvedorLogin />}/>
       {/* <Route path="devperfil" element = {<Dashboard />}/>   */}
       <Route path="gestorcriardemandas" element = {<GestorCriarDemandas />}/>
