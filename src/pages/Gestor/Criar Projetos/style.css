@@ -6,17 +6,19 @@
 }
 
 #CriarProjetos .gestor {
+    
     color: var(--cinzaclaro);
     margin-top: 15px;
-    margin-left: 15px;
+    
 }
+
 
 #CriarProjetos .right {
 
     display: flex;
     flex-direction:column-reverse;
     height: 100vh;
-    width: 65.8vw;
+    width: 83.8vw;
     
 }
 
@@ -37,6 +39,7 @@
     border-style: solid;
     display: flex;
     flex-direction: column;
+    
 
 }
 
@@ -55,6 +58,7 @@ section {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    
 }
 
 #CriarProjetos .input-box > input {
@@ -62,6 +66,8 @@ section {
     border: 1px solid var(--cinzaclaro);
     color: var(--cinzaclaro);
 }
+
+
 
 #CriarProjetos .input-box > textarea{
     border-radius: 5px;
