@@ -1,13 +1,12 @@
 
 .topo {
     height: 12vh;
-    /* width: 93.5vw; */
+    width: 100vw;
     
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--azulescuro);
-
     align-items: center;
 }
 
@@ -17,6 +16,7 @@
     background: url("../../assets/Logo.png") no-repeat;
     width: 18vw;
     height: 5vw;
+    margin-left: 150px;
     /* padding: 15px; */
 } 
 

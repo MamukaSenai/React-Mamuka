@@ -17,7 +17,7 @@ import React from "react";
 
 
 
-function Gestor_Perfil() {
+function GestorPerfil() {
 
   // const [] = useState<>("")
   // const [] = useState<>("")
@@ -204,4 +204,4 @@ function Gestor_Perfil() {
 
 }
 
-export default Gestor_Perfil;
+export default GestorPerfil;
