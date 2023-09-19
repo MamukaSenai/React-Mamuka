@@ -9,13 +9,13 @@
 
 #CadastroConclusao 
 {
-    margin-bottom: 25vh;
+    margin-bottom: 35vh;
     
     /* margin-left: 50px; */ 
     
 }
 
-#CadastroConclusao #CadastroConclusao .linha_sup_status
+#CadastroConclusao .linha_sup_status
     {
         display: flex;
         justify-content: space-between;
@@ -23,7 +23,7 @@
         font-size: 20px;
      }
 
-#CadastroConclusao #CadastroConclusao .linha_sup_esq
+#CadastroConclusao .linha_sup_esq
      {
          text-transform: capitalize;
          color: var(--cinzaclaro);
