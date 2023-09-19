@@ -16,7 +16,7 @@ import React from "react";
 
 
 
-function Perfil() {
+function DesenvolvedorPerfil() {
 
   // const [] = useState<>("")
   // const [] = useState<>("")
@@ -122,5 +122,5 @@ function Perfil() {
 
 }
 
-export default Perfil;
+export default DesenvolvedorPerfil;
 

@@ -16,7 +16,7 @@ import AdministradorLogin from './pages/Administrador/Login'
 import CadastroInfosPessoais from './pages/Administrador/CadastroInfosPessoais'
 import CadastroInfosCorporativas from './pages/Administrador/CadastroInfosCorporativas'
 import CadastroInfosConclusao from './pages/Administrador/CadastroInfosConclusão'
-import Desenvolvedorperfil from '../src/pages/Desenvolvedor/Perfil/index'
+import DesenvolvedorPerfil from '../src/pages/Desenvolvedor/Perfil/index'
 import DesenvolvedorLogin from './pages/Desenvolvedor/Login'
 import DesenvolvedorDemandas from './pages/Desenvolvedor/Demandas'
 import Dashboard from './pages/Gestor/Dashboard'
@@ -28,17 +28,20 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Header />
       <Aside />
     <Routes>
+      {/* As paginas de login vao ter header e aside? - Se nao, como retirar o aside e o header? */}
+      {/* PAGINAS DE ADM */}
       <Route path="/" element = {<Home />}/>
       <Route path="admconclusao" element = {<CadastroInfosConclusao />}/>
       <Route path="admcorporativas" element = {<CadastroInfosCorporativas />}/>
       <Route path="admpessoais" element = {<CadastroInfosPessoais />}/>
-      {/* As paginas de login vao ter header e aside? */}
       <Route path="admlogin" element = {<AdministradorLogin />}/> 
       <Route path="admconsulta" element = {<AdministradorConsulta />}/>
       {/* <Route path="admperfil" element = {<AdministradorConsulta />}/> */}
+      {/* PAGINAS DE DEV */}
       <Route path="devdemandas" element = {< DesenvolvedorDemandas />}/>
       <Route path="devlogin" element = {<DesenvolvedorLogin />}/>
-      {/* <Route path="devperfil" element = {<Dashboard />}/>   */}
+      <Route path="devperfil" element = {<DesenvolvedorPerfil />}/> 
+      {/* PAGINAS DE GESTOR */} 
       <Route path="gestorcriardemandas" element = {<GestorCriarDemandas />}/>
       <Route path="gestorcriarprojetos" element = {<GestorCriarProjetos />}/>
       <Route path="dashboard" element = {<Dashboard />}/>
