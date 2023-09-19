@@ -1,15 +1,10 @@
-#Home .right {
-
+#right_home {
     display: flex;
     flex-direction:column-reverse;
-
-    width: 100vw;
     
 }
 
 #Home {
-    height: 88vh;
-    width: 100vw;  
     display: flex;
     
 }

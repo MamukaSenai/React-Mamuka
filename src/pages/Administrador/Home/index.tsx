@@ -18,8 +18,8 @@ function Home() {
   return (
     <>
 
-      <div className="right">
-        <main id="Home">
+      <main id="right_home">
+        <section id="Home">
           <section className="right">
             <div className="conteudo">
               <div className="cadastro">
@@ -38,9 +38,9 @@ function Home() {
               </div>
             </div>
           </section>
-        </main>
+        </section>
 
-      </div>
+      </main>
     </>
 
 
