@@ -1,11 +1,11 @@
-main {
+#CriarDemandas {
     height: 88vh;
     width: 100vw;  
     display: flex;
     
 }
 
-.gestor {
+#CriarDemandas .gestor {
     color: var(--cinzaclaro);
     margin-top: 15px;
     margin-left: 15px;
@@ -19,7 +19,7 @@ section {
    
 }
 
-.container{
+#CriarDemandas .container{
     display: flex;
     justify-content: center;
     height: 100%;
@@ -27,7 +27,7 @@ section {
     margin-bottom: 100px;
 }
 
-.formulario{
+#CriarDemandas .formulario{
     height: 400px;
     width: 700px;
     border-radius: 10px;
@@ -40,32 +40,32 @@ section {
 }
 
 
-.input-box{
+#CriarDemandas .input-box{
     padding: 5px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
 }
 
-.input-box > input {
+#CriarDemandas .input-box > input {
     border-radius: 3px;
     color: var(--cinzaclaro);
     border: 1px solid var(--cinzaclaro);
 }
 
-.input-box > textarea{
+#CriarDemandas .input-box > textarea{
     border-radius: 5px;
 }
 
 
-.linha1{
+#CriarDemandas .linha1{
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
 
-.linha2{
+#CriarDemandas .linha2{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -73,7 +73,7 @@ section {
 }
 
 
-.continue-button{
+#CriarDemandas .continue-button{
     display: flex;
     justify-content: flex-end;
     padding-right: 10px;
@@ -81,7 +81,7 @@ section {
 }
 
 
-.continue-button button{
+#CriarDemandas .continue-button button{
     margin-top: 2%;
     padding: 2px 5px 2px 5px;
     color: white;
@@ -90,7 +90,7 @@ section {
     font-weight: bold;
 }
 
-.gestor {
+#CriarDemandas .gestor {
     color: var(--cinzaclaro);
     margin-top: 15px;
     margin-left: 15px;

@@ -1,4 +1,4 @@
-.right {
+#Home .right {
 
     display: flex;
     flex-direction:column-reverse;
@@ -7,7 +7,7 @@
     
 }
 
-main {
+#Home {
     height: 88vh;
     width: 100vw;  
     display: flex;
@@ -15,7 +15,7 @@ main {
 }
 
 
-.conteudo {
+#Home .conteudo {
     display: flex;
     align-items: center;
     height: 100vh;
@@ -24,8 +24,7 @@ main {
     margin-right: 131px;
 }
 
-.cadastro,
-.consulta {
+#Home .cadastro, .consulta {
     width: 40%;
     display: flex;
     align-items: center;
@@ -35,7 +34,7 @@ main {
 }
 
 
-.button {
+#Home .button {
     background-color: var(--azulescuro);
     margin: 50px auto;
     border-radius: 10px;

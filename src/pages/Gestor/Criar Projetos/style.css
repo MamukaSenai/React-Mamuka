@@ -1,17 +1,17 @@
-main {
+#CriarProjetos {
     height: 88vh;
     width: 100vw;  
     display: flex;
     
 }
 
-.gestor {
+#CriarProjetos .gestor {
     color: var(--cinzaclaro);
     margin-top: 15px;
     margin-left: 15px;
 }
 
-.right {
+#CriarProjetos .right {
 
     display: flex;
     flex-direction:column-reverse;
@@ -20,7 +20,7 @@ main {
     
 }
 
-.container{
+#CriarProjetos .container{
     display: flex;
     justify-content: center;
     height: 100%;
@@ -28,7 +28,7 @@ main {
     margin-bottom: 100px;
 }
 
-.formulario{
+#CriarProjetos .formulario{
     height: 400px;
     width: 700px;
     border-radius: 10px;
@@ -50,32 +50,32 @@ section {
    
 }
 
-.input-box{
+#CriarProjetos .input-box{
     padding: 5px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
 }
 
-.input-box > input {
+#CriarProjetos .input-box > input {
     border-radius: 3px;
     border: 1px solid var(--cinzaclaro);
     color: var(--cinzaclaro);
 }
 
-.input-box > textarea{
+#CriarProjetos .input-box > textarea{
     border-radius: 5px;
 }
 
 
-.linha1{
+#CriarProjetos .linha1{
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
 
-.linha2{
+#CriarProjetos .linha2{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -83,7 +83,7 @@ section {
 }
 
 
-.continue-button{
+#CriarProjetos .continue-button{
     display: flex;
     justify-content: flex-end;
     padding-right: 10px;
@@ -91,7 +91,7 @@ section {
 }
 
 
-.continue-button button{
+#CriarProjetos .continue-button button{
     margin-top: 2%;
     padding: 2px 5px 2px 5px;
     color: white;

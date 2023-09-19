@@ -19,7 +19,7 @@ function Home() {
     <>
 
       <div className="right">
-        <main>
+        <main id="Home">
           <section className="right">
             <div className="conteudo">
               <div className="cadastro">

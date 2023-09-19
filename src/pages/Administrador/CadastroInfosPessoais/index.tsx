@@ -2,7 +2,7 @@ import "./style.css";
 
 function CadastroInfosPessoais (){
     return (
-        <main>
+        <main id="CadastroPessoais">
                 {/* <section class="right"> */}
                 <div className="linha_sup_status">
                     <div className="linha_sup_esq">

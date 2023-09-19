@@ -41,7 +41,7 @@ export default function DesenvolvedorDemandas() {
     // });
     return (
         <>
-        
+            
             <div className="wrapper">
                 <div className="header">
                     <div className="title">Customer Issue Tracker</div>

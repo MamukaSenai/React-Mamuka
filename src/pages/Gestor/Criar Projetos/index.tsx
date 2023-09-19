@@ -39,7 +39,7 @@ function GestorCriarProjetos() {
 
 
     return (
-        <main>
+        <main id="CriarProjetos">
             <span className="gestor">Gestor/Criar Projetos</span>
             <section className="right">
                 <div className="container">

@@ -4,7 +4,7 @@ import  "./style.css";
 function GestorCriarDemandas() {
     return (
         <>
-            <main>
+            <main id="CriarDemandas">
                 <span className="gestor">Gestor/Criar Demandas</span>
                 <section className="right">
                     <div className="container">

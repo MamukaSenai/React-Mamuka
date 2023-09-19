@@ -1,8 +1,10 @@
 import "./style.css"
 import PessoaCadastro from "../../../assets/PessoaCadastro.png"
+
+
 export default function AdministradorConsulta() {
     return (
-            <main>
+            <main id="AdministradorConsulta">
                 <section className="right">
                     <form className="formi">
                         <div className="perfil_img">

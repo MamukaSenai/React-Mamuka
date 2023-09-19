@@ -50,5 +50,5 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Route path="gestorprojetos" element = {<GestorProjetos />}/>
     </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
