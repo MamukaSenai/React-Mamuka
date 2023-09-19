@@ -5,7 +5,7 @@ import './index.css'
 
 // import App from './App'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Gestorperfil from '../src/pages/Gestor/Perfil'
+import Gestorperfil from '../src/pages/Gestor/Perfil/index'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
 
       <Routes>
-        <Route path='Gestorperfil' element={<Gestorperfil/>} />
+        <Route path='gestorperfil' element={<Gestorperfil />} />
 
       </Routes>
     </BrowserRouter>

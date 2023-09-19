@@ -1,352 +1,248 @@
-
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-    resize: none;
-    font-family: sans-serif;
-
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-
-:root {
-    --azulescuro: #405189;
-    --branco: #ffffff;
-    --azulClaro: #0073EA;
-    --cinza: #2C2E3E;
-    --cinzaclaro: #7C7C7C;
-    --fonte1: 'Raleway', sans-serif;
-    --fonte2: "Core Sans G";
-
-}
-
-/* menu */
-
-body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    font-family: var(--font);
-    overflow-x: hidden;
-    overflow-y: hidden;
-
-}
+/* Main */
+/* define os recuo dentro da area da main */
+main
+    { 
+        padding: 10px 10px 10px 10px;
+        /* margin-left: 20px; */
+    }
 
 
-aside {
-    display: flex;
-    height: 100vh;
-    width: 6.5vw;
-
-}
-
-.menu {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--cinza);
-    color: #fff;
-    fill: #fff;
-}
-
-.menu svg {
-    height: 5vh;
-    width: 5vw;
-    margin-top: 15px;
-}
-
-.menu p {
-    padding-top: 50%;
-    padding-right: 5%;
-    padding-left: 5%;
-    font-weight: 700;
-    /* font-size: large; */
-}
-
-.right {
-
-    display: flex;
-    flex-direction: column-reverse;
-    height: 100vh;
-    width: 83.8vw;
-
-}
-
-.topo {
-    height: 12vh;
-    width: 93.5vw;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--azulescuro);
-
-    align-items: center;
-}
-
-.alinhamento{
-    padding-left:18px ;
-}
+.linha_sup_status 
+    {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        margin-bottom: 1%;
+        font-size: 20px;
+    }
 
 
-.logo img {
-    width: 180px;
-    padding: 15px;
-}
+/* posiciona o texto "administrador/cadastro" */    
+.linha_sup_esq
+    {
+        text-transform: capitalize;
+        border-radius: 10px;      
+         
+        display: flex;            
+        color: var(--cinzaclaro);
+        font-size: 20px;
 
-.pesquisa svg {
+        /* display: flex;
+        justify-content: space-evenly;*/
 
-    position: absolute;
-    color: var(--cinza);
-    margin-left: 7px;
-    margin-top: 7px;
-    fill: var(--cinzaclaro);
-}
-
-.campotexto {
-    width: 25vw;
-    height: 30px;
-    border-radius: 10px;
-    padding-left: 40px;
-    border: none;
-}
-
-.ricardo {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    color: var(--branco);
-    fill: var(--branco);
-}
-
-.ricardo img {
-    padding: 10px;
-}
+        padding: 10px;
+        padding-top: 6px;
+        /*flex-direction: row-reverse;     */ 
+    }
 
 
 
-.ricardo p {
-    padding-right: 9px;
-    font-weight: 600;
+.limiteformulario
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 1vh;
+        width: 60vw;
+        height: 80vh;
+
+        border-top: 10px solid var(--azulC);
+        border-bottom: 10px solid var(--azulC);
+        border-left: 2px solid var(--cinzaclaro);
+        border-right:  2px solid var(--cinzaclaro);
+        justify-content: center;
+        border-radius: 10px;
+    }
 
 
-}
 
-main {
-    height: 88vh;
-    width: 100vw;
-    display: flex;
+.fotoNovoUsuario img
+    {
+        width: 12vw; /*define o tamanho do formulario 2% maior que os campo*/
+        height: 22vh;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }    
 
-}
+
+.linha1 , /*coloca os campos input em linha*/
+.linha2 ,
+.linha3 ,
+.linha4 ,
+.linha5 
+    {
+        width: 60vw; /*define o tamanho do formulario */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    } 
 
 
-/* menu */
 
-.perfil_geral {
-    height: 73vh;
-    margin-top: 5%;
-    padding-right: 15px;
-}
+.linha1Coluna1 , /*define o espaçamentos entre as linhas*/
+.linha1Coluna2 ,
+.linha2Coluna1 ,
+.linha2Coluna2 ,
+.linha3Coluna1 ,
+.linha3Coluna2 ,
+.linha3Coluna3 ,
+.linha4Coluna1 ,
+.linha4Coluna2 ,
+.linha4Coluna3 ,
+.linha4Coluna4 ,
+.linha5Coluna1 ,
+.linha5Coluna2 
+    { /*superior, direito, inferior, esquerdo*/
+        padding: 1vh 2vw 1vh 2vw;
+    }
 
-.sinalizacao {
-    color: var(--cinzaclaro);
-}
 
-.configconteudo {
-    border: 1px solid var(--cinzaclaro);
-    border-radius: 5px;
-    border-top: 10px solid var(--azulClaro);
-    border-bottom: 10px solid var(--azulClaro);
+
+.linha1Coluna1 label, /*define a configuração label dos campos input */
+.linha1Coluna2 label,
+.linha2Coluna1 label,
+.linha2Coluna2 label,
+.linha3Coluna1 label,
+.linha3Coluna2 label,
+.linha3Coluna3 label,
+.linha4Coluna1 label,
+.linha4Coluna2 label,
+.linha4Coluna3 label,
+.linha4Coluna4 label,
+.linha5Coluna1 label,
+.linha5Coluna2 label
+    {  /*superior, direito, inferior, esquerdo*/
+        padding: 1vh 0vw 0vh 3px;
+        display: flex;
+    }
+
+
+.linha1Coluna1 input, /*define a configuração dos campos input */
+.linha1Coluna2 input,
+.linha2Coluna1 input,
+.linha2Coluna2 input,
+.linha3Coluna1 input,
+.linha3Coluna2 input,
+.linha3Coluna3 input,
+.linha4Coluna1 input,
+.linha4Coluna2 input,
+.linha4Coluna3 input,
+.linha4Coluna4 input,
+.linha5Coluna1 input,
+.linha5Coluna2 input
+    {
+      /*  border-radius: 15px;arredonda os campos de input 
+        border: solid 1px;*/
+        padding: 1vh 1vw 1vh 0vw;
+
+        height: 30px;
+        width: 250px;
+        border-radius: 7px;
+        border: solid 1px;
+        text-indent: 5px;
+        font-size: 15px;
+        color: var(--cinzaclaro);
+    }
+
+
+.linha1Coluna1 input, /*define a configuração dos campos input */
+.linha1Coluna2 input
+    {
+        width: 26vw; /*define o tamanho dos campos do formulario */    
+    }
+
+
+.linha2Coluna1 input,
+.linha2Coluna2 input
+    {
+        width: 26vw; /*define o tamanho dos campos do formulario */    
+    }
+
+
+.linha3Coluna1 input,
+.linha3Coluna2 input,
+.linha3Coluna3 input
+    {
+        width: 16vw; /*define o tamanho dos campos do formulario */    
+    }
+
+
+.linha4Coluna1 input,
+.linha4Coluna2 input,
+.linha4Coluna3 input,
+.linha4Coluna4 input
+    {
+        width: 11vw; /*define o tamanho dos campos do formulario */    
+    }
+
+
+.linha5Coluna1 input,
+.linha5Coluna2 input
+    {
+        width: 26vw; /*define o tamanho dos campos do formulario */    
+    }
+
+
+
+/* Main */
+/* Quando a resolução for menor que 820px esconde o campo de busca */
+@media screen and (max-width: 750px) 
+{
+
+    .fotoNovoUsuario img
+    {
+        width: 18vw; /*define o tamanho do formulario 2% maior que os campo*/
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }  
     
-}
-
-.input_style input {
-    border: 1px solid var(--cinzaclaro);
-    border-radius: 10px;
-    height: 3.5vh;
-    margin-right: 20px;
-    color: var(--cinzaclaro);
-}
-
-.input1,
-.input2,
-.input3,
-.input4,
-.input5 {
-    color: var(--cinzaclaro);
-}
-
-.conteudo_topo {
-    display: flex;
-    align-items: center;
-    
-}
-
-
-.padrao_input {
-    width: 50vw;
-    display: flex;
-    align-items: center;
-    padding-bottom: 20px;
-
-}
-
-.s1 {
-    padding-bottom: 30px;
-
-}
-
-.conteudo_topo img {
-    width: 28%;
-    height: 30%;
-    padding: 30px 50px;
-}
-
-
-#name {
-    width: 35vw;
-
-}
-
-#email {
-    width: 35vw;;
-
-}
-
-.input3,
-.input4
- {
-    padding-left: 50px;
-    padding-bottom: px;
-}
-
-.input5 {
-    padding-left: 50px;
-    padding-bottom: 50px;
+ 
 }
 
 
 
-.att {
-    /* width: 50vw; */
-    display: flex;
-    flex-direction: column;
-}
+/* Quando a resolução for menor que 760px esconde o campo de busca */
+@media screen and (max-width: 550px) 
+{
 
-.att label {
-    padding-bottom: 5px;
-    padding-left: 3px;
-}
-
-.x1 {
-    width: 18vw;
-    padding-left: 20px;
-}
-
-.x2 {
-    width: 10vw;
-    /* padding-left: 30px; */
-    margin-right: 130px;
-}
-
-.x2 #resp {
-    width: 35vw;
-    padding-left: 50px;
-    
-}
-
-.att x2 {
-    width: 0vw;
-    padding-left: 0px;
+    .fotoNovoUsuario img
+    {
+        width: 18vw; /*define o tamanho do formulario 2% maior que os campo*/
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    } 
 
 }
 
-att x3{
-    padding-left: 30px;
-}
 
-.x3 {
-    width: 15vw;
-    /* padding-left: 30px; */
+/* Quando a resolução for menor que 408px esconde o campo de busca */
+@media screen and (max-width: 408px) 
+{
 
-}
+    .fotoNovoUsuario img
+    {
+        width: 18vw; /*define o tamanho do formulario 2% maior que os campo*/
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    } 
 
-.att x5{
-
-    margin: 64px;
-}
-
-#pais{
 
     
 }
 
 
-#cidade {
-    width: 18vw;
-    padding-right: 10px;
-}
-
-.pc {
-    /* padding-left: 30px; */
-}
-
-.integ {
-    padding-left: 0px;
-}
-
-#perfil,
-#estado {
-    width: 14vw;
-}
-
-
-.x4local {
-    width: 50vw;
-    padding-right: 300px;
-}
-
-
-#name,
-#id,
-#email,
-#status,
-#cargo,
-#perfil,
-#datai,
-#estado,
-#local {
-    padding: 8px;
-}
-
-#cidade{
-
-}
-
-#pais{
-    /* margin-left: 64px; */
-
-}
-
-#resp{
-    padding: 8px;
-    width: 33vw;
-}
-
-#depart{
-    width: 14vw;
-}
-
-#cargo{
-    width: 14vw;
-}
-
-
-.sinalizacao p {
-    padding-left: 28px;
-    padding-top: 20px;
+/* Quando a resolução for menor que 408px esconde o campo de busca */
+@media screen and (max-width: 370px) 
+{
+    
 }
