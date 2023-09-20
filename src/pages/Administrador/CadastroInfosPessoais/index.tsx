@@ -1,4 +1,5 @@
 import "./style.css";
+import PessoaCadastro from "../../../assets/PessoaCadastro.png"
 
 function CadastroInfosPessoais() {
     return (
@@ -24,7 +25,7 @@ function CadastroInfosPessoais() {
                 </div>
                 <form className="formulario">
                     <div>
-                        <img src="../img/PessoaCadastro.png" alt="" />
+                        <img src={PessoaCadastro} alt="" />
                     </div>
                     <div className="label_mail">
                         <label htmlFor="campo-usuario">Nome:</label>

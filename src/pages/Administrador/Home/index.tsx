@@ -26,7 +26,7 @@ function Home() {
                 <img src={Cadastro} alt="cadastro" />
                 <a href="#" className="button">
                   {" "}
-                  Cadastre um no usuários
+                  Cadastre os usuários
                 </a>
               </div>
               <div className="consulta">
