@@ -25,7 +25,7 @@ main
          
         display: flex;            
         color: var(--cinzaclaro);
-        font-size: 20px;
+        font-size: 16px;
 
         /* display: flex;
         justify-content: space-evenly;*/
@@ -45,8 +45,8 @@ main
         flex-direction: column;
         margin: 0 auto;
         padding-top: 1vh;
-        width: 60vw;
-        height: 80vh;
+        width: 58vw;
+        /* height: 72vh; */
 
         border-top: 10px solid var(--azulC);
         border-bottom: 10px solid var(--azulC);
@@ -60,8 +60,8 @@ main
 
 .fotoNovoUsuario img
     {
-        width: 12vw; /*define o tamanho do formulario 2% maior que os campo*/
-        height: 22vh;
+        width: 9vw; /*define o tamanho do formulario 2% maior que os campo*/
+        /* height: 18vh; */
         display: flex;
         align-items: center;
         margin: 0 auto;
@@ -139,7 +139,7 @@ main
         border: solid 1px;*/
         padding: 1vh 1vw 1vh 0vw;
 
-        height: 30px;
+        height: 25px;
         width: 250px;
         border-radius: 7px;
         border: solid 1px;
@@ -195,8 +195,8 @@ main
 
     .fotoNovoUsuario img
     {
-        width: 18vw; /*define o tamanho do formulario 2% maior que os campo*/
-        height: 20vh;
+        width: 14vw; /*define o tamanho do formulario 2% maior que os campo*/
+        /* height: 16vh; */
         display: flex;
         align-items: center;
         margin: 0 auto;
