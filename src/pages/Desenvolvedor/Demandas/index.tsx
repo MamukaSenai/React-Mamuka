@@ -1,6 +1,6 @@
 import './style.css'
 
-import {useRef, useEffect} from 'react';
+// import {useRef, useEffect} from 'react';
 
 
 export default function DesenvolvedorDemandas() {
@@ -44,7 +44,7 @@ export default function DesenvolvedorDemandas() {
             
             <div className="wrapper">
                 <div className="header">
-                    <div className="title">Customer Issue Tracker</div>
+                    {/* <div className="title">Customer Issue Tracker</div> */}
                     <div className="search_box">
                         <input
                             type="text"

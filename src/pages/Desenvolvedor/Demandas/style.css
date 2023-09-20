@@ -2,44 +2,45 @@ body {
     background: #eaeaea;
   }
   
-  .wrapper .header {
+  /* .wrapper .header {
     background: #29a5d8;
   }
-  
-  .wrapper .title {
+   */
+  /* .wrapper .title {
     padding: 50px 0;
     text-align: center;
     font-weight: 700;
     font-size: 32px;
     color: #fff;
-  }
+  } */
   
   .wrapper .search_box {
-    max-width: 1000px;
-    background: #29a5d8;
+    max-width: 65vw;
+    /* background: #29a5d8; */
+    /* background: var(--azulescuro); */
     margin: 0 auto;
-    padding: 25px 0 50px;
+    padding: 50px 0 25px;
     border-radius: 3px;
   }
   
   .wrapper .search_box input {
     border: 0;
-    border-bottom: 2px solid #e5edfa;
+    border-bottom: 2px solid var(--azulescuro);
     width: 100%;
     outline: none;
     padding: 10px;
     background: transparent;
-    color: #fff;
+    color: var(--cinzaclaro);
     font-size: 16px;
   }
   
   ::placeholder {
-    color: #e5edfa;
+    color: var(--cinzaclaro);
   }
   
-  .wrapper .search_box input:focus {
-    border-bottom: 2px solid #fff;
-  }
+  /* .wrapper .search_box input:focus {
+    border-bottom: 2px solid var( --azulescuro);
+  } */
   
   .table_wrap {
     width: 65vw;
@@ -48,6 +49,7 @@ body {
   
   .table_wrap ul li .item {
     display: flex;
+    align-items: center;
     background: #fff;
     padding: 15px 0;
     height: 50px;
@@ -56,15 +58,15 @@ body {
   .table_wrap ul li .item .id,
   .table_wrap ul li .item .grupo {
     width: 40%;
-    padding: 0 20px;
-    /* display: flex;
+    /* padding: 0 20px; */
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    text-align: center; */
+    text-align: center;
   }
   
   .table_wrap ul li .item .grupo {
-    width: 80%;
+    /* width: 80%; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -98,14 +100,16 @@ body {
     width: 45%;
     padding: 0 20px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
+    /* align-items: center; */
+    justify-content: center;
+    /* text-align: left; */
   }
   
   .table_wrap ul li .item .cronograma {
     width: 45%;
     padding: 0 20px;
+    display: flex;
+    justify-content: center;
   }
   .table_wrap ul li .item .nome span,
   .table_wrap ul li .item .id span {
