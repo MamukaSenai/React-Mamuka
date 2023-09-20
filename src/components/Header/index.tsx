@@ -1,5 +1,6 @@
 import "./style.css"
 import { Link } from "react-router-dom";
+import Logo from "../../assets/Logo.png"
 
 export default function Header(){
     return(
@@ -7,7 +8,11 @@ export default function Header(){
           <header className="topo">
               <div className="logo">
                 {/* <a href="../administrador_home/administrador_home.html"> */}
-                  <div className="teste"></div>
+                  {/* <div className="teste"></div> */}
+                  <Link to="/">
+                    <img src={Logo} className="teste" />
+                  </Link>
+                  
                 {/* </a> */}
               </div>
               <div className="pesquisa">
@@ -29,10 +34,11 @@ export default function Header(){
                 <div className="ricardoimg">
                 </div>
                 {/*<p>Ricardo Souza</p>*/}
-                <Link to="devperfil">
-                  <a href="#">
+                <Link to="/devperfil" className="a">
+                  {/* <a href="#">
                     Ricardo Souza
-                  </a> 
+                  </a>  */}
+                  Ricardo Souza
                 </Link>
                 
                 {/* <i>

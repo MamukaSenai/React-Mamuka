@@ -2,6 +2,7 @@ import "./style.css"
 import PessoaCadastro from "../../../assets/PessoaCadastro.png"
 
 
+
 export default function AdministradorConsulta() {
     return (
             <main id="AdministradorConsulta">

@@ -1,4 +1,6 @@
 import "./style.css"
+import { Link } from "react-router-dom";
+
 import PessoaCadastro  from "../../../assets/PessoaCadastro.png"
 
 function CadastroInfosCorporativas(){
@@ -12,16 +14,26 @@ function CadastroInfosCorporativas(){
                     <p>administrador / cadastro</p>
                     </div>
                     <div className="linha_sup_dir">
-                    <a href="../cadastro1/cadastro1.html" className="destaque2">
+                    <Link to="/admpessoais" className="destaque2">
+                        {/* <a href="#" className="destaque2">
+                            pessoal
+                        </a> */}
                         pessoal
-                    </a>
-                    {/* <p class="destaque">corporativo</p> */}
-                    <a href="../cadastro2/cadastro2.html" className="destaque">
+                    </Link>    
+                    <Link to="/admcorporativas" className="destaque">
+                        {/* <p class="destaque">corporativo</p> */}
+                        {/* <a href="#" className="destaque">
+                            corporativo
+                        </a> */}
                         corporativo
-                    </a>
-                    <a href="../cadastro3/cadastro3.html" className="destaque2">
+                    </Link>    
+                    <Link to="/admconclusao" className="destaque2">
+                        {/* <a href="#" className="destaque2">
+                            conclusão
+                        </a> */}
                         conclusão
-                    </a>
+                    </Link>    
+                    
                     </div>
                 </div>
                 <form className="formulario">
@@ -43,7 +55,10 @@ function CadastroInfosCorporativas(){
                     <div>
                     <button type="submit">
                         {" "}
-                        <a href="../cadastro3/cadastro3.html">salvar</a>{" "}
+                        <Link to="/admconclusao">
+                            salvar
+                        </Link> 
+                        {/* <a href="../cadastro3/cadastro3.html">salvar</a>{" "} */}
                     </button>
                     </div>
                 </form>

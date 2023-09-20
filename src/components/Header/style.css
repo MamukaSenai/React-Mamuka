@@ -13,9 +13,10 @@
 
 
 .logo .teste {
-    background: url("../../assets/Logo.png") no-repeat;
+    /* background: url("../../assets/Logo.png") no-repeat; */
     width: 18vw;
-    height: 5.3vw;
+    height: 5vw;
+    margin-top: 5px;
     margin-left: 150px;
     /* padding: 15px; */
 } 

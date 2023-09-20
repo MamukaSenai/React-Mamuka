@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Cadastro from "../../../assets/Cadastro.png"
 import Consulta from "../../../assets/Consulta.png"
 
@@ -24,17 +25,25 @@ function Home() {
             <div className="conteudo">
               <div className="cadastro">
                 <img src={Cadastro} alt="cadastro" />
-                <a href="#" className="button">
-                  {" "}
+                <Link to="admpessoais" className="button">
+                  {/* <a href="#" className="button">
+                    {" "}
+                    Cadastre os usuários
+                  </a> */}
                   Cadastre os usuários
-                </a>
+                </Link>
+                
               </div>
               <div className="consulta">
                 <img src={Consulta} alt="consulta" />
-                <a href="" className="button">
-                  {" "}
+                <Link to="admconsulta" className="button">
+                  {/* <a href="" className="button">
+                    {" "}
+                    Consulte usuários cadastrados
+                  </a> */}
                   Consulte usuários cadastrados
-                </a>
+                </Link>
+                
               </div>
             </div>
           </section>

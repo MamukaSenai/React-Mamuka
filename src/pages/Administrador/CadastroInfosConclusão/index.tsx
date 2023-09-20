@@ -1,4 +1,5 @@
 import "./style.css"
+import { Link } from "react-router-dom";
 import PessoaCadastro  from "../../../assets/PessoaCadastro.png"
 
 function CadastroInfosConclusao() {
@@ -11,18 +12,28 @@ function CadastroInfosConclusao() {
                         <p>administrador / cadastro</p>
                     </div>
                     <div className="linha_sup_dir">
-                        {/* <p>pessoal</p>  */}
-                        <a href="../cadastro1/cadastro1.html" className="destaque2">
+                        <Link to="/admpessoais" className="destaque2">
+                            {/* <p>pessoal</p>  */}
+                            {/* <a href="../cadastro1/cadastro1.html" className="destaque2">
+                                pessoal
+                            </a> */}
                             pessoal
-                        </a>
-                        {/* <p>corporativo</p> */}
-                        <a href="../cadastro2/cadastro2.html" className="destaque2">
+                        </Link>
+                        <Link to="/admcorporativas" className="destaque2">
+                            {/* <p>corporativo</p> */}
+                            {/* <a href="../cadastro2/cadastro2.html" className="destaque2">
+                                corporativo
+                            </a> */}
                             corporativo
-                        </a>
-                        {/* <p class="destaque">conclusao</p> */}
-                        <a href="../cadastro3/cadastro3.html" className="destaque">
+                        </Link>
+                        <Link to="/admconclusao" className="destaque">
+                            {/* <p class="destaque">conclusao</p> */}
+                            {/* <a href="../cadastro3/cadastro3.html" className="destaque">
+                                conclusão
+                            </a> */}
                             conclusão
-                        </a>
+                        </Link>
+                        
                     </div>
                 </div>
                 <form className="formulario">
