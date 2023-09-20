@@ -2,6 +2,7 @@ import "./style.css"
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 // import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
@@ -59,80 +60,114 @@ export default function BotaoDropDown() {
             <div className="menuTesteConteudo">
             <Menu.Item>
               {({ active }) => (
-                <a 
-                  href="#"
-                  className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  )}
-                >
-                  Cadastro
-                </a>
+                <Link to="admpessoais">
+                  <a 
+                    href="#"
+                    className={classNames(
+                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                      'block px-4 py-2 text-sm'
+                    )}
+                  >
+                    Cadastro
+                  </a>
+                </Link>
+                
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
-                  className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  )}
-                >
-                  Consulta
-                </a>
+                <Link to="admconsulta">
+                    <a
+                    href="#"
+                    className={classNames(
+                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                      'block px-4 py-2 text-sm'
+                    )}
+                  >
+                    Consulta
+                  </a>
+                </Link>
+
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
-                  className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  )}
-                >
-                  Demandas
-                </a>
+                <Link to="dashboard">
+                  <a
+                    href="#"
+                    className={classNames(
+                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                      'block px-4 py-2 text-sm'
+                    )}
+                  >
+                    Dashboard
+                  </a>
+                </Link>
+                
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
-                  className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  )}
-                >
-                  Projetos
-                </a>
+                <Link to="devdemandas">
+                  <a
+                    href="#"
+                    className={classNames(
+                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                      'block px-4 py-2 text-sm'
+                    )}
+                  >
+                    Demandas
+                  </a>
+                </Link>
+                
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
-                  className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  )}
-                >
-                  Criar Projetos
-                </a>
+                <Link to="gestorprojetos">
+                  <a
+                    href="#"
+                    className={classNames(
+                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                      'block px-4 py-2 text-sm'
+                    )}
+                  >
+                    Projetos
+                  </a>
+                </Link>
+                
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <Link to="gestorcriarprojetos">
+                  <a
+                    href="#"
+                    className={classNames(
+                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                      'block px-4 py-2 text-sm'
+                    )}
+                  >
+                    Criar Projetos
+                  </a>
+                </Link>
+                
               )}
             </Menu.Item>        
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="#"
-                  className={classNames(
-                    active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  )}
-                >
-                  Criar Demandas
-                </a>
+                <Link to="gestorcriardemandas">
+                  <a
+                    href=""
+                    className={classNames(
+                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                      'block px-4 py-2 text-sm'
+                    )}
+                  >
+                    Criar Demandas
+                  </a>
+                </Link>
+                
               )}
             </Menu.Item>        
             </div>
