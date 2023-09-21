@@ -1,5 +1,6 @@
 body {
     background: #eaeaea;
+    text-align: center;
   }
   
   /* .wrapper .header {
@@ -45,23 +46,39 @@ body {
   .table_wrap {
     width: 65vw;
     margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
   
   .table_wrap ul li .item {
     display: flex;
     align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* margin: 0 20px; */
+    /* flex-direction: column; */
     background: #fff;
-    padding: 15px 0;
-    height: 50px;
+    /* padding: 0px 10px; */
+    height: 8vh;
+    /* height: 50px; */
+  }
+
+  .item {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   
   .table_wrap ul li .item .id,
   .table_wrap ul li .item .grupo {
     width: 40%;
-    /* padding: 0 20px; */
+    padding: 0 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
   }
   
@@ -69,14 +86,10 @@ body {
     /* width: 80%; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     /* text-align: center; */
   }
 
-  .grupo span {
-
-    
-  }
   .table_wrap ul li .item .status {
     width: 20%;
     padding: 0 20px;
@@ -86,12 +99,13 @@ body {
     
   }
 
+
   .table_wrap ul li .item .responsavel {
-    width: 20%;
+    /* width: 20%; */
     padding: 0 20px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    /* justify-content: center; */
     text-align: center;
   }
   
@@ -108,51 +122,91 @@ body {
   .table_wrap ul li .item .cronograma {
     width: 45%;
     padding: 0 20px;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
   }
+
   .table_wrap ul li .item .nome span,
   .table_wrap ul li .item .id span {
     width: 90%;
-    display: inline-block;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* display: flex; */
+    /* justify-content: center;
+    text-align: center; */
+    /* align-items: center; */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+  }
+
+  .table_wrap .nome span {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
   }
   
   .table_header ul li .item {
     border-bottom: 2px solid #eaeaea;
     font-weight: 600;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+
   }
   
   .table_body {
-    height: 300px;
+    /* height: 300px; */
     overflow: auto;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    /* align-items: center; */
   }
   
   .table_body ul li .item {
     border-bottom: 1px solid #efefef;
+    /* padding: 5px 20px; */
   }
-  
+/* 
+  .status span .andamento .concluido .cancelado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  } */
+
   .table_body ul li .item .status span {
     padding: 5px 20px;
     border-radius: 25px;
-    max-width: 100%;
-    /* display: flex;
+    width: 8vw;
+    /* max-width: 100%; */
+     /* display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; */
   }
 
   .table_body ul li .item .responsavel span {
-    padding: 5px 20px;
+    /* padding: 0px 15px; */
     border-radius: 25px;
-    max-width: 115px;
-    display: inline-block;
-  }
+    /* max-width: 115px; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    }
   
   .table_body ul li .item .open {
     background: #e5edfa;
     color: #5a8ee4;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; */
   }
   
   .table_body ul li .item .concluido {
@@ -166,10 +220,11 @@ body {
   }
   
   .table_body ul li .item .andamento {
+    display: flex;
     background: #fff0db;
     color: #f59d39;
   }
-  
+/*   
   .table_body ul li .item .reopened {
     background: #d6f2ff;
     color: #29a5d8;
@@ -179,4 +234,28 @@ body {
     background: #ffdbd6;
     color: #e87060;
   }
-  
+   */
+
+   ::marker {
+    font-size: 0;
+   }
+
+/* 
+   .moises .status > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    background-color: aqua;
+   } */
+
+   .ajuste_alinhamento_status {
+    width: 20vw;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* align-content: center; */
+   }
