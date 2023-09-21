@@ -1,31 +1,31 @@
 /* Main */
 /* define os recuo dentro da area da main */
-main
+#DesenvolvedorPerfil
     { 
         padding: 10px 10px 10px 10px;
         /* margin-left: 20px; */
     }
 
 
-.linha_sup_status 
+#DesenvolvedorPerfil .linha_sup_status 
     {
         display: flex;
         justify-content: space-between;
         /* align-items: center; */
         margin-bottom: 1%;
-        font-size: 20px;
+        margin-left: 6.5%;
     }
 
 
 /* posiciona o texto "administrador/cadastro" */    
-.linha_sup_esq
+#DesenvolvedorPerfil .linha_sup_esq
     {
         text-transform: capitalize;
         border-radius: 10px;      
          
         display: flex;            
         color: var(--cinzaclaro);
-        font-size: 20px;
+        font-size: 16px;
 
         /* display: flex;
         justify-content: space-evenly;*/
@@ -37,42 +37,47 @@ main
 
 
 
-.limiteformulario
+#DesenvolvedorPerfil .limiteformulario
     {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin: 0 auto;
+        margin-top: 2%;
+        margin-left: 3%;
         padding-top: 1vh;
-        width: 60vw;
-        height: 80vh;
+        width: 58vw;
+        height: 74vh;
+        
 
-        border-top: 10px solid var(--azulC);
-        border-bottom: 10px solid var(--azulC);
+        border-top: 10px solid var(--azulClaro);
+        border-bottom: 10px solid var(--azulClaro);
+
         border-left: 2px solid var(--cinzaclaro);
         border-right:  2px solid var(--cinzaclaro);
+
         justify-content: center;
         border-radius: 10px;
     }
 
 
 
-.fotoNovoUsuario img
+#DesenvolvedorPerfil .fotoNovoUsuario img
     {
-        width: 12vw; /*define o tamanho do formulario 2% maior que os campo*/
-        height: 22vh;
+        width: 7vw; /*define o tamanho do formulario 2% maior que os campo*/
+        height: 13vh;
         display: flex;
         align-items: center;
         margin: 0 auto;
     }    
 
 
-.linha1 , /*coloca os campos input em linha*/
-.linha2 ,
-.linha3 ,
-.linha4 ,
-.linha5 
+#DesenvolvedorPerfil .linha1 , /*coloca os campos input em linha*/
+#DesenvolvedorPerfil .linha2 ,
+#DesenvolvedorPerfil .linha3 ,
+#DesenvolvedorPerfil .linha4 ,
+#DesenvolvedorPerfil .linha5 
     {
         width: 60vw; /*define o tamanho do formulario */
         display: flex;
@@ -83,63 +88,67 @@ main
 
 
 
-.linha1Coluna1 , /*define o espaçamentos entre as linhas*/
-.linha1Coluna2 ,
-.linha2Coluna1 ,
-.linha2Coluna2 ,
-.linha3Coluna1 ,
-.linha3Coluna2 ,
-.linha3Coluna3 ,
-.linha4Coluna1 ,
-.linha4Coluna2 ,
-.linha4Coluna3 ,
-.linha4Coluna4 ,
-.linha5Coluna1 ,
-.linha5Coluna2 
+#DesenvolvedorPerfil .linha1Coluna1 , /*define o espaçamentos entre as linhas*/
+#DesenvolvedorPerfil .linha1Coluna2 ,
+#DesenvolvedorPerfil .linha2Coluna1 ,
+#DesenvolvedorPerfil .linha2Coluna2 ,
+#DesenvolvedorPerfil .linha3Coluna1 ,
+#DesenvolvedorPerfil .linha3Coluna2 ,
+#DesenvolvedorPerfil .linha3Coluna3 ,
+#DesenvolvedorPerfil .linha4Coluna1 ,
+#DesenvolvedorPerfil .linha4Coluna2 ,
+#DesenvolvedorPerfil .linha4Coluna3 ,
+#DesenvolvedorPerfil .linha4Coluna4 ,
+#DesenvolvedorPerfil .linha5Coluna1 ,
+#DesenvolvedorPerfil .linha5Coluna2 
     { /*superior, direito, inferior, esquerdo*/
         padding: 1vh 2vw 1vh 2vw;
     }
 
 
 
-.linha1Coluna1 label, /*define a configuração label dos campos input */
-.linha1Coluna2 label,
-.linha2Coluna1 label,
-.linha2Coluna2 label,
-.linha3Coluna1 label,
-.linha3Coluna2 label,
-.linha3Coluna3 label,
-.linha4Coluna1 label,
-.linha4Coluna2 label,
-.linha4Coluna3 label,
-.linha4Coluna4 label,
-.linha5Coluna1 label,
-.linha5Coluna2 label
+#DesenvolvedorPerfil .linha1Coluna1 label, /*define a configuração label dos campos input */
+#DesenvolvedorPerfil .linha1Coluna2 label,
+#DesenvolvedorPerfil .linha2Coluna1 label,
+#DesenvolvedorPerfil .linha2Coluna2 label,
+#DesenvolvedorPerfil .linha3Coluna1 label,
+#DesenvolvedorPerfil .linha3Coluna2 label,
+#DesenvolvedorPerfil .linha3Coluna3 label,
+#DesenvolvedorPerfil .linha4Coluna1 label,
+#DesenvolvedorPerfil .linha4Coluna2 label,
+#DesenvolvedorPerfil .linha4Coluna3 label,
+#DesenvolvedorPerfil .linha4Coluna4 label,
+#DesenvolvedorPerfil .linha5Coluna1 label,
+#DesenvolvedorPerfil .linha5Coluna2 label
     {  /*superior, direito, inferior, esquerdo*/
-        padding: 1vh 0vw 0vh 3px;
+        padding: 0vh 0vw 0vh 3px;
         display: flex;
     }
 
+#DesenvolvedorPerfil .linha1 {
+    padding: 1vh 0vw 0vh 0px;
+    }
 
-.linha1Coluna1 input, /*define a configuração dos campos input */
-.linha1Coluna2 input,
-.linha2Coluna1 input,
-.linha2Coluna2 input,
-.linha3Coluna1 input,
-.linha3Coluna2 input,
-.linha3Coluna3 input,
-.linha4Coluna1 input,
-.linha4Coluna2 input,
-.linha4Coluna3 input,
-.linha4Coluna4 input,
-.linha5Coluna1 input,
-.linha5Coluna2 input
+
+#DesenvolvedorPerfil .linha1Coluna1 input, /*define a configuração dos campos input */
+#DesenvolvedorPerfil .linha1Coluna2 input,
+#DesenvolvedorPerfil .linha2Coluna1 input,
+#DesenvolvedorPerfil .linha2Coluna2 input,
+#DesenvolvedorPerfil .linha3Coluna1 input,
+#DesenvolvedorPerfil .linha3Coluna2 input,
+#DesenvolvedorPerfil .linha3Coluna3 input,
+#DesenvolvedorPerfil .linha4Coluna1 input,
+#DesenvolvedorPerfil .linha4Coluna2 input,
+#DesenvolvedorPerfil .linha4Coluna3 input,
+#DesenvolvedorPerfil .linha4Coluna4 input,
+#DesenvolvedorPerfil .linha5Coluna1 input,
+#DesenvolvedorPerfil .linha5Coluna2 input
     {
       /*  border-radius: 15px;arredonda os campos de input 
         border: solid 1px;*/
         padding: 1vh 1vw 1vh 0vw;
 
-        height: 30px;
+        height: 25px;
         width: 250px;
         border-radius: 7px;
         border: solid 1px;
@@ -148,44 +157,38 @@ main
         color: var(--cinzaclaro);
     }
 
+#DesenvolvedorPerfil .linha5 {
+    margin-bottom: 4vh;
+}
 
-.linha1Coluna1 input, /*define a configuração dos campos input */
-.linha1Coluna2 input
+
+
+
+
+#DesenvolvedorPerfil .linha1Coluna1 input, /*define a configuração dos campos input */
+#DesenvolvedorPerfil .linha1Coluna2 input
     {
         width: 26vw; /*define o tamanho dos campos do formulario */    
     }
 
 
-.linha2Coluna1 input,
-.linha2Coluna2 input
-    {
-        width: 26vw; /*define o tamanho dos campos do formulario */    
-    }
 
 
-.linha3Coluna1 input,
-.linha3Coluna2 input,
-.linha3Coluna3 input
+#DesenvolvedorPerfil .linha3Coluna1 input,
+#DesenvolvedorPerfil .linha3Coluna2 input,
+#DesenvolvedorPerfil .linha3Coluna3 input
     {
         width: 16vw; /*define o tamanho dos campos do formulario */    
     }
 
 
-.linha4Coluna1 input,
-.linha4Coluna2 input,
-.linha4Coluna3 input,
-.linha4Coluna4 input
+#DesenvolvedorPerfil .linha4Coluna1 input,
+#DesenvolvedorPerfil .linha4Coluna2 input,
+#DesenvolvedorPerfil .linha4Coluna3 input,
+#DesenvolvedorPerfil .linha4Coluna4 input
     {
         width: 11vw; /*define o tamanho dos campos do formulario */    
     }
-
-
-.linha5Coluna1 input,
-.linha5Coluna2 input
-    {
-        width: 26vw; /*define o tamanho dos campos do formulario */    
-    }
-
 
 
 /* Main */
@@ -193,7 +196,7 @@ main
 @media screen and (max-width: 750px) 
 {
 
-    .fotoNovoUsuario img
+    #DesenvolvedorPerfil .fotoNovoUsuario img
     {
         width: 18vw; /*define o tamanho do formulario 2% maior que os campo*/
         height: 20vh;
@@ -211,7 +214,7 @@ main
 @media screen and (max-width: 550px) 
 {
 
-    .fotoNovoUsuario img
+    #DesenvolvedorPerfil .fotoNovoUsuario img
     {
         width: 18vw; /*define o tamanho do formulario 2% maior que os campo*/
         height: 20vh;
@@ -227,7 +230,7 @@ main
 @media screen and (max-width: 408px) 
 {
 
-    .fotoNovoUsuario img
+    #DesenvolvedorPerfil .fotoNovoUsuario img
     {
         width: 18vw; /*define o tamanho do formulario 2% maior que os campo*/
         height: 20vh;

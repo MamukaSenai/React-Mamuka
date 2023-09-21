@@ -25,7 +25,7 @@ function DesenvolvedorPerfil() {
 
   return (
 
-    <main>
+    <main id="DesenvolvedorPerfil">
       <div className="linha_sup_status">
         <div className="linha_sup_esq">
           <p>Desenvolvedor / Perfil</p>
@@ -33,7 +33,7 @@ function DesenvolvedorPerfil() {
       </div>
       <div className="limiteformulario">
         <div className="fotoNovoUsuario">
-          <img src="..\src\assets\PessoaPerfil.png"/>
+          <img src={PessoaPerfil}/>
           
         </div>
         {/* primeira linha do formulario  */}
@@ -44,7 +44,7 @@ function DesenvolvedorPerfil() {
           </div>
           <div className="linha1Coluna2">
             <label htmlFor="id">ID:</label>
-            <input type="text" name="id" id="id" placeholder={899878321} />
+            <input type="text" name="id" id="id" placeholder="899878321" />
           </div>
         </div>
         {/* segunda linha do formulario  */}

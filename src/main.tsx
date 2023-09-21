@@ -20,6 +20,7 @@ import DesenvolvedorPerfil from '../src/pages/Desenvolvedor/Perfil/index'
 import DesenvolvedorLogin from './pages/Desenvolvedor/Login'
 // import DesenvolvedorDemandas from './pages/Desenvolvedor/Demandas'
 import Dashboard from './pages/Gestor/Dashboard'
+import Administradorperfil from './pages/Administrador/Perfil'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -36,7 +37,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="admpessoais" element = {<CadastroInfosPessoais />}/>
         <Route path="admlogin" element = {<AdministradorLogin />}/> 
         <Route path="admconsulta" element = {<AdministradorConsulta />}/>
-        {/* <Route path="admperfil" element = {<AdministradorConsulta />}/> */}
+        <Route path="admperfil" element = {<Administradorperfil />}/>
         {/* PAGINAS DE DEV */}
         {/* <Route path="devdemandas" element = {< DesenvolvedorDemandas />}/> */}
         <Route path="devlogin" element = {<DesenvolvedorLogin />}/>
@@ -46,7 +47,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="gestorcriarprojetos" element = {<GestorCriarProjetos />}/>
         <Route path="dashboard" element = {<Dashboard />}/>
         <Route path="gestorlogin" element = {<GestorLogin />}/>
-        {/* <Route path="gestorperfil" element = {<GestorPerfil />}/> */}
+        <Route path="gestorperfil" element = {<GestorPerfil />}/>
         <Route path="gestorprojetos" element = {<GestorProjetos />}/>
       </Routes>
     </BrowserRouter>

@@ -1,32 +1,31 @@
 #CriarDemandas {
-    width: 100vw;
+    width: 88vw;
     height: 100vh;  
     display: flex;
 }
 
 #CriarDemandas .gestor {
     color: var(--cinzaclaro);
-    margin-top: 15px;
-    margin-left: 16vh;
-}
 
-#CriarDemandas .right{
-    margin: 0 auto;
+    margin-top: 15px;
+   
 }
 
 
 #CriarDemandas .container{
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     height: 100%;
     align-items: center;
     margin-bottom: 21vh;
-    margin-right: 36.7vh;
+    margin-left: 8vh;
+    margin-right: 5vh;
 }
 
 #CriarDemandas .formulario{
     height: 400px;
-    width: 700px;
+    width: 600px;
     border-radius: 10px;
     border-width: 5px 1px;
     border-color:#0073EA #7C7C7C;
