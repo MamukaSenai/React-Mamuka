@@ -1,32 +1,27 @@
 #CriarDemandas {
-    height: 88vh;
-    width: 100vw;  
+    width: 100vw;
+    height: 100vh;  
     display: flex;
-    
 }
 
 #CriarDemandas .gestor {
     color: var(--cinzaclaro);
     margin-top: 15px;
-    margin-left: 15px;
-    
+    margin-left: 16vh;
 }
 
-
-section {
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-  
-   
+#CriarDemandas .right{
+    margin: 0 auto;
 }
+
 
 #CriarDemandas .container{
     display: flex;
     justify-content: center;
     height: 100%;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 21vh;
+    margin-right: 36.7vh;
 }
 
 #CriarDemandas .formulario{
@@ -92,8 +87,3 @@ section {
     font-weight: bold;
 }
 
-#CriarDemandas .gestor {
-    color: var(--cinzaclaro);
-    margin-top: 15px;
-    margin-left: 15px;
-}

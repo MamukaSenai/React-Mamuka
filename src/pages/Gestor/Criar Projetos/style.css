@@ -17,9 +17,9 @@
 
     display: flex;
     flex-direction:column-reverse;
-    height: 100vh;
-    width: 83.8vw;
-    
+    height: 93vh;
+    width:64vw;
+    margin-right: 20vh;
 }
 
 #CriarProjetos .container{
