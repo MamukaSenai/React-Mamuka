@@ -18,7 +18,7 @@ import CadastroInfosCorporativas from './pages/Administrador/CadastroInfosCorpor
 import CadastroInfosConclusao from './pages/Administrador/CadastroInfosConclusão'
 import DesenvolvedorPerfil from '../src/pages/Desenvolvedor/Perfil/index'
 import DesenvolvedorLogin from './pages/Desenvolvedor/Login'
-// import DesenvolvedorDemandas from './pages/Desenvolvedor/Demandas'
+import DesenvolvedorDemandas from './pages/Desenvolvedor/Demandas'
 import Dashboard from './pages/Gestor/Dashboard'
 import Administradorperfil from './pages/Administrador/Perfil'
 
@@ -39,7 +39,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="admconsulta" element = {<AdministradorConsulta />}/>
         <Route path="admperfil" element = {<Administradorperfil />}/>
         {/* PAGINAS DE DEV */}
-        {/* <Route path="devdemandas" element = {< DesenvolvedorDemandas />}/> */}
+        <Route path="devdemandas" element = {< DesenvolvedorDemandas />}/>
         <Route path="devlogin" element = {<DesenvolvedorLogin />}/>
         <Route path="devperfil" element = {<DesenvolvedorPerfil />}/> 
         {/* PAGINAS DE GESTOR */} 
