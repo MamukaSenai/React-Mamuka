@@ -49,6 +49,11 @@
     border-radius: 10px;
 }
 
+#CriarDemandas .input-box > label{
+    display: flex;
+
+}
+
 #CriarDemandas .input-box > input {
     border-radius: 3px;
     color: var(--cinzaclaro);

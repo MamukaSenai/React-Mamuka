@@ -67,6 +67,9 @@ section {
     color: var(--cinzaclaro);
 }
 
+#CriarProjetos .input-box > label {
+    display: flex;
+}
 
 
 #CriarProjetos .input-box > textarea{
