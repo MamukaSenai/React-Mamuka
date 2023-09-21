@@ -1,6 +1,6 @@
 #CriarDemandas {
-    width: 88vw;
-    height: 100vh;  
+    height: 88vh;
+    width: 100vw;  
     display: flex;
 }
 
@@ -11,16 +11,22 @@
    
 }
 
+#CriarDemandas .right {
+
+    display: flex;
+    flex-direction:column-reverse;
+    height: 93vh;
+    width:64vw;
+    margin-right: 18vh;
+}
+
 
 #CriarDemandas .container{
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     height: 100%;
     align-items: center;
-    margin-bottom: 21vh;
-    margin-left: 8vh;
-    margin-right: 5vh;
+    margin-bottom: 100px;
 }
 
 #CriarDemandas .formulario{

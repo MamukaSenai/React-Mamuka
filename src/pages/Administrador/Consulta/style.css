@@ -131,6 +131,7 @@
 
 #AdministradorConsulta .label_mail label 
     {
+    display: flex;
     color: var(--cinzaclaro);
     font-size: 15px;
     }
@@ -172,8 +173,10 @@
 
 
 #AdministradorConsulta .historico {
+    display: flex;
     margin-top: 10px;
     margin-bottom: 40px;
+    /* margin-right: 85%; */
     color: var(--cinzaclaro);
 }
 
