@@ -1,0 +1,116 @@
+main {
+    height: 88vh;
+    width: 100vw;  
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.link {
+    color: var(--cinzaclaro);
+    padding-top: 1%;
+    margin-left: 7.5%;
+}
+
+section {
+    padding-top: 3%;
+}
+
+.right {
+
+    display: flex;
+    flex-direction:column-reverse;
+    height: 100vh;
+    width: 83.8vw;
+    
+}
+
+.header_fixed {
+    height:  100%;
+    overflow: auto;
+    margin-top:  30px;
+    
+    
+}
+
+.header_fixed thead th{
+    position: sticky;
+    top: 0;
+    background-color:var(--azulClaro);
+    color: var(--branco);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 20px 20px 20px 20px  ; /* para borda com o hidden*/
+    overflow: hidden;
+    
+}
+
+.header_fixed {
+    height:  100%;
+    overflow: auto;
+    margin-top:  30px;
+    
+    
+}
+
+.header_fixed thead th{
+    position: sticky;
+    top: 0;
+    background-color:var(--azulClaro);
+    color: var(--branco);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+th,td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    font-size: 14px;
+    
+}
+
+
+tr:nth-child(even){
+    background-color: #dddd;
+}
+
+tr:nth-child(odd){
+    background-color: #edeef1;
+}
+
+tr:hover td {
+    color: var(--azulescuro);
+    cursor: pointer;
+    background-color:  #fff;
+}
+
+td button{
+    border: none;
+    padding: 7px 20px;
+    border-radius: 20px;
+    background-color: var(--azulClaro);
+    color: #e6e7eb;
+    font-weight: bold;
+}
+
+.concluido {
+    color: var(--branco);
+    background-color: var(--verde);
+    font-weight: bold;
+}
+
+.andamento {
+    color: var(--branco);
+    background-color: var(--laranja);
+    font-weight: bold;
+  }
+
+.cancelado {
+    color: var(--branco);
+    background-color: var(--vermelho);
+    font-weight: bold;
+} 

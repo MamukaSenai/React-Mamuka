@@ -1,34 +1,34 @@
 import './style.css'
 
-import {useRef, useEffect} from 'react';
+// import {useRef, useEffect} from 'react';
 
 
 export default function DesenvolvedorDemandas() {
-    
+
     //   const ref = useRef(null);
-    
+
     //   useEffect(() => {
     //     // 👇️ use a ref (best)
     //     const element2 = ref.current;
     //     console.log(element2);
-    
+
     //     // 👇️ use document.querySelector()
     //     // should only be used when you can't set a ref prop on the element
     //     // (you don't have access to the element)
     //     const element = document.querySelector('#search_input');
     //     console.log(element);
     //   }, []);
-        // const busca = useBusca();
+    // const busca = useBusca();
 
-        // useEffect(() => {
+    // useEffect(() => {
 
-        // })
+    // })
     // let search_input:any = document.querySelector("#search_input");
 
     // search_input.addEventListener("keyup", function(e:any){
     //   let span_items:any = document.querySelectorAll(".table_body ul li .item .id span");
     //   let search_item:any = e.target.value.toLowerCase();
-     
+
     //  span_items.forEach(function(item :any){
     //    if(item.textContent.toLowerCase().indexOf(search_item) != -1){
     //       item.closest("li").style.display = "block"
@@ -37,14 +37,14 @@ export default function DesenvolvedorDemandas() {
     //      item.closest("li").style.display = "none";
     //    }
     //  })
-      
+
     // });
     return (
         <>
-        
+
             <div className="wrapper">
                 <div className="header">
-                    <div className="title">Customer Issue Tracker</div>
+                    {/* <div className="title">Customer Issue Tracker</div> */}
                     <div className="search_box">
                         <input
                             type="text"
@@ -96,8 +96,10 @@ export default function DesenvolvedorDemandas() {
                                     <div className="cronograma">
                                         <span className="prazo">Abril/23 - Nov/23</span>
                                     </div>
-                                    <div className="status">
-                                    <span className="concluido">Concluído</span>
+                                    <div className="ajuste_alinhamento_status">
+                                        <div className="status">
+                                            <span className="concluido">Concluído</span>
+                                        </div>
                                     </div>
                                     <div className="responsavel">
                                         <span>Ricardo Souza</span>
@@ -118,8 +120,10 @@ export default function DesenvolvedorDemandas() {
                                     <div className="cronograma">
                                         <span className="prazo">Jan/22 - Jun/22</span>
                                     </div>
-                                    <div className="status">
-                                        <span className="concluido">Concluído</span>
+                                    <div className="ajuste_alinhamento_status">
+                                        <div className="status">
+                                            <span className="concluido">Concluído</span>
+                                        </div>
                                     </div>
                                     <div className="responsavel">
                                         <span>Rodrigo Amaro</span>
@@ -140,8 +144,10 @@ export default function DesenvolvedorDemandas() {
                                     <div className="cronograma">
                                         <span className="prazo">Jan/23 - Fev/23</span>
                                     </div>
-                                    <div className="status">
-                                        <span className="cancelado">Cancelado</span>
+                                    <div className="ajuste_alinhamento_status">
+                                        <div className="status">
+                                            <span className="cancelado">Cancelado</span>
+                                        </div>
                                     </div>
                                     <div className="responsavel">
                                         <span>Paulo Pereira</span>
@@ -162,8 +168,10 @@ export default function DesenvolvedorDemandas() {
                                     <div className="cronograma">
                                         <span className="prazo">Fev/23 - Nov/23</span>
                                     </div>
-                                    <div className="status">
-                                        <span className="andamento">Andamento</span>
+                                    <div className="ajuste_alinhamento_status">
+                                        <div className="status">
+                                            <span className="andamento">Andamento</span>
+                                        </div>
                                     </div>
                                     <div className="responsavel">
                                         <span>Hugo Ramos</span>
@@ -184,8 +192,10 @@ export default function DesenvolvedorDemandas() {
                                     <div className="cronograma">
                                         <span className="prazo">Jun/22 - Dez/22</span>
                                     </div>
-                                    <div className="status">
-                                    <span className="concluido">Concluído</span>
+                                    <div className="ajuste_alinhamento_status">
+                                        <div className="status">
+                                            <span className="concluido">Concluído</span>
+                                        </div>
                                     </div>
                                     <div className="responsavel">
                                         <span>Vagner Barros</span>
@@ -193,7 +203,7 @@ export default function DesenvolvedorDemandas() {
                                 </div>
                             </li>
                             <li>
-                                <div className="item">
+                                <div className="item moises">
                                     <div className="id">
                                         <span>105/23</span>
                                     </div>
@@ -206,15 +216,17 @@ export default function DesenvolvedorDemandas() {
                                     <div className="cronograma">
                                         <span className="prazo">Fev/23 - Set/23</span>
                                     </div>
-                                    <div className="status">
-                                    <span className="cancelado">Cancelado</span>
+                                    <div className="ajuste_alinhamento_status">
+                                        <div className="status">
+                                            <span className="cancelado">Cancelado</span>
+                                        </div>
                                     </div>
                                     <div className="responsavel">
                                         <span>Moises Amparo</span>
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            {/* <li>
                                 <div className="item">
                                     <div className="id">
                                         <span>106/20</span>
@@ -235,7 +247,7 @@ export default function DesenvolvedorDemandas() {
                                         <span>Moacir Lima</span>
                                     </div>
                                 </div>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                     <div className="table_footer" />
