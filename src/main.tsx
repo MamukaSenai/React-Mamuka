@@ -21,6 +21,7 @@ import DesenvolvedorLogin from './pages/Desenvolvedor/Login'
 import DesenvolvedorDemandas from './pages/Desenvolvedor/Demandas'
 import Dashboard from './pages/Gestor/Dashboard'
 import Administradorperfil from './pages/Administrador/Perfil'
+import DesenvolvedorDemandas2 from './pages/Desenvolvedor/Demandas teste'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -40,6 +41,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="admperfil" element = {<Administradorperfil />}/>
         {/* PAGINAS DE DEV */}
         <Route path="devdemandas" element = {< DesenvolvedorDemandas />}/>
+        <Route path="devdemandas2" element = {< DesenvolvedorDemandas2 />}/>
         <Route path="devlogin" element = {<DesenvolvedorLogin />}/>
         <Route path="devperfil" element = {<DesenvolvedorPerfil />}/> 
         {/* PAGINAS DE GESTOR */} 
