@@ -193,6 +193,39 @@
 
 /* Main */
 /* Quando a resolução for menor que 820px esconde o campo de busca */
+
+
+@media screen and (max-width: 960px){
+    #DesenvolvedorPerfil .linha2Coluna2 input,
+    #DesenvolvedorPerfil .linha5Coluna2 input,
+    #DesenvolvedorPerfil .linha2Coluna1 input,
+    #DesenvolvedorPerfil .linha5Coluna1 input{
+        width: 26vw
+    }
+    
+}
+
+
+@media screen and (max-width: 790px){
+    #DesenvolvedorPerfil .linha4Coluna1 label,
+    #DesenvolvedorPerfil .linha4Coluna2 label,
+    #DesenvolvedorPerfil .linha4Coluna3 label,
+    #DesenvolvedorPerfil .linha4Coluna4 label{
+        width: 9vw;
+    }
+
+}
+
+@media screen and (max-width: 714px){
+    
+    #DesenvolvedorPerfil .linha3Coluna1 input,
+    #DesenvolvedorPerfil .linha3Coluna2 input,
+    #DesenvolvedorPerfil .linha3Coluna3 input{
+        width: 15vw;
+    }
+}
+
+
 @media screen and (max-width: 750px) 
 {
 
