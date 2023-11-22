@@ -1,8 +1,18 @@
 import "./style.css"
 import { Link } from "react-router-dom";
+import { useState } from "react"
 import PessoaCadastro  from "../../../assets/PessoaCadastro.png"
 
 function CadastroInfosConclusao() {
+    const [email, setEmail] = useState<string>("")
+
+    function cadastrarUsuario(event: any){
+        event.preventDefault();
+
+        const formdata = new FormData()
+
+        formdata.append("email", email)
+    }
 
     return (
         <main id="rightConclusao">
@@ -36,24 +46,26 @@ function CadastroInfosConclusao() {
                         
                     </div>
                 </div>
-                <form className="formulario">
+                <form onSubmit={cadastrarUsuario} className="formulario" method="POST">
                     <div>
                         <img src={PessoaCadastro} alt="" />
                     </div>
                     <div className="label_mail">
                         <label htmlFor="campo-usuario">E-mail:</label>
-                        <input
+                        <input type="email"
                             placeholder="ricardosouza1980@gmail.com"
                             name="usuario"
                             id="campo-usuario"
+                            onChange={ (event) => {setEmail(event.target.value)}}
                         />
                     </div>
                     <div className="label_mail">
                         <label htmlFor="campo-senha">Confirme o E-mail:</label>
-                        <input
+                        <input type="email"
                             placeholder="ricardosouza1980@gmail.com"
                             name="usuario"
                             id="campo-usuario"
+                            onChange={ (event) => {setEmail(event.target.value)}}
                         />
                     </div>
                     <div>

@@ -1,9 +1,22 @@
 import "./style.css"
 import { Link } from "react-router-dom";
+import { useState } from "react"
 
 import PessoaCadastro  from "../../../assets/PessoaCadastro.png"
 
 function CadastroInfosCorporativas(){
+    const [perfil, setPerfil] = useState<string>("")
+    const [cargo, setCargo] = useState<string>("")
+
+    function cadastrarUsuario(event: any){
+        event.preventDefault();
+
+        const formdata = new FormData()
+
+        formdata.append("perfil", perfil)
+        formdata.append("cargo", cargo)
+    }
+    
 
     return(
         <main id="rightCorporativas">
@@ -36,17 +49,23 @@ function CadastroInfosCorporativas(){
                     
                     </div>
                 </div>
-                <form className="formulario">
+                <form onSubmit={cadastrarUsuario} className="formulario" method="POST">
                     <div>
                     <img src={PessoaCadastro} alt="" />
                     </div>
                     <div className="label_mail">
                     <label htmlFor="campo-usuario">Perfil:</label>
-                    <input placeholder="Administrador" name="usuario" id="campo-usuario" />
+                    <input type="text" placeholder="Administrador" 
+                        name="usuario" id="campo-usuario" 
+                        onChange={ (event) => {setPerfil(event.target.value)}}
+                    />
                     </div>
                     <div className="label_mail">
                     <label htmlFor="campo-senha">Cargo:</label>
-                    <input placeholder="Gerente" name="usuario" id="campo-usuario" />
+                    <input type="text" placeholder="Gerente" 
+                        name="usuario" id="campo-usuario"
+                        onChange={ (event) => {setCargo(event.target.value)}}
+                     />
                     </div>
                     <div className="label_mail">
                     <label htmlFor="campo-senha">Numero Usuario:</label>
