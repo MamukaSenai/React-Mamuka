@@ -6,6 +6,8 @@ import "./style.css"
 
 export default function ListaDevs(){
     const [devs, setDevs] = useState<any[]>([]);
+    
+    const [skillDigitada, setskillDigitada] = useState<string>("");
 
     const [listaDevsFiltrados, setListaDevsFiltarados] = useState<any[]> (devs);
 
@@ -14,18 +16,31 @@ export default function ListaDevs(){
         listarDesenvolvedores()
     }, [])
 
+    function buscarPorSkill(event: any){
+        event.preventDefault();
+
+        const devsFiltrados = devs.filter((dev: any) => dev.hardSkills.includes(skillDigitada.toLocaleUpperCase()));
+
+        if(devsFiltrados.length === 0){
+            alert("Nenhum desenvolvedor (a) com essa skill")
+        }else {
+            setListaDevsFiltarados(devsFiltrados)   
+        }
+
+    }
+
     function retornoDevsGeral(event: any){
         if(event.target.value === ""){
             setListaDevsFiltarados(devs)
         }
-        //setskillDigitada(event.target.value)
+        setskillDigitada(event.target.value)
     }
 
     function listarDesenvolvedores(){
-        /*api.get("users").then((response: any) => {
-            console.log(response.data)
-            setDevs(response.data)
-        })*/
+        // api.get("users").then((response: any) => {
+        //     console.log(response.data)
+        //     setDevs(response.data)
+        // })
     }
 
 
@@ -33,14 +48,14 @@ export default function ListaDevs(){
         <main id="lista-devs">
         <div className="container container_lista_devs">
             <div className="lista_devs_conteudo">
-                <h1>Lista de Devs</h1>
+                <h1>Lista de Usuarios</h1>
                 <hr/>
-                    <form method="post" /*onSubmit={buscarPorSkill}*/>
+                    <form method="post" onSubmit={buscarPorSkill}>
                         <div className="wrapper_form">
-                            <label htmlFor="busca">Procurar desenvolvedores</label>
+                            <label htmlFor="busca">Procurar Usuarios</label>
                             <div className="campo-label">
-                                <input type="search" name="campo-busca" id="busca" placeholder="Buscar desenvolvedores por tecnologias..." onChange={retornoDevsGeral}/>
-                                    <button type="submit">Buscar</button>
+                                <input type="search" name="campo-busca" id="busca" placeholder="Buscar de Usuarios" onChange={retornoDevsGeral}/>
+                                <button type="submit">Buscar</button>
                             </div>
                         </div>
                     </form>
