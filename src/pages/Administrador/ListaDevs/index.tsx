@@ -1,46 +1,46 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
-import CardDev from "../../../components/CardDev"
+import CardGestor from "../../../components/CardGestor"
 import "./style.css"
-//import api from "../../utils/api";
+import api from "../../../utils/api";
 
 export default function ListaDevs(){
     const [devs, setDevs] = useState<any[]>([]);
     
-    const [skillDigitada, setskillDigitada] = useState<string>("");
+   const [usuarioDigitada, setusuarioDigitada] = useState<string>("");
 
-    const [listaDevsFiltrados, setListaDevsFiltarados] = useState<any[]> (devs);
+    const [listaUsuariosFiltrados, setListaUsuariosFiltarados] = useState<any[]> (devs);
 
     useEffect( () => {
         document.title = "VSConnect - Lista devs"
-        listarDesenvolvedores()
+        listarUsuarios()
     }, [])
 
-    function buscarPorSkill(event: any){
+    function buscarPorUsuario(event: any){
         event.preventDefault();
+        // testar tipousuario se indica algum erro depois mudar api
+        const usuariosFiltrados = devs.filter((dev: any) => dev.tipoUsuario.includes(usuarioDigitada.toLocaleUpperCase()));
 
-        const devsFiltrados = devs.filter((dev: any) => dev.hardSkills.includes(skillDigitada.toLocaleUpperCase()));
-
-        if(devsFiltrados.length === 0){
-            alert("Nenhum desenvolvedor (a) com essa skill")
+        if(usuariosFiltrados.length === 0){
+            alert("Nenhum Gestor com esse usuario")
         }else {
-            setListaDevsFiltarados(devsFiltrados)   
+            setListaUsuariosFiltarados(usuariosFiltrados)   
         }
 
     }
 
     function retornoDevsGeral(event: any){
         if(event.target.value === ""){
-            setListaDevsFiltarados(devs)
+            listarUsuarios()
         }
-        setskillDigitada(event.target.value)
+        setusuarioDigitada(event.target.value)
     }
 
-    function listarDesenvolvedores(){
-        // api.get("users").then((response: any) => {
-        //     console.log(response.data)
-        //     setDevs(response.data)
-        // })
+    function listarUsuarios(){
+         api.get("users").then((response: any) => {
+            console.log(response.data)
+            setDevs(response.data)
+        })
     }
 
 
@@ -50,7 +50,7 @@ export default function ListaDevs(){
             <div className="lista_devs_conteudo">
                 <h1>Lista de Usuarios</h1>
                 <hr/>
-                    <form method="post" onSubmit={buscarPorSkill}>
+                    <form method="post" onSubmit={buscarPorUsuario}>
                         <div className="wrapper_form">
                             <label htmlFor="busca">Procurar Usuarios</label>
                             <div className="campo-label">
@@ -63,10 +63,11 @@ export default function ListaDevs(){
                         <ul>
                             {devs.map((dev: any, index: number) => {
                                 return <li key={index}>
-                                     <CardDev 
+                                     <CardGestor 
                                      id={dev.id}
                                      nome={dev.nome}
                                      email={dev.email}
+                                     tipoUsuario={dev.tipoUsuario}
                                      />
                                 </li>
                             }

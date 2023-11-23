@@ -22,8 +22,11 @@ import DesenvolvedorDemandas from './pages/Desenvolvedor/Demandas'
 import Dashboard from './pages/Gestor/Dashboard'
 import Administradorperfil from './pages/Administrador/Perfil'
 import DesenvolvedorDemandas2 from './pages/Desenvolvedor/Demandas teste'
+
+
 /* NOVO*/
 import ListaDevs from './pages/Administrador/ListaDevs'
+import PerfilUsuario from './pages/Administrador/PerfilUsuario'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -41,7 +44,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="admlogin" element = {<AdministradorLogin />}/> 
         <Route path="admconsulta" element = {<AdministradorConsulta />}/>
         <Route path="admperfil" element = {<Administradorperfil />}/>
-        <Route path='ListaDevs' element={<ListaDevs/>}/>
+
+        <Route path='listadevs' element={ <ListaDevs /> } /> 
+        <Route path='perfil/:idUsuario' element={ <PerfilUsuario /> } />
         {/* PAGINAS DE DEV */}
         <Route path="devdemandas" element = {< DesenvolvedorDemandas />}/>
         <Route path="devdemandas2" element = {< DesenvolvedorDemandas2 />}/>

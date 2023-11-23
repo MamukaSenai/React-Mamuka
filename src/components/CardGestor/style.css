@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
 
-    font-family: var(--font2);
+    /*font-family: var(--font2);*/
 }
 
 .grupo_contato {
@@ -31,7 +31,7 @@
 
 .grupo_contato h2 {
     font-size: 24px;
-    font-family: var(--font2);
+    /*font-family: var(--font2);*/
     text-transform: capitalize;
 }
 
@@ -39,7 +39,7 @@
     font-size: 14px;
 }
 
-.techs {
+.usuarios {
     width: 180px;
 
     display: flex;
@@ -47,7 +47,7 @@
     justify-content: space-between;
 }
 
-.techs span {
+.usuarios span {
     font-size: 14px;
     padding: 2px 10px;
     border-radius: 20px;
