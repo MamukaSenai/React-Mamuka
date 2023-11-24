@@ -24,7 +24,11 @@ export default function ListaDevs(){
         if(usuariosFiltrados.length === 0){
             alert("Nenhum Gestor com esse usuario")
         }else {
-            setListaUsuariosFiltarados(usuariosFiltrados)   
+            // console.log(usuariosFiltrados);
+            
+            //Criar variavel que recebe o usuariofiltrado
+            setDevs(usuariosFiltrados);   
+            // console.log("AOPA BOIADA");
         }
 
     }
@@ -64,7 +68,7 @@ export default function ListaDevs(){
                             {devs.map((dev: any, index: number) => {
                                 return <li key={index}>
                                      <CardGestor 
-                                     id={dev.id}
+                                     id={dev.idUsuario}
                                      nome={dev.nome}
                                      email={dev.email}
                                      tipoUsuario={dev.tipoUsuario}
