@@ -7,17 +7,24 @@ import api from "../../../utils/api";
 export default function ListaDevs(){
     const [devs, setDevs] = useState<any[]>([]);
     
-   const [usuarioDigitada, setusuarioDigitada] = useState<string>("");
+    const [usuarioDigitada, setusuarioDigitada] = useState<string>("");
 
     const [listaUsuariosFiltrados, setListaUsuariosFiltarados] = useState<any[]> (devs);
 
-    useEffect( () => {
-        document.title = "VSConnect - Lista devs"
-        listarUsuarios()
-    }, [])
+
+    function retornoDevsGeral(event: any){
+        if(event.target.value === ""){
+            listarUsuarios();
+        }
+        setusuarioDigitada(event.target.value)
+    }
+
 
     function buscarPorUsuario(event: any){
+        //não recarrega a pagina
         event.preventDefault();
+
+        //filtrar devs pela skill digitada no campo buscar
         // testar tipousuario se indica algum erro depois mudar api
         const usuariosFiltrados = devs.filter((dev: any) => dev.tipoUsuario.includes(usuarioDigitada.toLocaleUpperCase()));
 
@@ -26,6 +33,8 @@ export default function ListaDevs(){
         }else {
             // console.log(usuariosFiltrados);
             
+
+            //atribui valor de devs filtrado, ao state ListaDevsFiltrados 
             //Criar variavel que recebe o usuariofiltrado
             setDevs(usuariosFiltrados);   
             // console.log("AOPA BOIADA");
@@ -33,19 +42,24 @@ export default function ListaDevs(){
 
     }
 
-    function retornoDevsGeral(event: any){
-        if(event.target.value === ""){
-            listarUsuarios()
-        }
-        setusuarioDigitada(event.target.value)
-    }
+
+
 
     function listarUsuarios(){
          api.get("users").then((response: any) => {
-            console.log(response.data)
+            //console.log(response.data)
             setDevs(response.data)
         })
+        .catch((error: any) => {
+            console.log("Error ao realizar um requisição:", error);
+        })
     }
+
+
+    useEffect( () => {
+        document.title = "VSConnect - Lista devs"
+        listarUsuarios()
+    }, [])
 
 
     return (
