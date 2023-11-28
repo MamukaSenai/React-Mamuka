@@ -1,9 +1,10 @@
 /* MAIN */
 .main_cadastro {
-    /* background-image:
+    /* background:
         linear-gradient(180deg, #060821 0%, #06082120 25%, #0608218f 80%, #060821 100%),
         url("../../assets/images/background_login.png"); */
-    min-height: var(--cinzaclaro);
+    background-color: var(--cinzaclaro);
+    min-height: calc(100vh - 339px);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;

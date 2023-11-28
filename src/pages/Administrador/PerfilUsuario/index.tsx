@@ -20,7 +20,7 @@ function PerfilUsuario() {
     //const [foto, setFoto] = useState <String>("")
     
     //const [uf, setUf] = useState <String>("")
-   // const [cidade, setCidade] = useState <String>("")
+    // const [cidade, setCidade] = useState <String>("")
     const [ listaUsuarios, setListasUsuarios] = useState <String[]>([])
 
     
