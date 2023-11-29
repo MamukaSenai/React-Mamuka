@@ -8,12 +8,18 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    
 }
+
+/* .cad_conteudo{
+    margin-top: 120vh;
+} */
 
 .main_cadastro .container_cad {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* margin-top: 1vw; */
 }
 
 .main_cadastro .cad_conteudo {
@@ -27,19 +33,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0;
+    padding: 21px 0;
     color: var(--branco);
     margin: 100px 0;
 }
 
 .main_cadastro h1 {
     /* font-family: var(--font1); */
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
 }
 
 .main_cadastro hr {
-    margin: 20px auto;
+    margin: 0px auto;
     width: 80%;
     height: 4px;
     background-color: var(--rosa);
@@ -255,7 +261,7 @@
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    padding: 50px 0;
+    padding: 5% 0;
 }
 
 .main_cadastro .cad_item_skill {
@@ -300,6 +306,6 @@
     padding: 7px 40px;
     background: linear-gradient(0deg, #00000040, rgba(0, 0, 0, 0.25)), linear-gradient(92.23deg, #FF398F -25.96%, #17BBFF 126.83%);
     border: none;
-    margin-top: 25px;
+    /* margin-top: 1%; */
     cursor: pointer;
 }

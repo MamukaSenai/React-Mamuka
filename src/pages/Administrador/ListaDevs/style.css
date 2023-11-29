@@ -56,8 +56,13 @@ main#lista-devs {
     width: 85%;
     padding: 20px 0;
 }
+/* 
+.wrapper_lista:checked~{
+
+} */
 
 .wrapper_lista {
+    /* display: none; */
     width: 85%;
 }
 

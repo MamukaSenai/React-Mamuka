@@ -75,6 +75,23 @@
       ],
       "user_img": "1692211091725.jpeg",
       "id": 4
+    },
+
+    {
+      "email": "jefferson1@gmail.com",
+      "password": "$2a$10$bOkRzNpwl5XSIz/J8Ao6EOWZC91PzF0ADSX59m5VvhtREax8ctuyC",
+      "nome": "Jefferson Souza",
+      "tipoUsuario": "[\"ADM\"]",
+      "user_img": "",
+      "id": 5
+    },
+    {
+      "email": "ricardo@mail.com",
+      "password": "$2a$10$ibA3TFNQYLYKPQHZOdi11uUFIWMyqoQVBf8itEQtluGKzGy/kxI6K",
+      "nome": "Ricardo Maira",
+      "tipoUsuario": "[\"ADM\"]",
+      "user_img": "",
+      "id": 6
     }
   ],
   "servicos": [

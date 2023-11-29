@@ -69,7 +69,7 @@ function AdministradorLogin() {
                                     <div className="unlearn">
                                         <a href="#">Esqueceu sua senha</a>
                                     </div>
-                                    <button className="btn-login">Login</button>
+                                    <button className="btn-login"> Login</button>
                                     <a className="registro" href="#">
                                     Registre-se
                                     </a>

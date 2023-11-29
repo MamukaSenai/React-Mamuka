@@ -43,7 +43,7 @@ export default function CadastroUsuario(props: any) {
         //const [ listaUsuarios, setListasUsuarios] = useState <String[]>([])
 
         //formData.append("hardSkills", JSON.stringify(usuariosSelecionados))
-        formData.append("Username", JSON.stringify(usuariosSelecionados))
+        formData.append("tipoUsuario", JSON.stringify(usuariosSelecionados))
 
 
         api.post("users", formData).then( (response) => {
@@ -91,7 +91,7 @@ export default function CadastroUsuario(props: any) {
 
     return (
         <main className="main_cadastro">
-            <div className="container container_cad">
+            <div className="container_cad">
                 <div className="cad_conteudo">
                     <h1>Cadastro</h1>
                     <hr />
@@ -152,7 +152,7 @@ export default function CadastroUsuario(props: any) {
                                         <span>Selecione o tipo de usuário:</span>
                                         <div className="cad_linha_select">
                                             <select
-                                                name=""
+                                                name="tipoUsuario"
                                                 id="cad_select_skill"
                                                 onChange={(e) => setSelect(e.target.value)}
                                             >
