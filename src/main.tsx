@@ -29,6 +29,7 @@ import ListaDevs from './pages/Administrador/ListaDevs'
 import PerfilUsuario from './pages/Administrador/PerfilUsuario'
 import CadastroUsuario from './pages/Administrador/CadastroUsuario'
 import Login from './pages/Administrador/Login'
+import Login2 from './pages/Administrador/Login2'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -51,7 +52,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='listadevs' element={<ListaDevs />} />
         <Route path='perfil/:idUsuario' element={<PerfilUsuario />} />
         <Route path='cadastro/usuario' element={<CadastroUsuario />} />
-        <Route path='Login' element={< Login />} />
+        <Route path='login' element={< Login />} />
+        <Route path='login2' element={< Login2 />} />
 
         {/* PAGINAS DE DEV */}
         <Route path="devdemandas" element={< DesenvolvedorDemandas />} />

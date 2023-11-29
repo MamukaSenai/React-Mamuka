@@ -76,7 +76,6 @@
       "user_img": "1692211091725.jpeg",
       "id": 4
     },
-
     {
       "email": "jefferson1@gmail.com",
       "password": "$2a$10$bOkRzNpwl5XSIz/J8Ao6EOWZC91PzF0ADSX59m5VvhtREax8ctuyC",
@@ -92,6 +91,22 @@
       "tipoUsuario": "[\"ADM\"]",
       "user_img": "",
       "id": 6
+    },
+    {
+      "email": "gustavo@mail.com",
+      "password": "$2a$10$wY/nh6n.fL5UpNDwS4VJRuVpN3t23457FCYnLcYFY8LpXynFi0sBy",
+      "nome": "Gustavo Maria",
+      "tipoUsuario": "[]",
+      "user_img": "",
+      "id": 7
+    },
+    {
+      "email": "mm@mail.com",
+      "password": "$2a$10$UsFUcycVtjinqno.T5UIXOLOhsLjQ1QoD6Unw4TxzYp/4xKE4AnG6",
+      "nome": "Mario Maria",
+      "tipoUsuario": "ADM",
+      "user_img": "",
+      "id": 8
     }
   ],
   "servicos": [

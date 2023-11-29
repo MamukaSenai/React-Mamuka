@@ -2,7 +2,7 @@
 .topo {
     height: 12vh;
     width: 100vw;
-    
+    /*position: fixed;*/
     display: flex;
     align-items: center;
     justify-content: space-between;

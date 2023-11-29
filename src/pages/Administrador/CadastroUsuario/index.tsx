@@ -12,18 +12,22 @@ import api from "../../../utils/api";
 export default function CadastroUsuario(props: any) {
 
     //state techs com as tecnologias definidas
-    const [techs, setTechs] = useState<string[]>(
+    /*const [techs, setTechs] = useState<string[]>(
         [
             "ADM",
             "DEV",
             "GESTOR"
         ]
-         );
+         );*/
 
 
     const [nome, setNome] = useState<string>("");
     const [email, setEmail] = useState<string>("");
     const [senha, setSenha] = useState<string>("");
+
+    const [tipoUsuario, setTipoUsuario] = useState<string>("");//ajuste no input do select
+
+
 
     const [usuariosSelecionados, setUsuariosSelecionadao] = useState<string[]>([]); // Array (lista) para armazenar as skills selecionadas
 
@@ -40,10 +44,11 @@ export default function CadastroUsuario(props: any) {
         formData.append("nome", nome);
         formData.append("email", email);
         formData.append("password", senha);
+        formData.append("tipoUsuario", tipoUsuario);
         //const [ listaUsuarios, setListasUsuarios] = useState <String[]>([])
 
         //formData.append("hardSkills", JSON.stringify(usuariosSelecionados))
-        formData.append("tipoUsuario", JSON.stringify(usuariosSelecionados))
+        //formData.append("tipoUsuario", JSON.stringify(usuariosSelecionados))
 
 
         api.post("users", formData).then( (response) => {
@@ -55,7 +60,7 @@ export default function CadastroUsuario(props: any) {
         })
     }
 
-    function adicionarUsuario() {
+   /*function adicionarUsuario() {
         //verifica o valor do state select
         if (select === "") {
             //se for igual a string vazia, exibe uma mensagem
@@ -77,8 +82,8 @@ export default function CadastroUsuario(props: any) {
                 setUsuariosSelecionadao(novaListaUsuariosSelecionadas);
             }
         }
-    }
-
+    }*/
+    /*
     function excluirUsuario(skill: string) {
 
         //A variavel novaListaUsuariosSelecionadas armazena skills diferente da skill que o usuário clicou para ser excluida.
@@ -86,7 +91,7 @@ export default function CadastroUsuario(props: any) {
 
         //Atualiza o valor do state usuariosSelecionados, com o valor da variavel novaListaUsuariosSelecionadas 
         setUsuariosSelecionadao(novaListaUsuariosSelecionadas);
-    }
+    }*/
    
 
     return (
@@ -126,6 +131,16 @@ export default function CadastroUsuario(props: any) {
                                 required
                             />
                         </div>
+                        <div className="cad_box_input">
+                            <label htmlFor="tipoUsuario">Tipo de Usuário:</label>
+                            <input
+                                type="text"
+                                id="tipoUsuario"
+                                onChange={ (event) => { setTipoUsuario(event.target.value) } }
+                                placeholder="Digite o tipo Usuário:"
+                                required
+                            />
+                        </div>
                        {/* <div className="cad_box_input">
                             <label htmlFor="foto">Foto:</label>
                             /* Passar primeiro como exemplo *
@@ -146,12 +161,12 @@ export default function CadastroUsuario(props: any) {
                             
                             <span>Desenvolvedor</span>
                         </div> */}
-                        <div className="cad_box_input">
+                         {/*<div className="cad_box_input">
                                     <hr />
                                     <div className="cad_box_skills">
                                         <span>Selecione o tipo de usuário:</span>
                                         <div className="cad_linha_select">
-                                            <select
+                                            {/*<select
                                                 name="tipoUsuario"
                                                 id="cad_select_skill"
                                                 onChange={(e) => setSelect(e.target.value)}
@@ -163,7 +178,18 @@ export default function CadastroUsuario(props: any) {
                                                     })
                                                 }
                                             </select>
-                                            <button
+                                            <select 
+                                                name="tipoUsuario"
+                                                id="cad_select_skill"
+                                                value={selectedtipoUsuario} 
+                                                onChange={(e) => setselectedTipoUsuario(e.target.value)}
+                                                >
+                                                    <option value="ADM">ADM</option>
+                                                    <option value="DEV">DEV</option>
+                                                    <option value="GESTOR">GESTOR</option>
+                                                    
+                                                </select>
+                                            {/*<button
                                                 type="button"
                                                 id="cad_btn_inserir"
                                                 onClick={adicionarUsuario}>
@@ -193,7 +219,7 @@ export default function CadastroUsuario(props: any) {
                                         </div>
                                     </div>
                         </div>
-                        
+                    */}
 
                          {/*<div className="cad_container_checkbox">
                                 <input
