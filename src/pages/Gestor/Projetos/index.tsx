@@ -3,14 +3,14 @@ import React, { useState } from 'react';
 
 interface UserData {
   id: number;
-//   grupo: string;
+  //   grupo: string;
   projeto: string;
   cronograma: string;
   status: string;
   responsavel: string;
 }
 
-export default function DesenvolvedorDemandas() {
+export default function GestorProjetos() {
   const [filtroStatus, setFiltroStatus] = useState('');
   const [filtroTermo, setFiltroTermo] = useState('');
 
@@ -30,7 +30,7 @@ export default function DesenvolvedorDemandas() {
   const dados: UserData[] = [
     {
       id: 1,
-    //   grupo: 'testestestestestestestes',
+      //   grupo: 'testestestestestestestes',
       projeto: 'Projeto teste',
       cronograma: '02/06/2025',
       status: 'Cancelado',
@@ -38,20 +38,28 @@ export default function DesenvolvedorDemandas() {
     },
     {
       id: 2,
-    //   grupo: 'testestestestestestestes',
+      //   grupo: 'testestestestestestestes',
       projeto: 'Projeto 01',
       cronograma: '02/06/2025',
       status: 'Andamento',
       responsavel: 'Andre',
     },
     {
-        id: 3,
-        // grupo: 'testestestestestestestes',
-        projeto: 'Projeto 04',
-        cronograma: '02/06/2025',
-        status: 'Concluido',
-        responsavel: 'Andre',
-      },
+      id: 3,
+      // grupo: 'testestestestestestestes',
+      projeto: 'Projeto 04',
+      cronograma: '02/06/2025',
+      status: 'Concluido',
+      responsavel: 'Andre',
+    },
+    {
+      id: 4,
+      // grupo: 'testestestestestestestes',
+      projeto: 'Projeto 05',
+      cronograma: '02/06/2023',
+      status: 'Concluido',
+      responsavel: 'Jose',
+    },
     // ... outros dados aqui
   ];
 
@@ -60,7 +68,7 @@ export default function DesenvolvedorDemandas() {
     return dados.filter(item =>
       item.status.toLowerCase().includes(filtroStatus.toLowerCase()) &&
       (item.projeto.toLowerCase().includes(filtroTermo.toLowerCase()) ||
-       item.responsavel.toLowerCase().includes(filtroTermo.toLowerCase()))
+        item.responsavel.toLowerCase().includes(filtroTermo.toLowerCase()))
     );
   };
 
@@ -69,32 +77,34 @@ export default function DesenvolvedorDemandas() {
   return (
     <div>
       {/* Input para o filtro de status */}
-      <div className='filtro-status'>
-      <label>Filtrar por Status:</label>
-      <select
-        value={filtroStatus}
-        onChange={(e) => setFiltroStatus(e.target.value)}
-      >
-        <option value="">Todos</option>
-        <option value="Cancelado">Cancelado</option>
-        <option value="Andamento">Andamento</option>
-        <option value="Concluido">Concluído</option>
-        {/* Adicione mais opções conforme necessário */}
-      </select>
-      </div>
+
       {/* Input para a barra de busca de nome e responsável */}
       <div className='filtro-projeto-responsavel'>
-      {/* <label>Pesquisar por Projeto/Responsável:</label> */}
-      <input
-        type="text"
-        placeholder="Digite o Projeto ou responsável"
-        value={filtroTermo}
-        onChange={(e) => setFiltroTermo(e.target.value)}
-      />
-        </div>
+        <p>Filtre por Projeto ou Responsável</p>
+        {/* <label>Pesquisar por Projeto/Responsável:</label> */}
+        <input
+          type="text"
+          placeholder="Digite o Projeto ou responsável"
+          value={filtroTermo}
+          onChange={(e) => setFiltroTermo(e.target.value)}
+        />
+      </div>
+      <div className='filtro-status-projetos'>
+        <label>Filtrar por Status:</label>
+        <select
+          value={filtroStatus}
+          onChange={(e) => setFiltroStatus(e.target.value)}
+        >
+          <option value="">Todos</option>
+          <option value="Cancelado">Cancelado</option>
+          <option value="Andamento">Andamento</option>
+          <option value="Concluido">Concluído</option>
+          {/* Adicione mais opções conforme necessário */}
+        </select>
+      </div>
       {/* Tabela de dados filtrados */}
-      <table>
-        <thead>
+      <table className='tabela-geral-projetos'>
+        <thead className='header-tabela-projetos'>
           <tr>
             <th>ID</th>
             {/* <th>Grupo</th> */}
@@ -104,14 +114,14 @@ export default function DesenvolvedorDemandas() {
             <th>Responsável</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className='corpo-tabela-projetos'>
           {dadosFiltrados.map(item => (
             <tr key={item.id}>
               <td>{item.id}</td>
               {/* <td>{item.grupo}</td> */}
               <td>{item.projeto}</td>
               <td>{item.cronograma}</td>
-               <td className={getStatusClassName(item.status)}>{item.status}</td>
+              <td className={getStatusClassName(item.status)}>{item.status}</td>
               <td>{item.responsavel}</td>
             </tr>
           ))}

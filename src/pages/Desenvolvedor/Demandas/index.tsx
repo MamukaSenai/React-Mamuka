@@ -1,197 +1,128 @@
-// src/components/DesenvolvedorDemandas.tsx
-import './style.css'
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-
+import './style.css';
+import React, { useState } from 'react';
 
 interface UserData {
   id: number;
-  grupo: string;
-  nome: string;
+//   grupo: string;
+  projeto: string;
   cronograma: string;
   status: string;
   responsavel: string;
 }
 
 export default function DesenvolvedorDemandas() {
-  const [userData, setUserData] = useState<UserData[]>([]);
+  const [filtroStatus, setFiltroStatus] = useState('');
+  const [filtroTermo, setFiltroTermo] = useState('');
 
-  useEffect(() => {
-    // Substitua a URL da API pela sua
-    axios.get('https://api.example.com/demandas')
-      .then(response => {
-        setUserData(response.data);
-      })
-      .catch(error => {
-        console.error('Erro ao obter dados da API:', error);
-      });
-  }, []);
+  const getStatusClassName = (status: string) => {
+    switch (status.toLowerCase()) {
+      case 'cancelado':
+        return 'status-cancelado';
+      case 'andamento':
+        return 'status-andamento';
+      case 'concluido':
+        return 'status-concluido';
+      default:
+        return ''; // Adicione mais casos conforme necessário
+    }
+  };
+  // Dados fixos
+  const dados: UserData[] = [
+    {
+      id: 1,
+    //   grupo: 'testestestestestestestes',
+      projeto: 'Projeto teste',
+      cronograma: '02/06/2025',
+      status: 'Cancelado',
+      responsavel: 'Roberto',
+    },
+    {
+      id: 2,
+    //   grupo: 'testestestestestestestes',
+      projeto: 'Projeto 01',
+      cronograma: '02/06/2025',
+      status: 'Andamento',
+      responsavel: 'Andre',
+    },
+    {
+        id: 3,
+        // grupo: 'testestestestestestestes',
+        projeto: 'Projeto 04',
+        cronograma: '02/06/2025',
+        status: 'Concluido',
+        responsavel: 'Andre',
+      },
+      {
+        id: 4,
+        // grupo: 'testestestestestestestes',
+        projeto: 'Projeto 05',
+        cronograma: '02/06/2023',
+        status: 'Concluido',
+        responsavel: 'Jose',
+      },
+    // ... outros dados aqui
+  ];
+
+  // Função para aplicar os filtros
+  const filtrarDados = () => {
+    return dados.filter(item =>
+      item.status.toLowerCase().includes(filtroStatus.toLowerCase()) &&
+      (item.projeto.toLowerCase().includes(filtroTermo.toLowerCase()) ||
+       item.responsavel.toLowerCase().includes(filtroTermo.toLowerCase()))
+    );
+  };
+
+  const dadosFiltrados = filtrarDados();
 
   return (
     <div>
-      {/* <h2>Tabela de Demandas</h2> */}
-      <table>
-        <thead>
+      {/* Input para o filtro de status */}
+      <div className='filtro-status-tarefa'>
+      {/* <label>Filtrar por Status:</label>
+      <select
+        value={filtroStatus}
+        onChange={(e) => setFiltroStatus(e.target.value)}
+      >
+        <option value="">Todos</option>
+        <option value="Cancelado">Cancelado</option>
+        <option value="Andamento">Andamento</option>
+        <option value="Concluido">Concluído</option> */}
+        {/* Adicione mais opções conforme necessário */}
+      {/* </select> */}
+      </div>
+      {/* Input para a barra de busca de nome e responsável */}
+      <div className='filtro-tarefa-responsavel'>
+      {/* <label>Pesquisar por Projeto/Responsável:</label> */}
+      {/* <input
+        type="text"
+        placeholder="Digite o Projeto ou responsável"
+        value={filtroTermo}
+        onChange={(e) => setFiltroTermo(e.target.value)}
+      /> */}
+        </div>
+      {/* Tabela de dados filtrados */}
+      <table className='tabela-geral-tarefa'>
+        <thead className='header-tabela-tarefa'>
           <tr>
             <th>ID</th>
-            <th>Grupo</th>
+            {/* <th>Grupo</th> */}
             <th>Projeto</th>
             <th>Cronograma</th>
             <th>Status</th>
             <th>Responsável</th>
           </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td>
-                    1230320413
-                </td>
-                <td>
-                    testestestestestestestes
-                </td>
-                <td>
-                Projeto 01
-                </td>
-                <td>
-                    02/06/2025
-                </td>
-                <td className='status-cancelado'>
-                    Cancelado
-                </td>
-                <td>
-                    Roberto
-                </td>
+        <tbody className='corpo-tabela-tarefa'>
+          {dadosFiltrados.map(item => (
+            <tr key={item.id}>
+              <td>{item.id}</td>
+              {/* <td>{item.grupo}</td> */}
+              <td>{item.projeto}</td>
+              <td>{item.cronograma}</td>
+               <td className={getStatusClassName(item.status)}>{item.status}</td>
+              <td>{item.responsavel}</td>
             </tr>
-            <tr>
-                <td>
-                    1230320413
-                </td>
-                <td>
-                    testestestestestestestes
-                </td>
-                <td>
-                Projeto 02
-                </td>
-                <td>
-                    02/06/2025
-                </td>
-                <td>
-                    Andamento
-                </td>
-                <td>
-                    Roberto
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    1230320413
-                </td>
-                <td>
-                    testestestestestestestestestes
-                </td>
-                <td>
-                Projeto 03
-                </td>
-                <td>
-                    02/06/2025
-                </td>
-                <td>
-                    Andamento
-                </td>
-                <td>
-                    Roberto
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    1230320413
-                </td>
-                <td>
-                    testes
-                </td>
-                <td>
-                Projeto 04
-                </td>
-                <td>
-                    02/06/2025
-                </td>
-                <td>
-                    Andamento
-                </td>
-                <td>
-                    Roberto
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    1230320413
-                </td>
-                <td>
-                    testes
-                </td>
-                <td>
-                Projeto 05
-                </td>
-                <td>
-                    02/06/2025
-                </td>
-                <td className='status-concluido'>
-                    Concluido
-                </td>
-                <td>
-                    Roberto
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    1230320413
-                </td>
-                <td>
-                    testes
-                </td>
-                <td>
-                Projeto 06
-                </td>
-                <td>
-                    02/06/2025
-                </td>
-                <td>
-                    Andamento
-                </td>
-                <td>
-                    Roberto
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    1230320413
-                </td>
-                <td>
-                    testes
-                </td>
-                <td>
-                Projeto 07
-                </td>
-                <td>
-                    02/06/2025
-                </td>
-                <td className='status-andamento'>
-                    Andamento
-                </td>
-                <td>
-                    Roberto
-                </td>
-            </tr>
-          {/* {userData.map(user => (
-            <tr key={user.id}>
-              <td>{user.id}</td>
-              <td>{user.grupo}</td>
-              <td>{user.nome}</td>
-              <td>{user.cronograma}</td>
-              <td>{user.status}</td>
-              <td>{user.responsavel}</td>
-            </tr>
-          ))} */}
+          ))}
         </tbody>
       </table>
     </div>
