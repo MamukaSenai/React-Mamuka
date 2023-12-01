@@ -35,7 +35,7 @@ export default function DesenvolvedorDemandas() {
           <tr>
             <th>ID</th>
             <th>Grupo</th>
-            <th>Nome</th>
+            <th>Projeto</th>
             <th>Cronograma</th>
             <th>Status</th>
             <th>Responsável</th>
@@ -50,7 +50,7 @@ export default function DesenvolvedorDemandas() {
                     testestestestestestestes
                 </td>
                 <td>
-                    Jose
+                Projeto 01
                 </td>
                 <td>
                     02/06/2025
@@ -70,7 +70,7 @@ export default function DesenvolvedorDemandas() {
                     testestestestestestestes
                 </td>
                 <td>
-                    Jose
+                Projeto 02
                 </td>
                 <td>
                     02/06/2025
@@ -90,7 +90,7 @@ export default function DesenvolvedorDemandas() {
                     testestestestestestestestestes
                 </td>
                 <td>
-                    Jose
+                Projeto 03
                 </td>
                 <td>
                     02/06/2025
@@ -110,7 +110,7 @@ export default function DesenvolvedorDemandas() {
                     testes
                 </td>
                 <td>
-                    Jose
+                Projeto 04
                 </td>
                 <td>
                     02/06/2025
@@ -130,7 +130,7 @@ export default function DesenvolvedorDemandas() {
                     testes
                 </td>
                 <td>
-                    Jose
+                Projeto 05
                 </td>
                 <td>
                     02/06/2025
@@ -150,7 +150,7 @@ export default function DesenvolvedorDemandas() {
                     testes
                 </td>
                 <td>
-                    Jose
+                Projeto 06
                 </td>
                 <td>
                     02/06/2025
@@ -170,7 +170,7 @@ export default function DesenvolvedorDemandas() {
                     testes
                 </td>
                 <td>
-                    Jose
+                Projeto 07
                 </td>
                 <td>
                     02/06/2025
