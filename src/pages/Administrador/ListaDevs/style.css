@@ -3,7 +3,7 @@ main#lista-devs {
     /* background-image:
         linear-gradient(180deg, #060821 0%, #06082120 25%, #0608218f 80%, #060821 100%),
         url("../../assets/img/background_login.png"); */
-    background-color: var(--cinzaclaro);  
+    /* background-color: var(--cinzaclaro); */
     min-height: calc(100vh - 339px);
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,24 +21,31 @@ main#lista-devs {
 .lista_devs_conteudo {
     width: 100%;
     max-width: 900px;
-    
-    padding: 10vh ;
+
+    padding: 10vh;
     margin-top: 6vh;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     background: linear-gradient(114.61deg, #ffffff0d 1.08%, #ffffff1e 99.26%);
     box-shadow: 30px 30px 60px #00000080;
-    border: 1px solid #ffffffcc;
-    border-radius: 80px;
+    border-top: 10px solid var(--azulClaro);
+    border-bottom: 10px solid var(--azulClaro);
+    border-left: 2px solid var(--cinzaclaro);
+    border-right: 2px solid var(--cinzaclaro);
+    border-radius: 10px;
+
+    /* border: 1px solid #ffffffcc;
+    border-radius: 80px; */
     backdrop-filter: blur(10px);
-    color: var(--branco);
+    /* color: var(--branco); */
 }
 
 #lista-devs h1 {
     /* font-family: var(--font1); */
+    color: var(--cinzaclaro);
     font-size: 50px;
     text-align: center;
 }
@@ -47,7 +54,7 @@ main#lista-devs {
     margin: 20px auto;
     width: 80%;
     height: 4px;
-    background-color: var(--rosa);
+    background-color: var(--azulClaro);
     border: none;
     border-radius: 50%;
 }
@@ -56,6 +63,7 @@ main#lista-devs {
     width: 85%;
     padding: 20px 0;
 }
+
 /* 
 .wrapper_lista:checked~{
 
@@ -79,6 +87,7 @@ main#lista-devs {
 
 .wrapper_form label {
     /* font-family: var(--font2); */
+    color: var(--cinzaclaro);
     text-transform: capitalize;
     font-size: 28px;
 }
@@ -95,8 +104,8 @@ main#lista-devs {
     border-radius: 20px;
 
     background: linear-gradient(136deg, #ffffff1a 0%, #ffffff0b 100%);
-    backdrop-filter: blur(15px);    
-    box-shadow: 30px 30px 60px 0px #00000080;
+    backdrop-filter: blur(15px);
+    /* box-shadow: 30px 30px 60px 0px #00000080; */
 
     font-size: 16px;
     color: white;
@@ -111,13 +120,15 @@ main#lista-devs {
     width: 30%;
 
     border: 4px solid white;
-    border-radius: 30%;
+    border-radius: 10px;
     padding-left: 4%;
     padding-right: 5%;
     margin-left: 2%;
 
     background-color: transparent;
-    color: white;
+    color: var(--branco);
+    background-color: var(--azulescuro);
+    /* color: white; */
     /* font-family: var(--font1); */
     text-transform: uppercase;
 }
@@ -147,7 +158,7 @@ main#lista-devs {
     height: 70px;
     width: 85%;
     margin: 0 auto;
-    
+
     display: flex;
     justify-content: space-between;
 
