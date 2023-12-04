@@ -7,7 +7,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 50px 0 100px 0;
-    background-color: var(--cinzaclaro);
+    /*background-color: var(--cinzaclaro);*/
 }
 
 .container_login {
@@ -19,16 +19,16 @@
 .login_conteudo {
     background: linear-gradient(114.61deg, #ffffff0d 1.08%, #ffffff1e 99.26%);
     box-shadow: 30px 30px 60px #00000080;
-    border: 1px solid #ffffffcc;
+    border: 1px solid var(--cinzaclaro);
     backdrop-filter: blur(10px);
-    border-radius: 80px;
+    border-radius: 20px;
     width: 100%;
     max-width: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 0;
-    color: var(--branco);
+    color: var(--cinzaclaro);
     margin-top: 6vh;
 }
 
@@ -43,7 +43,7 @@
     margin: 20px 0;
     width: 80%;
     height: 5px;
-    background-color: var(--rosa);
+    background-color: var(--azulClaro);
     border: none;
     border-radius: 50%;
 }
@@ -53,7 +53,7 @@
     max-width: 460px;
     display: flex;
     flex-direction: column;
-    font-family: var(--font2);
+    /* font-family: var(--font2);*/
 }
 
 .login_box_input {
@@ -61,6 +61,7 @@
     flex-direction: column;
     width: 100%;
     margin: 15px 0;
+    
 }
 
 #main_login label {
@@ -72,43 +73,41 @@
     padding: 8px;
     border-radius: 20px;
     border: 1px solid #909090;
-    background: linear-gradient(136deg, #ffffff1a 0%, #ffffff0b 100%);
-    box-shadow: 30px 30px 60px 0px #00000080;
+    
+    /*box-shadow: 30px 30px 60px 0px #00000080;*/
     backdrop-filter: blur(15px);
-    color: var(--branco);
     font-size: 16px;
 }
 
 .login_box_input>input:focus-visible {
-    outline: 2px solid var(--rosa);
+    outline: 2px solid var(--cinzaclaro);
 }
 
 /* Cor de fundo do autocomplete */
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px #524569 inset;
+    -webkit-box-shadow: 0 0 0 30px #ffffff inset;
 }
 
 /* Cor do texto do autocomplete */
 input:-webkit-autofill {
-    -webkit-text-fill-color: var(--branco);
+    -webkit-text-fill-color: var(--cinzaclaro);
 }
 
 .login_box_input>input::placeholder {
-    color: #ffffff80;
     font-size: 15px;
 }
 
 .login_botao {
     align-self: center;
-    font-family: var(--font1);
+    /*font-family: var(--font1);*/
     color: var(--branco);
     text-transform: uppercase;
     font-size: 18px;
     text-decoration: none;
-    border-radius: 30%;
-    box-shadow: 15px 15px 30px #00000066;
+    border-radius: 10px;
+    /* box-shadow: 15px 15px 30px #00000066; */
     padding: 7px 40px;
-    background: linear-gradient(0deg, #00000040, rgba(0, 0, 0, 0.25)), linear-gradient(92.23deg, #FF398F -25.96%, #17BBFF 126.83%);
+    background-color: var(--azulescuro);
     border: none;
     margin-top: 25px;
     cursor: pointer;

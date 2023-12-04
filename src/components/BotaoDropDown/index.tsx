@@ -60,7 +60,7 @@ export default function BotaoDropDown() {
             <div className="menuTesteConteudo">
             <Menu.Item>
               {({ active }) => (
-                <Link to="admpessoais">
+                <Link to="cadastro/usuario">
                   <a 
                     href="#"
                     className={classNames(
@@ -76,7 +76,7 @@ export default function BotaoDropDown() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Link to="admconsulta">
+                <Link to="listadevs">
                     <a
                     href="#"
                     className={classNames(
