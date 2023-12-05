@@ -107,6 +107,18 @@
       "tipoUsuario": "ADM",
       "user_img": "",
       "id": 8
+    },
+    {
+      "email": "vilma@mail.com",
+      "password": "$2a$10$g3f5yUtuD9lm86Aafajsgep3DOOgO3WI0cg.S3i9kURCImH96gr9O",
+      "nome": "Vilma",
+      "tipoUsuario": "ADM",
+      "cpf": "12345678912",
+      "nascimento": "1972-09-01",
+      "departamento": "TI",
+      "cargo": "Gerencia",
+      "user_img": "",
+      "id": 9
     }
   ],
   "servicos": [
