@@ -24,6 +24,10 @@ export default function CadastroUsuario(props: any) {
     const [nome, setNome] = useState<string>("");
     const [email, setEmail] = useState<string>("");
     const [senha, setSenha] = useState<string>("");
+    const [cpf, setCpf] = useState<string>("");
+    const [nascimento, setNascimento] = useState<string>("");
+    const [departamento, setDepartamento] = useState<string>("");
+    const [cargo, setCargo] = useState<string>("");
 
     const [tipoUsuario, setTipoUsuario] = useState<string>("");//ajuste no input do select
 
@@ -45,44 +49,49 @@ export default function CadastroUsuario(props: any) {
         formData.append("email", email);
         formData.append("password", senha);
         formData.append("tipoUsuario", tipoUsuario);
+
+        formData.append("cpf", cpf);
+        formData.append("nascimento", nascimento);
+        formData.append("departamento", departamento);
+        formData.append("cargo", cargo);
         //const [ listaUsuarios, setListasUsuarios] = useState <String[]>([])
 
         //formData.append("hardSkills", JSON.stringify(usuariosSelecionados))
         //formData.append("tipoUsuario", JSON.stringify(usuariosSelecionados))
 
 
-        api.post("users", formData).then( (response) => {
+        api.post("users", formData).then((response) => {
             console.log(response)
             alert("Usuário criado com sucesso! 😊🤗")
             // Navegação para login
-        }).catch( (error) => {
+        }).catch((error) => {
             console.log(error)
         })
     }
 
-   /*function adicionarUsuario() {
-        //verifica o valor do state select
-        if (select === "") {
-            //se for igual a string vazia, exibe uma mensagem
-            alert("Selecione um tipo de usuário para adicionar");
-        } else {
-            //se não, verifica se no state usuariosSelecionados existe a skill que o usuario selecionou
-            if (usuariosSelecionados.includes(select)) {
-                //se existir, exibe uma mensagem
-                alert("Esse tipo de usuário já foi selecionado");
-            }
-            else {
-                //se não existir, a variavel novaListaUsuariosSelecionadas cria uma cópia do valor do state usuariosSelecionados
-                let novaListaUsuariosSelecionadas = [...usuariosSelecionados];
-
-                //E adiciona a skill, que foi selecionada pelo usuário
-                novaListaUsuariosSelecionadas.push(select);
-
-                //Atualiza o valor do state usuariosSelecionados
-                setUsuariosSelecionadao(novaListaUsuariosSelecionadas);
-            }
-        }
-    }*/
+    /*function adicionarUsuario() {
+         //verifica o valor do state select
+         if (select === "") {
+             //se for igual a string vazia, exibe uma mensagem
+             alert("Selecione um tipo de usuário para adicionar");
+         } else {
+             //se não, verifica se no state usuariosSelecionados existe a skill que o usuario selecionou
+             if (usuariosSelecionados.includes(select)) {
+                 //se existir, exibe uma mensagem
+                 alert("Esse tipo de usuário já foi selecionado");
+             }
+             else {
+                 //se não existir, a variavel novaListaUsuariosSelecionadas cria uma cópia do valor do state usuariosSelecionados
+                 let novaListaUsuariosSelecionadas = [...usuariosSelecionados];
+ 
+                 //E adiciona a skill, que foi selecionada pelo usuário
+                 novaListaUsuariosSelecionadas.push(select);
+ 
+                 //Atualiza o valor do state usuariosSelecionados
+                 setUsuariosSelecionadao(novaListaUsuariosSelecionadas);
+             }
+         }
+     }*/
     /*
     function excluirUsuario(skill: string) {
 
@@ -92,7 +101,7 @@ export default function CadastroUsuario(props: any) {
         //Atualiza o valor do state usuariosSelecionados, com o valor da variavel novaListaUsuariosSelecionadas 
         setUsuariosSelecionadao(novaListaUsuariosSelecionadas);
     }*/
-   
+
 
     return (
         <main className="main_cadastro">
@@ -100,48 +109,94 @@ export default function CadastroUsuario(props: any) {
                 <div className="cad_conteudo">
                     <h1>Cadastro</h1>
                     <hr />
-                    <form onSubmit={ cadastrarUsuario } className="cad_formulario" method="POST">
-                        <div className="cad_box_input">
-                            <label htmlFor="nome">Nome Completo:</label>
-                            <input
-                                type="text"
-                                id="nome"
-                                onChange={ (event) => { setNome(event.target.value) } }
-                                placeholder="Digite aqui seu nome:"
-                                required
-                            />
+                    <form onSubmit={cadastrarUsuario} className="cad_formulario" method="POST">
+                        <div className="card_form">
+                            <div className="cad_box_input">
+                                <label htmlFor="nome">Nome Completo:</label>
+                                <input
+                                    type="text"
+                                    id="nome"
+                                    onChange={(event) => { setNome(event.target.value) }}
+                                    placeholder="Digite aqui seu nome:"
+                                    required
+                                />
+                            </div>
+                            <div className="cad_box_input">
+                                <label htmlFor="email">E-mail:</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    onChange={(event) => { setEmail(event.target.value) }}
+                                    placeholder="Digite aqui seu e-mail:"
+                                    required
+                                />
+                            </div>
+                            <div className="cad_box_input">
+                                <label htmlFor="senha">Senha:</label>
+                                <input
+                                    type="password"
+                                    id="senha"
+                                    onChange={(event) => { setSenha(event.target.value) }}
+                                    placeholder="Digite aqui sua senha:"
+                                    required
+                                />
+                            </div>
+                            <div className="cad_box_input">
+                                <label htmlFor="tipoUsuario">Tipo de Usuário:</label>
+                                <input
+                                    type="text"
+                                    id="tipoUsuario"
+                                    onChange={(event) => { setTipoUsuario(event.target.value) }}
+                                    placeholder="Digite o tipo Usuário:"
+                                    required
+                                />
+                            </div>
                         </div>
-                        <div className="cad_box_input">
-                            <label htmlFor="email">E-mail:</label>
-                            <input
-                                type="email"
-                                id="email"
-                                onChange={ (event) => { setEmail(event.target.value) } }
-                                placeholder="Digite aqui seu e-mail:"
-                                required
-                            />
+
+                        <div className="card_form">
+                            <div className="cad_box_input">
+                                <label htmlFor="cpf">CPF:</label>
+                                <input
+                                    type="text"
+                                    id="cpf"
+                                    onChange={(event) => { setCpf(event.target.value) }}
+                                    placeholder="Digite aqui seu cpf:"
+                                    required
+                                />
+                            </div>
+                            <div className="cad_box_input">
+                                <label htmlFor="nascimento">Data de nascimento:</label>
+                                <input
+                                    type="date"
+                                    id="nascimento"
+                                    onChange={(event) => { setNascimento(event.target.value) }}
+                                    placeholder="Digite aqui data de nascimento:"
+                                    required
+                                />
+                            </div>
+                            <div className="cad_box_input">
+                                <label htmlFor="departamento">Departamento:</label>
+                                <input
+                                    type="text"
+                                    id="departamento"
+                                    onChange={(event) => { setDepartamento(event.target.value) }}
+                                    placeholder="Digite aqui seu departamento:"
+                                    required
+                                />
+                            </div>
+                            <div className="cad_box_input">
+                                <label htmlFor="cargo">Cargo:</label>
+                                <input
+                                    type="text"
+                                    id="cargo"
+                                    onChange={(event) => { setCargo(event.target.value) }}
+                                    placeholder="Digite aqui seu cargo:"
+                                    required
+                                />
+                            </div>
                         </div>
-                        <div className="cad_box_input">
-                            <label htmlFor="senha">Senha:</label>
-                            <input
-                                type="password"
-                                id="senha"
-                                onChange={ (event) => { setSenha(event.target.value) } }
-                                placeholder="Digite aqui sua senha:"
-                                required
-                            />
-                        </div>
-                        <div className="cad_box_input">
-                            <label htmlFor="tipoUsuario">Tipo de Usuário:</label>
-                            <input
-                                type="text"
-                                id="tipoUsuario"
-                                onChange={ (event) => { setTipoUsuario(event.target.value) } }
-                                placeholder="Digite o tipo Usuário:"
-                                required
-                            />
-                        </div>
-                       {/* <div className="cad_box_input">
+
+                        {/* <div className="cad_box_input">
                             <label htmlFor="foto">Foto:</label>
                             /* Passar primeiro como exemplo *
                             <input
@@ -161,7 +216,7 @@ export default function CadastroUsuario(props: any) {
                             
                             <span>Desenvolvedor</span>
                         </div> */}
-                         {/*<div className="cad_box_input">
+                        {/*<div className="cad_box_input">
                                     <hr />
                                     <div className="cad_box_skills">
                                         <span>Selecione o tipo de usuário:</span>
@@ -221,7 +276,7 @@ export default function CadastroUsuario(props: any) {
                         </div>
                     */}
 
-                         {/*<div className="cad_container_checkbox">
+                        {/*<div className="cad_container_checkbox">
                                 <input
                                     className="cad_checkbox"
                                     type="checkbox"
@@ -287,9 +342,10 @@ export default function CadastroUsuario(props: any) {
                             <span>Desenvolvedor</span>
                         </div>
                         */}
+
                         
-                        <button type="submit" className="cad_botao">Cadastrar</button>
                     </form>
+                    <button type="submit" className="cad_botao">Cadastrar</button>
                 </div>
             </div>
         </main>

@@ -15,7 +15,7 @@ main#lista-devs {
     justify-content: center;
     align-items: center;
 
-    padding: 50px 0;
+    
 }
 
 .lista_devs_conteudo {
@@ -41,6 +41,7 @@ main#lista-devs {
     border-radius: 80px; */
     backdrop-filter: blur(10px);
     /* color: var(--branco); */
+    
 }
 
 #lista-devs h1 {
@@ -90,6 +91,7 @@ main#lista-devs {
     color: var(--cinzaclaro);
     text-transform: capitalize;
     font-size: 28px;
+    padding-left: 3%;
 }
 
 .campo-label input {
@@ -108,8 +110,8 @@ main#lista-devs {
     /* box-shadow: 30px 30px 60px 0px #00000080; */
 
     font-size: 16px;
-    color: white;
-    caret-color: white;
+    color: var(--cinzaclaro);
+    caret-color: var(--cinzaclaro);
 }
 
 .campo-label input:focus-visible {
@@ -145,7 +147,7 @@ main#lista-devs {
 
 .lista_devs_conteudo ul {
     list-style: none;
-    padding: 50px 0;
+    
 }
 
 .lista_devs_conteudo li {
