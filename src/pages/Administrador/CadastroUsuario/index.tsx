@@ -48,19 +48,22 @@ export default function CadastroUsuario(props: any) {
         formData.append("nome", nome);
         formData.append("email", email);
         formData.append("password", senha);
-        formData.append("tipoUsuario", tipoUsuario);
+        formData.append("tipo_usuario", tipoUsuario);
 
         formData.append("cpf", cpf);
         formData.append("nascimento", nascimento);
         formData.append("departamento", departamento);
         formData.append("cargo", cargo);
+
+
+        
         //const [ listaUsuarios, setListasUsuarios] = useState <String[]>([])
 
         //formData.append("hardSkills", JSON.stringify(usuariosSelecionados))
         //formData.append("tipoUsuario", JSON.stringify(usuariosSelecionados))
 
 
-        api.post("users", formData).then((response) => {
+        api.post("usuarios", formData).then((response) => {
             console.log(response)
             alert("Usuário criado com sucesso! 😊🤗")
             // Navegação para login
