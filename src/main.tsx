@@ -52,8 +52,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='listadevs' element={<ListaDevs />} />
         <Route path='perfil/:idUsuario' element={<PerfilUsuario />} />
         <Route path='cadastro/usuario' element={<CadastroUsuario />} />
-        <Route path='login' element={< Login />} />
-        <Route path='login2' element={< Login2 />} />
+        {/* <Route path='login' element={< Login />} /> */}
+        <Route path='login' element={< Login2 />} />
 
         {/* PAGINAS DE DEV */}
         <Route path="devdemandas" element={< DesenvolvedorDemandas />} />

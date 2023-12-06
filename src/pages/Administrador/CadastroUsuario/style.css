@@ -300,6 +300,7 @@
 }
 
 .main_cadastro .cad_botao {
+    
     align-self: center;
     /* font-family: var(--font1); */
     color: var(--branco);
@@ -314,4 +315,5 @@
     border: none;
     /* margin-top: 1%; */
     cursor: pointer;
+    margin-top: 3%;
 }

@@ -22,7 +22,7 @@ main#lista-devs {
     width: 100%;
     max-width: 900px;
 
-    padding: 10vh;
+    padding: 10vh 0;
     margin-top: 6vh;
 
     display: flex;
@@ -92,11 +92,12 @@ main#lista-devs {
     text-transform: capitalize;
     font-size: 28px;
     padding-left: 3%;
+    padding-bottom: 3%;
 }
 
 .campo-label input {
 
-    height: 37px;
+    height: 10vh;
     /* width: 90%; */
 
 
@@ -125,7 +126,7 @@ main#lista-devs {
     border-radius: 10px;
     padding-left: 4%;
     padding-right: 5%;
-    margin-left: 2%;
+    
 
     background-color: transparent;
     color: var(--branco);
