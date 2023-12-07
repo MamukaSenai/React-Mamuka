@@ -44,6 +44,9 @@ export default function CadastroUsuario(props: any) {
     function cadastrarUsuario(event: any) {
         event.preventDefault();
 
+        console.log("odosdnfisdnfisdjfn");
+        
+
         //só utiliza formData quando tiver arquivos 
         const formData = new FormData();
 
@@ -52,7 +55,7 @@ export default function CadastroUsuario(props: any) {
         formData.append("tipo_usuario", tipoUsuario);
         formData.append("nome", nome);
         formData.append("cpf", cpf);
-        formData.append("data_nascimento", nascimento);
+        formData.append("data_nascimento", new Date(nascimento));
         formData.append("status_atividade", statusAtividade);
         formData.append("departamento", departamento);
         formData.append("responsavel", responsavel);
@@ -68,6 +71,8 @@ export default function CadastroUsuario(props: any) {
         //formData.append("hardSkills", JSON.stringify(usuariosSelecionados))
         //formData.append("tipoUsuario", JSON.stringify(usuariosSelecionados))
 
+        console.log("chamadaaa API");
+        
 
         api.post("usuarios", formData).then((response) => {
             console.log(response)
@@ -383,8 +388,8 @@ export default function CadastroUsuario(props: any) {
                         */}
 
                         
-                    </form>
                     <button type="submit" className="cad_botao">Cadastrar</button>
+                    </form>
                 </div>
             </div>
         </main>

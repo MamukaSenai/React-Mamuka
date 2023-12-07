@@ -60,112 +60,78 @@ export default function BotaoDropDown() {
             <div className="menuTesteConteudo">
             <Menu.Item>
               {({ active }) => (
-                <Link to="cadastro/usuario">
-                  <a 
-                    href="#"
-                    className={classNames(
-                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                      'block px-4 py-2 text-sm'
-                    )}
-                  >
-                    Cadastro
-                  </a>
+                <Link to="cadastro/usuario" 
+                className={classNames(
+                  active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                  'block px-4 py-2 text-sm')} >Cadastro
+                  
                 </Link>
                 
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Link to="listadevs">
-                    <a
-                    href="#"
-                    className={classNames(
-                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                      'block px-4 py-2 text-sm'
-                    )}
-                  >
-                    Consulta
-                  </a>
+                <Link to="listadevs"  
+                className={classNames(
+                  active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                  'block px-4 py-2 text-sm'
+                )}>Consulta
+                  
                 </Link>
 
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Link to="dashboard">
-                  <a
-                    href="#"
-                    className={classNames(
-                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                      'block px-4 py-2 text-sm'
-                    )}
-                  >
-                    Dashboard
-                  </a>
+                <Link to="dashboard"  
+                className={classNames(
+                  active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                  'block px-4 py-2 text-sm'
+                )}>Dashboard
                 </Link>
                 
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Link to="devdemandas">
-                  <a
-                    href="#"
-                    className={classNames(
-                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                      'block px-4 py-2 text-sm'
-                    )}
-                  >
-                    Demandas
-                  </a>
+                <Link to="devdemandas"  
+                className={classNames(
+                  active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                  'block px-4 py-2 text-sm'
+                )}>Demandas
                 </Link>
                 
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Link to="gestorprojetos">
-                  <a
-                    href="#"
-                    className={classNames(
-                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                      'block px-4 py-2 text-sm'
-                    )}
-                  >
-                    Projetos
-                  </a>
+                <Link to="gestorprojetos" 
+                className={classNames(
+                  active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                  'block px-4 py-2 text-sm'
+                )}>Projetos
                 </Link>
                 
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Link to="gestorcriarprojetos">
-                  <a
-                    href="#"
-                    className={classNames(
-                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                      'block px-4 py-2 text-sm'
-                    )}
-                  >
-                    Criar Projetos
-                  </a>
+                <Link to="gestorcriarprojetos"
+                className={classNames(
+                  active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                  'block px-4 py-2 text-sm'
+                )}>Criar Projetos
                 </Link>
                 
               )}
             </Menu.Item>        
             <Menu.Item>
               {({ active }) => (
-                <Link to="gestorcriardemandas">
-                  <a
-                    href=""
-                    className={classNames(
-                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                      'block px-4 py-2 text-sm'
-                    )}
-                  >
-                    Criar Demandas
-                  </a>
+                <Link to="gestorcriardemandas"
+                className={classNames(
+                  active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                  'block px-4 py-2 text-sm'
+                )}>Criar Demandas
                 </Link>
                 
               )}
