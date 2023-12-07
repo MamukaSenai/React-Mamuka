@@ -20,16 +20,19 @@ export default function CadastroUsuario(props: any) {
         ]
          );*/
 
-
+    const [tipoUsuario, setTipoUsuario] = useState<string>("");//ajuste no input do select
     const [nome, setNome] = useState<string>("");
-    const [email, setEmail] = useState<string>("");
-    const [senha, setSenha] = useState<string>("");
     const [cpf, setCpf] = useState<string>("");
     const [nascimento, setNascimento] = useState<string>("");
+    const [statusAtividade, setStatusAtividade] = useState<string>("");
     const [departamento, setDepartamento] = useState<string>("");
+    const [responsavel, setResponsavel] = useState<string>("");
+    const [perfil, setPerfil] = useState<string>("");
     const [cargo, setCargo] = useState<string>("");
 
-    const [tipoUsuario, setTipoUsuario] = useState<string>("");//ajuste no input do select
+    const [email, setEmail] = useState<string>("");
+    const [senha, setSenha] = useState<string>("");
+
 
 
 
@@ -45,16 +48,19 @@ export default function CadastroUsuario(props: any) {
         const formData = new FormData();
 
         //A chave da função do append() precisa ser o mesmo nome do atributo que api retorna
-        formData.append("nome", nome);
-        formData.append("email", email);
-        formData.append("password", senha);
+       
         formData.append("tipo_usuario", tipoUsuario);
-
+        formData.append("nome", nome);
         formData.append("cpf", cpf);
-        formData.append("nascimento", nascimento);
+        formData.append("data_nascimento", nascimento);
+        formData.append("status_atividade", statusAtividade);
         formData.append("departamento", departamento);
-        formData.append("cargo", cargo);
+        formData.append("responsavel", responsavel);
+        formData.append("perfil", perfil);
 
+        formData.append("cargo", cargo);
+        formData.append("email", email);
+        formData.append("senha", senha);
 
         
         //const [ listaUsuarios, setListasUsuarios] = useState <String[]>([])
@@ -145,12 +151,22 @@ export default function CadastroUsuario(props: any) {
                                 />
                             </div>
                             <div className="cad_box_input">
-                                <label htmlFor="tipoUsuario">Tipo de Usuário:</label>
+                                <label htmlFor="tipo_usuario">Tipo de Usuário:</label>
                                 <input
                                     type="text"
-                                    id="tipoUsuario"
+                                    id="tipo_usuario"
                                     onChange={(event) => { setTipoUsuario(event.target.value) }}
                                     placeholder="Digite o tipo Usuário:"
+                                    required
+                                />
+                            </div>
+                            <div className="cad_box_input">
+                                <label htmlFor="perfil">Perfil:</label>
+                                <input
+                                    type="text"
+                                    id="perfil"
+                                    onChange={(event) => { setPerfil(event.target.value) }}
+                                    placeholder="Digite seu Perfil:"
                                     required
                                 />
                             </div>
@@ -168,10 +184,10 @@ export default function CadastroUsuario(props: any) {
                                 />
                             </div>
                             <div className="cad_box_input">
-                                <label htmlFor="nascimento">Data de nascimento:</label>
+                                <label htmlFor="data_nascimento">Data de nascimento:</label>
                                 <input
                                     type="date"
-                                    id="nascimento"
+                                    id="data_nascimento"
                                     onChange={(event) => { setNascimento(event.target.value) }}
                                     placeholder="Digite aqui data de nascimento:"
                                     required
@@ -194,6 +210,26 @@ export default function CadastroUsuario(props: any) {
                                     id="cargo"
                                     onChange={(event) => { setCargo(event.target.value) }}
                                     placeholder="Digite aqui seu cargo:"
+                                    required
+                                />
+                            </div>
+                            <div className="cad_box_input">
+                                <label htmlFor="responsavel">Responsável:</label>
+                                <input
+                                    type="text"
+                                    id="responsavel"
+                                    onChange={(event) => { setResponsavel(event.target.value) }}
+                                    placeholder="Digite aqui seu responsável:"
+                                    required
+                                />
+                            </div>
+                            <div className="cad_box_input">
+                                <label htmlFor="status_atividade">Status:</label>
+                                <input
+                                    type="text"
+                                    id="status_atividade"
+                                    onChange={(event) => { setStatusAtividade(event.target.value) }}
+                                    placeholder="Digite aqui o status:"
                                     required
                                 />
                             </div>
