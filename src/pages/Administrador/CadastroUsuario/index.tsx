@@ -55,7 +55,8 @@ export default function CadastroUsuario(props: any) {
         formData.append("tipo_usuario", tipoUsuario);
         formData.append("nome", nome);
         formData.append("cpf", cpf);
-        formData.append("data_nascimento", new Date(nascimento));
+        
+        formData.append("data_nascimento", nascimento);
         formData.append("status_atividade", statusAtividade);
         formData.append("departamento", departamento);
         formData.append("responsavel", responsavel);
