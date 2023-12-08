@@ -56,6 +56,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         {/* <Route path='login' element={< Login />} /> */}
         <Route path='login' element={< Login2 />} />
         <Route path='visualizartarefa' element={< VisualizarTarefa />} />
+        
 
         {/* PAGINAS DE DEV */}
         <Route path="devdemandas" element={< DesenvolvedorDemandas />} />

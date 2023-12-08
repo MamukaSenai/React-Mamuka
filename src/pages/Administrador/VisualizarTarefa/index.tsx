@@ -29,12 +29,12 @@ function VisualizarTarefa() {
     useEffect(() => {
         document.title = "Perfil de" + nomeTarefa + " - VSConnect"
 
-        buscarUsuarioPorId()
+        buscarTarefaPorId()
     }, [])
 
 
 
-    function buscarUsuarioPorId() {
+    function buscarTarefaPorId() {
 
         api.get("tarefas" + idTarefa).then((response: any) => {// exiba usuario
             setNomeTarefa(response.data.nomeTarefa)
