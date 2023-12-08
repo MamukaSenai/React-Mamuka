@@ -12,8 +12,13 @@
     color: #fff;
     font-weight: 900;
     font-family: var(--font);
+<<<<<<< HEAD
     padding: 40px;
     
+=======
+    /* padding-left: 20px;
+    padding-right: 20px; */ 
+>>>>>>> d7a4e4dab0c9ba77b7000e172ee3e1a8967601f2
 }
 
 #conteudoMenu {
@@ -75,3 +80,23 @@
     
 }
 
+
+
+
+
+/* Quando a resolução for menor que 1200px esconde o campo de busca */
+@media screen and (max-width: 1200px) 
+{
+    #menuGeral {
+        padding-left: 50px;
+        padding-right: 50px; 
+    }
+
+    .menuTesteConteudo {
+        align-items: center;
+        text-align: center; 
+        padding-left: 50px;
+        padding-right: 50px; 
+    }
+
+}

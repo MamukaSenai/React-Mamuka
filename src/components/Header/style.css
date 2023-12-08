@@ -66,3 +66,14 @@
     color: var(--branco);
     text-decoration: none;
 }
+
+
+
+/* Quando a resolução for menor que 1200px esconde o campo de busca */
+@media screen and (max-width: 800px) 
+{
+    .a {
+        display: none;
+    }
+
+}
