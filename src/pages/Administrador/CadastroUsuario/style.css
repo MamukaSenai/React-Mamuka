@@ -29,11 +29,11 @@
     backdrop-filter: blur(10px);
     border-radius: 20px;
     width: 100%;
-    max-width: 700px;
+    max-width: 783px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 21px 30px;
+    padding: 21px 0;
     color: var(--cinzaclaro);
     margin: 3% 0;
 }
@@ -107,16 +107,19 @@
     background-color: var(--azulClaro);
 }
 
-.card_form {
+.card_box_org {
     
+    display: flex;
+    justify-content: space-between;
     
 }
 
 .main_cadastro .cad_formulario {
     width: 95%;
-    max-width: 460px;
+    max-width: 665px;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     /* font-family: var(--font2); */
 }
 
@@ -146,7 +149,7 @@
 }
 
 .main_cadastro label {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .main_cadastro .cad_box_input2>input,
@@ -159,7 +162,7 @@
     /* box-shadow: 30px 30px 60px 0px #00000080; */
     backdrop-filter: blur(15px);
     color: var(--cinzaclaro);
-    font-size: 16px;
+    font-size: 10px;
 }
 
 .main_cadastro #cad_select_skill:focus-visible,
@@ -300,7 +303,6 @@
 }
 
 .main_cadastro .cad_botao {
-    
     align-self: center;
     /* font-family: var(--font1); */
     color: var(--branco);
@@ -315,5 +317,4 @@
     border: none;
     /* margin-top: 1%; */
     cursor: pointer;
-    margin-top: 3%;
 }
