@@ -13,22 +13,21 @@ import api from "../../../utils/api"
 function VisualizarTarefa() {
 
 
-    const { idUsuario } = useParams();
+    const { idTarefa } = useParams();
 
-    const [nome, setNome] = useState<String>("")
-    const [email, setEmail] = useState<String>("")
-    const [cpf, setCpf] = useState<string>("");
-    const [nascimento, setNascimento] = useState<string>("");
-    const [departamento, setDepartamento] = useState<string>("");
-    const [cargo, setCargo] = useState<string>("");
+    const [nomeTarefa, setNomeTarefa] = useState<String>("")
+    const [statusTarefa, setStatusTarefa] = useState<string>("");
+    const [dataInicio, setDataInicio] = useState<string>("");
+    const [dataConclusao, setDataConclusao] = useState<string>("");
 
-    const [tipoUsuario, setTipoUsuario] = useState<string>("");
 
-    const [listaUsuarios, setListasUsuarios] = useState<String[]>([])
+   // const [tipoUsuario, setTipoUsuario] = useState<string>("");
+
+    //const [listaUsuarios, setListasUsuarios] = useState<String[]>([])
 
 
     useEffect(() => {
-        document.title = "Perfil de" + nome + " - VSConnect"
+        document.title = "Perfil de" + nomeTarefa + " - VSConnect"
 
         buscarUsuarioPorId()
     }, [])
@@ -37,21 +36,21 @@ function VisualizarTarefa() {
 
     function buscarUsuarioPorId() {
 
-        api.get("users/" + idUsuario).then((response: any) => {// exiba usuario
-            setNome(response.data.nome)
-            setEmail(response.data.email)
-            setCpf(response.data.cpf)
-            setNascimento(response.data.nascimento)
-            setDepartamento(response.data.departamento)
-            setCargo(response.data.cargo)
-            setTipoUsuario(response.data.tipoUsuario)
+        api.get("tarefas" + idTarefa).then((response: any) => {// exiba usuario
+            setNomeTarefa(response.data.nomeTarefa)
+            setStatusTarefa(response.data.statusTarefa)
+            setDataInicio(response.data.dataInicio)
+            setDataConclusao(response.data.dataConclusao)
+
+
+            //setTipoUsuario(response.data.tipoUsuario)
             
 
-            if (typeof response.data.tipoUsuario === "string") {
-                setListasUsuarios(JSON.parse(response.data.tipoUsuario))
-            } else {
-                setListasUsuarios(response.data.tipoUsuario)
-            }
+            // if (typeof response.data.tipoUsuario === "string") {
+            //     setListasUsuarios(JSON.parse(response.data.tipoUsuario))
+            // } else {
+            //     setListasUsuarios(response.data.tipoUsuario)
+            // }
 
             // setFoto(response.data.user_img)
 
@@ -69,26 +68,26 @@ function VisualizarTarefa() {
         <main id="main_perfilusuario">
             <div className="container container_perfil_dev">
                 <div className="perfil_dev_conteudo">
-                    <h1>{nome}</h1>
+                    <h1>{nomeTarefa}</h1>
 
                     <div className="topo_dev">
-                        {/*  <img src={"http://localhost:3000/static/" + foto} alt={"Foto de perfil de " + nome} />*/}
-                        {/* <h2> {nome}</h2> */}
+                        {/*  <img src={"http://localhost:3000/static/" + foto} alt={"Foto de perfil de " + nomeTarefa} />*/}
+                        {/* <h2> {nomeTarefa}</h2> */}
                     </div>
 
                     <div className="contato_form">
                         <div className="contato_local">
 
-                            <p>Email para contato: {email} </p>
-                            <p>Departamento: {departamento}</p>
-                            <p>Cargo: { cargo }</p>
+                            <p>Status: {statusTarefa} </p>
+                            {/* <p>Departamento: {departamento}</p>
+                            <p>Cargo: { cargo }</p> */}
 
                         </div>
 
                         <div className="contato_local">
-                            <p>CPF: { cpf }</p>
-                            <p>Nascimento: { nascimento }</p>
-                            <p>Tipo de Usuario: { tipoUsuario }</p>
+                            <p>Data de Inicio: { dataInicio }</p>
+                            <p>Data de Conclusão: { dataConclusao }</p>
+                            {/* <p>Tipo de Usuario: { tipoUsuario }</p> */}
                         </div>
                     </div>
                 </div>
