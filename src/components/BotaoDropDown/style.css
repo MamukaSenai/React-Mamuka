@@ -12,7 +12,8 @@
     color: #fff;
     font-weight: 900;
     font-family: var(--font);
-    
+    /* padding-left: 20px;
+    padding-right: 20px; */ 
 }
 
 #conteudoMenu {
@@ -71,3 +72,23 @@
     
 }
 
+
+
+
+
+/* Quando a resolução for menor que 1200px esconde o campo de busca */
+@media screen and (max-width: 1200px) 
+{
+    #menuGeral {
+        padding-left: 50px;
+        padding-right: 50px; 
+    }
+
+    .menuTesteConteudo {
+        align-items: center;
+        text-align: center; 
+        padding-left: 50px;
+        padding-right: 50px; 
+    }
+
+}
