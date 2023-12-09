@@ -1,18 +1,35 @@
 import './style.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import api from "../../../utils/api"
+import axios from 'axios';
+
+
 
 interface UserData {
   id: number;
-  //   grupo: string;
-  projeto: string;
-  cronograma: string;
-  status: string;
+  nome_projeto: string;
+  data_inicio: string;
+  data_conclusao: string;
+  status_projeto: string;
   responsavel: string;
 }
 
 export default function GestorProjetos() {
+
+  
+  const [dados, setDados] = useState<UserData[]>([]);
   const [filtroStatus, setFiltroStatus] = useState('');
   const [filtroTermo, setFiltroTermo] = useState('');
+
+  useEffect(() => {
+    api.get('/projetos')
+      .then(response => {
+        setDados(response.data);
+      })
+      .catch(error => {
+        console.error("A conexão falhou =/", error);
+      });
+  }, []);
 
   const getStatusClassName = (status: string) => {
     switch (status.toLowerCase()) {
@@ -23,51 +40,14 @@ export default function GestorProjetos() {
       case 'concluido':
         return 'status-concluido';
       default:
-        return ''; // Adicione mais casos conforme necessário
+        return '';
     }
   };
-  // Dados fixos
-  const dados: UserData[] = [
-    {
-      id: 1,
-      //   grupo: 'testestestestestestestes',
-      projeto: 'Projeto teste',
-      cronograma: '02/06/2025',
-      status: 'Cancelado',
-      responsavel: 'Roberto',
-    },
-    {
-      id: 2,
-      //   grupo: 'testestestestestestestes',
-      projeto: 'Projeto 01',
-      cronograma: '02/06/2025',
-      status: 'Andamento',
-      responsavel: 'Andre',
-    },
-    {
-      id: 3,
-      // grupo: 'testestestestestestestes',
-      projeto: 'Projeto 04',
-      cronograma: '02/06/2025',
-      status: 'Concluido',
-      responsavel: 'Andre',
-    },
-    {
-      id: 4,
-      // grupo: 'testestestestestestestes',
-      projeto: 'Projeto 05',
-      cronograma: '02/06/2023',
-      status: 'Concluido',
-      responsavel: 'Jose',
-    },
-    // ... outros dados aqui
-  ];
 
-  // Função para aplicar os filtros
   const filtrarDados = () => {
     return dados.filter(item =>
-      item.status.toLowerCase().includes(filtroStatus.toLowerCase()) &&
-      (item.projeto.toLowerCase().includes(filtroTermo.toLowerCase()) ||
+      item.status_projeto.toLowerCase().includes(filtroStatus.toLowerCase()) &&
+      (item.nome_projeto.toLowerCase().includes(filtroTermo.toLowerCase()) ||
         item.responsavel.toLowerCase().includes(filtroTermo.toLowerCase()))
     );
   };
@@ -76,12 +56,8 @@ export default function GestorProjetos() {
 
   return (
     <div>
-      {/* Input para o filtro de status */}
-
-      {/* Input para a barra de busca de nome e responsável */}
       <div className='filtro-projeto-responsavel'>
         <p>Filtre por Projeto ou Responsável</p>
-        {/* <label>Pesquisar por Projeto/Responsável:</label> */}
         <input
           type="text"
           placeholder="Digite o Projeto ou responsável"
@@ -99,15 +75,12 @@ export default function GestorProjetos() {
           <option value="Cancelado">Cancelado</option>
           <option value="Andamento">Andamento</option>
           <option value="Concluido">Concluído</option>
-          {/* Adicione mais opções conforme necessário */}
         </select>
       </div>
-      {/* Tabela de dados filtrados */}
       <table className='tabela-geral-projetos'>
         <thead className='header-tabela-projetos'>
           <tr>
             <th>ID</th>
-            {/* <th>Grupo</th> */}
             <th>Projeto</th>
             <th>Cronograma</th>
             <th>Status</th>
@@ -118,10 +91,9 @@ export default function GestorProjetos() {
           {dadosFiltrados.map(item => (
             <tr key={item.id}>
               <td>{item.id}</td>
-              {/* <td>{item.grupo}</td> */}
-              <td>{item.projeto}</td>
-              <td>{item.cronograma}</td>
-              <td className={getStatusClassName(item.status)}>{item.status}</td>
+              <td>{item.nome_projeto}</td>
+              <td>{item.data_inicio} + {item.data_inicio}</td>
+              <td className={getStatusClassName(item. status_projeto)}>{item. status_projeto}</td>
               <td>{item.responsavel}</td>
             </tr>
           ))}
