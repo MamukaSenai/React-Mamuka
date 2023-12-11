@@ -15,14 +15,18 @@ function PerfilUsuario() {
 
     const { idUsuario } = useParams();
 
-    const [nome, setNome] = useState<String>("")
-    const [email, setEmail] = useState<String>("")
+    const [tipoUsuario, setTipoUsuario] = useState<string>("");//ajuste no input do select
+    const [nome, setNome] = useState<string>("");
     const [cpf, setCpf] = useState<string>("");
     const [nascimento, setNascimento] = useState<string>("");
+    const [statusAtividade, setStatusAtividade] = useState<string>("");
     const [departamento, setDepartamento] = useState<string>("");
+    const [responsavel, setResponsavel] = useState<string>("");
+    const [perfil, setPerfil] = useState<string>("");
     const [cargo, setCargo] = useState<string>("");
 
-    const [tipoUsuario, setTipoUsuario] = useState<string>("");
+    const [email, setEmail] = useState<string>("");
+
     //const [foto, setFoto] = useState <String>("")
 
     //const [uf, setUf] = useState <String>("")
@@ -45,7 +49,10 @@ function PerfilUsuario() {
             setEmail(response.data.email)
             setCpf(response.data.cpf)
             setNascimento(response.data.nascimento)
+            setStatusAtividade(response.data.statusAtividade)
             setDepartamento(response.data.departamento)
+            setResponsavel(response.data.responsavel)
+            setPerfil(response.data.perfil)
             setCargo(response.data.cargo)
             setTipoUsuario(response.data.tipoUsuario)
             
@@ -103,6 +110,8 @@ function PerfilUsuario() {
                             <p>Email para contato: {email} </p>
                             <p>Departamento: {departamento}</p>
                             <p>Cargo: { cargo }</p>
+                            <p>Status: { statusAtividade }</p>
+                            <p>Perfil: { perfil }</p>
 
                         </div>
 
@@ -110,6 +119,7 @@ function PerfilUsuario() {
                             <p>CPF: { cpf }</p>
                             <p>Nascimento: { nascimento }</p>
                             <p>Tipo de Usuario: { tipoUsuario }</p>
+                            <p>Responsável: { responsavel }</p>
                         </div>
 
 
