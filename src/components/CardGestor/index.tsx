@@ -10,7 +10,7 @@ export default function CardGestor (props: any) {
                     <Link className="contato_dev_nome" to= {"/perfil/" + props.id} >{props.nome}</Link>
                     {/* <h3>{ props.nome }</h3> */}
                     <p>Login: { props.email }</p>
-                    <p>Tipo de Usuario: { props.tipoUsuario }</p>
+                    <p>Perfil: { props.perfil }</p>
                 </div>
             </div>
             

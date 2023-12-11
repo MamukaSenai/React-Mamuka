@@ -30,7 +30,7 @@ export default function ListaDevs() {
         }
 
         // Requisicao para a api, para trazer todos os users
-        api.get("users").then((response: any) => {
+        api.get("/usuarios").then((response: any) => {
             console.log(response.data)
             setDevs(response.data)
         })
@@ -38,7 +38,7 @@ export default function ListaDevs() {
             console.log("Error ao realizar um requisição:", error);
         })
 
-        const usuariosFiltrados = devs.filter((dev: any) => dev.tipoUsuario.includes(usuarioDigitada.toLocaleUpperCase()));
+        const usuariosFiltrados = devs.filter((dev: any) => dev.perfil.includes(usuarioDigitada.toLocaleUpperCase()));
 
             if (usuariosFiltrados.length === 0) {
                 alert("Nenhum Gestor com esse usuario:" + usuarioDigitada)
@@ -66,7 +66,7 @@ export default function ListaDevs() {
 
 
     function listarUsuarios() {
-        api.get("users").then((response: any) => {
+        api.get("/usuarios").then((response: any) => {
             //console.log(response.data)
             setDevs(response.data)
         })
@@ -105,7 +105,7 @@ export default function ListaDevs() {
                                         id={dev.idUsuario}
                                         nome={dev.nome}
                                         email={dev.email}
-                                        tipoUsuario={dev.tipoUsuario}
+                                        perfil={dev.perfil}
                                     />
                                 </li>
                             }

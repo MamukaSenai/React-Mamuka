@@ -44,7 +44,7 @@ function PerfilUsuario() {
 
     function buscarUsuarioPorId() {
 
-        api.get("users/" + idUsuario).then((response: any) => {// exiba usuario
+        api.get("/usuarios" + idUsuario).then((response: any) => {// exiba usuario
             setNome(response.data.nome)
             setEmail(response.data.email)
             setCpf(response.data.cpf)

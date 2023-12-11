@@ -52,7 +52,7 @@ export default function CadastroUsuario(props: any) {
 
         //A chave da função do append() precisa ser o mesmo nome do atributo que api retorna
        
-        formData.append("tipo_usuario", tipoUsuario);
+       //formData.append("tipo_usuario", tipoUsuario);
         formData.append("nome", nome);
         formData.append("cpf", cpf);
         
@@ -75,7 +75,7 @@ export default function CadastroUsuario(props: any) {
         console.log("chamadaaa API");
         
 
-        api.post("usuarios", formData).then((response) => {
+        api.post("/usuarios", formData).then((response) => {
             console.log(response)
             alert("Usuário criado com sucesso! 😊🤗")
             // Navegação para login
@@ -197,7 +197,7 @@ export default function CadastroUsuario(props: any) {
                             </div>
 
                             <div className="card_form">
-                                    <div className="cad_box_input">
+                                    {/* <div className="cad_box_input">
                                             <label htmlFor="tipo_usuario">Tipo de Usuário:</label>
                                             <input
                                                 type="text"
@@ -206,7 +206,7 @@ export default function CadastroUsuario(props: any) {
                                                 placeholder="Digite o tipo Usuário:"
                                                 required
                                             />
-                                    </div>
+                                    </div> */}
                                     <div className="cad_box_input">
                                             <label htmlFor="perfil">Perfil:</label>
                                             <input
