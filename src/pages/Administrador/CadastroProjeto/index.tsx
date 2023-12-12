@@ -12,10 +12,10 @@ import api from "../../../utils/api";
 export default function CadastroProjeto(props: any) {
 
 
-    const [nome_projeto, setNome_projeto] = useState<string>("");
-    const [status_projeto, setStatus_projeto] = useState<string>("");
-    const [data_inicio, setData_inicio] = useState<string>("");
-    const [data_conclusao, setData_conclusao] = useState<string>("");
+    const [nomeProjeto, setNomeProjeto] = useState<string>("");
+    const [statusProjeto, setStatusProjeto] = useState<string>("");
+    const [dataInicio, setDataInicio] = useState<string>("");
+    const [dataConclusao, setDataConclusao] = useState<string>("");
     const [responsavel, setResponsavel] = useState<string>("");
 
 
@@ -31,11 +31,11 @@ export default function CadastroProjeto(props: any) {
         //A chave da função do append() precisa ser o mesmo nome_projeto do atributo que api retorna
        
 
-        formData.append("nome_projeto", nome_projeto);
-        formData.append("status_projeto", status_projeto);
+        formData.append("nome_projeto", nomeProjeto);
+        formData.append("status_projeto", statusProjeto);
         
-        formData.append("dataNascimento", data_inicio);
-        formData.append("data_conclusao", data_conclusao);
+        formData.append("dataInicio", dataInicio);
+        formData.append("data_conclusao", dataConclusao);
         formData.append("responsavel", responsavel);
 
 
@@ -67,7 +67,7 @@ export default function CadastroProjeto(props: any) {
                                         <input
                                             type="text"
                                             id="nome_projeto"
-                                            onChange={(event) => { setNome_projeto(event.target.value) }}
+                                            onChange={(event) => { setNomeProjeto(event.target.value) }}
                                             placeholder="Digite aqui o nome do projeto:"
                                             required
                                         />
@@ -77,7 +77,7 @@ export default function CadastroProjeto(props: any) {
                                         <input
                                             type="text"
                                             id="status_projeto"
-                                            onChange={(event) => { setStatus_projeto(event.target.value) }}
+                                            onChange={(event) => { setStatusProjeto(event.target.value) }}
                                             placeholder="Digite aqui o status do projeto:"
                                             required
                                         />
@@ -90,7 +90,7 @@ export default function CadastroProjeto(props: any) {
                                         <input
                                             type="date"
                                             id="data_inicio"
-                                            onChange={(event) => { setData_inicio(event.target.value) }}
+                                            onChange={(event) => { setDataInicio(event.target.value) }}
                                             placeholder="Digite a data de inicio:"
                                             required
                                         />
@@ -100,13 +100,13 @@ export default function CadastroProjeto(props: any) {
                                         <input
                                             type="date"
                                             id="data_conclusao"
-                                            onChange={(event) => { setData_conclusao(event.target.value) }}
+                                            onChange={(event) => { setDataConclusao(event.target.value) }}
                                             placeholder="Digite data de conclusão:"
                                             required
                                         />
                                     </div>
                                     <div className="cad_box_input">
-                                        <label htmlFor="responsavel">Nome do Projeto:</label>
+                                        <label htmlFor="responsavel">Nome do responsavel:</label>
                                         <input
                                             type="text"
                                             id="responsavel"
