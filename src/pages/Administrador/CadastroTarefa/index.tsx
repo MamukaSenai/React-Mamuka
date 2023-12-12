@@ -33,7 +33,7 @@ export default function CadastroProjeto(props: any) {
         formData.append("nome_tarefa", nome_tarefa);
         formData.append("status_tarefa", status_tarefa);
         
-        formData.append("dataNascimento", data_inicio);
+        formData.append("data_inicio", data_inicio);
         formData.append("data_conclusao", data_conclusao);
 
 
@@ -54,14 +54,14 @@ export default function CadastroProjeto(props: any) {
         <main className="main_cadastro">
             <div className="container_cad">
                 <div className="cad_conteudo">
-                    <h1>Cadastro de Projeto</h1>
+                    <h1>Cadastro de Tarefa</h1>
                     <hr />
                     <form onSubmit={cadastrarProjeto} className="cad_formulario" method="POST">
                         <div className="card_box_org">
                             
                             <div className="card_form">
                                     <div className="cad_box_input">
-                                        <label htmlFor="nome_tarefa">Nome do Projeto:</label>
+                                        <label htmlFor="nome_tarefa">Nome da Tarefa:</label>
                                         <input
                                             type="text"
                                             id="nome_tarefa"
@@ -71,7 +71,7 @@ export default function CadastroProjeto(props: any) {
                                         />
                                     </div>
                                     <div className="cad_box_input">
-                                        <label htmlFor="status_tarefa">Status do Projeto:</label>
+                                        <label htmlFor="status_tarefa">Status da Tarefa:</label>
                                         <input
                                             type="text"
                                             id="status_tarefa"
