@@ -92,7 +92,7 @@ export default function GestorProjetos() {
             <tr key={item.id}>
               <td>{item.id}</td>
               <td>{item.nome_projeto}</td>
-              <td>{item.data_inicio} + {item.data_inicio}</td>
+              <td>{item.data_inicio} - {item.data_conclusao}</td>
               <td className={getStatusClassName(item. status_projeto)}>{item. status_projeto}</td>
               <td>{item.responsavel}</td>
             </tr>

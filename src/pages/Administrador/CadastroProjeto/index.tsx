@@ -34,7 +34,7 @@ export default function CadastroProjeto(props: any) {
         formData.append("nome_projeto", nome_projeto);
         formData.append("status_projeto", status_projeto);
         
-        formData.append("dataNascimento", data_inicio);
+        formData.append("data_inicio", data_inicio);
         formData.append("data_conclusao", data_conclusao);
         formData.append("responsavel", responsavel);
 
