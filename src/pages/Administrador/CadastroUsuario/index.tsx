@@ -23,7 +23,7 @@ export default function CadastroUsuario(props: any) {
     const [tipoUsuario, setTipoUsuario] = useState<string>("");//ajuste no input do select
     const [nome, setNome] = useState<string>("");
     const [cpf, setCpf] = useState<string>("");
-    const [nascimento, setNascimento] = useState<string>("");
+    const [dataNascimento, setNascimento] = useState<string>("");
     const [statusAtividade, setStatusAtividade] = useState<string>("");
     const [departamento, setDepartamento] = useState<string>("");
     const [responsavel, setResponsavel] = useState<string>("");
@@ -56,7 +56,7 @@ export default function CadastroUsuario(props: any) {
         formData.append("nome", nome);
         formData.append("cpf", cpf);
         
-        formData.append("dataNascimento", nascimento);
+        formData.append("dataNascimento", dataNascimento);
         formData.append("statusAtividade", statusAtividade);
         formData.append("departamento", departamento);
         formData.append("responsavel", responsavel);
@@ -175,7 +175,7 @@ export default function CadastroUsuario(props: any) {
                                         <label htmlFor="data_nascimento">Data de nascimento:</label>
                                         <input
                                             type="date"
-                                            id="data_nascimento"
+                                            id="dataNascimento"
                                             onChange={(event) => { setNascimento(event.target.value) }}
                                             placeholder="Digite aqui data de nascimento:"
                                             required

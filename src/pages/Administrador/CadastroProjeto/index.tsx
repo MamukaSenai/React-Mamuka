@@ -16,6 +16,7 @@ export default function CadastroProjeto(props: any) {
     const [status_projeto, setStatus_projeto] = useState<string>("");
     const [data_inicio, setData_inicio] = useState<string>("");
     const [data_conclusao, setData_conclusao] = useState<string>("");
+    const [responsavel, setResponsavel] = useState<string>("");
 
 
     function cadastrarProjeto(event: any) {
@@ -35,6 +36,7 @@ export default function CadastroProjeto(props: any) {
         
         formData.append("dataNascimento", data_inicio);
         formData.append("data_conclusao", data_conclusao);
+        formData.append("responsavel", responsavel);
 
 
         console.log("chamadaaa API");
@@ -103,7 +105,16 @@ export default function CadastroProjeto(props: any) {
                                             required
                                         />
                                     </div>
-                                    
+                                    <div className="cad_box_input">
+                                        <label htmlFor="responsavel">Nome do Projeto:</label>
+                                        <input
+                                            type="text"
+                                            id="responsavel"
+                                            onChange={(event) => { setResponsavel(event.target.value) }}
+                                            placeholder="Digite aqui o nome do projeto:"
+                                            required
+                                        />
+                                    </div>
                                     
                                     
                             </div>
