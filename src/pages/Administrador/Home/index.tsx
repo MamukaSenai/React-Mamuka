@@ -23,7 +23,7 @@ function Home() {
         <div className="conteudo">
                 <div className="cadastro">
                     <img src={Cadastro} alt="cadastro" />
-                        <Link to="admpessoais" className="button">
+                        <Link to="cadastro/usuario" className="button">
                           {/* <a href="#" className="button">
                             {" "}
                             Cadastre os usuários
@@ -35,7 +35,7 @@ function Home() {
 
                 <div className="consulta">
                     <img src={Consulta} alt="consulta" />
-                        <Link to="admconsulta" className="button">
+                        <Link to="listadevs" className="button">
                           {/* <a href="" className="button">
                             {" "}
                             Consulte usuários cadastrados

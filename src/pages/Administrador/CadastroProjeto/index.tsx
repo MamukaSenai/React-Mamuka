@@ -5,24 +5,31 @@ import { useState } from "react";
 
 //axios
 import api from "../../../utils/api";
-
+import { useParams } from "react-router-dom";
+import CardGestor from "../../../components/CardGestor";
+import secureLocalStorage from "react-secure-storage";
 
 
 
 export default function CadastroProjeto(props: any) {
 
+    secureLocalStorage.getItem("user")
 
-    const [nome_projeto, setNome_projeto] = useState<string>("");
-    const [status_projeto, setStatus_projeto] = useState<string>("");
-    const [data_inicio, setData_inicio] = useState<string>("");
-    const [data_conclusao, setData_conclusao] = useState<string>("");
+    const id_usuario = "user"
+    const [nome_projeto, setNomeProjeto] = useState<string>("");
+    const [status_projeto, setStatusProjeto] = useState<string>("");
+    const [data_inicio, setDataInicio] = useState<string>("");
+    const [data_conclusao, setDataConclusao] = useState<string>("");
     const [responsavel, setResponsavel] = useState<string>("");
+
+
+    // setID("e1138257-9e56-4951-994c-0fe385a9312b");
 
 
     function cadastrarProjeto(event: any) {
         event.preventDefault();
 
-        console.log("odosdnfisdnfisdjfn");
+        // console.log("odosdnfisdnfisdjfn");
         
 
         //só utiliza formData quando tiver arquivos 
@@ -30,17 +37,19 @@ export default function CadastroProjeto(props: any) {
 
         //A chave da função do append() precisa ser o mesmo nome_projeto do atributo que api retorna
        
-
+        formData.append("id_usuario", id_usuario);
         formData.append("nome_projeto", nome_projeto);
         formData.append("status_projeto", status_projeto);
         
+        // formData.append("data_inicio", data_inicio);
+        // formData.append("data_conclusao", data_conclusao);
         formData.append("data_inicio", data_inicio);
         formData.append("data_conclusao", data_conclusao);
         formData.append("responsavel", responsavel);
 
 
         console.log("chamadaaa API");
-        
+
 
         api.post("/projetos", formData).then((response) => {
             console.log(response)
@@ -49,10 +58,14 @@ export default function CadastroProjeto(props: any) {
         }).catch((error) => {
             console.log(error)
         })
+
+   
+       
     }
 
 
     return (
+
         <main className="main_cadastro">
             <div className="container_cad">
                 <div className="cad_conteudo">
@@ -63,21 +76,21 @@ export default function CadastroProjeto(props: any) {
                             
                             <div className="card_form">
                                     <div className="cad_box_input">
-                                        <label htmlFor="nome_projeto">Nome do Projeto:</label>
+                                        <label htmlFor="nomeProjeto">Nome do Projeto:</label>
                                         <input
                                             type="text"
-                                            id="nome_projeto"
-                                            onChange={(event) => { setNome_projeto(event.target.value) }}
+                                            id="nomeProjeto"
+                                            onChange={(event) => { setNomeProjeto(event.target.value) }}
                                             placeholder="Digite aqui o nome do projeto:"
                                             required
                                         />
                                     </div>
                                     <div className="cad_box_input">
-                                        <label htmlFor="status_projeto">Status do Projeto:</label>
+                                        <label htmlFor="statusProjeto">Status do Projeto:</label>
                                         <input
                                             type="text"
-                                            id="status_projeto"
-                                            onChange={(event) => { setStatus_projeto(event.target.value) }}
+                                            id="statusProjeto"
+                                            onChange={(event) => { setStatusProjeto(event.target.value) }}
                                             placeholder="Digite aqui o status do projeto:"
                                             required
                                         />
@@ -86,27 +99,27 @@ export default function CadastroProjeto(props: any) {
 
                             <div className="card_form">
                                     <div className="cad_box_input">
-                                        <label htmlFor="data_inicio">Data de inicio:</label>
+                                        <label htmlFor="dataInicio">Data de inicio:</label>
                                         <input
                                             type="date"
-                                            id="data_inicio"
-                                            onChange={(event) => { setData_inicio(event.target.value) }}
+                                            id="dataInicio"
+                                            onChange={(event) => { setDataInicio(event.target.value) }}
                                             placeholder="Digite a data de inicio:"
                                             required
                                         />
                                     </div>
                                     <div className="cad_box_input">
-                                        <label htmlFor="data_conclusao">Data de conclusão::</label>
+                                        <label htmlFor="dataConclusao">Data de conclusão::</label>
                                         <input
                                             type="date"
-                                            id="data_conclusao"
-                                            onChange={(event) => { setData_conclusao(event.target.value) }}
+                                            id="dataConclusao"
+                                            onChange={(event) => { setDataConclusao(event.target.value) }}
                                             placeholder="Digite data de conclusão:"
                                             required
                                         />
                                     </div>
                                     <div className="cad_box_input">
-                                        <label htmlFor="responsavel">Nome do Projeto:</label>
+                                        <label htmlFor="responsavel">Nome do responsavel:</label>
                                         <input
                                             type="text"
                                             id="responsavel"
