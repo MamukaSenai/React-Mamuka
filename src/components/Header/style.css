@@ -1,6 +1,6 @@
 
 .topo {
-    height: 12.1vh;
+    height: 13.1vh;
     width: 100vw;
     /*position: fixed;*/
     display: flex;
@@ -22,7 +22,7 @@
 } 
 
 .pesquisa svg {
-    
+    display: none;
     position: absolute;
     color: var(--cinza);
     margin-left: 7px;
@@ -36,6 +36,7 @@
     border-radius: 10px;
     padding-left: 40px;
     border: none;
+    display: none;
 }
 
 .ricardo {
