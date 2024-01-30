@@ -81,7 +81,8 @@ export default function CadastroProjeto(props: any) {
                                             type="text"
                                             id="nomeProjeto"
                                             onChange={(event) => { setNomeProjeto(event.target.value) }}
-                                            placeholder="Digite aqui o nome do projeto:"
+                                            //placeholder="Digite aqui o nome do projeto:"
+                                            placeholder="Digite aqui"
                                             required
                                         />
                                     </div>
@@ -91,7 +92,8 @@ export default function CadastroProjeto(props: any) {
                                             type="text"
                                             id="statusProjeto"
                                             onChange={(event) => { setStatusProjeto(event.target.value) }}
-                                            placeholder="Digite aqui o status do projeto:"
+                                            //placeholder="Digite aqui o status do projeto:"
+                                            placeholder="Digite aqui"
                                             required
                                         />
                                     </div>     
@@ -124,7 +126,8 @@ export default function CadastroProjeto(props: any) {
                                             type="text"
                                             id="responsavel"
                                             onChange={(event) => { setResponsavel(event.target.value) }}
-                                            placeholder="Digite aqui o nome do projeto:"
+                                            //placeholder="Digite aqui o nome do projeto:"
+                                            placeholder="Digite aqui"
                                             required
                                         />
                                     </div>

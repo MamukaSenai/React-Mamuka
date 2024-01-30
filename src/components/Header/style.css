@@ -4,10 +4,10 @@
     width: 100vw;
     /*position: fixed;*/
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
     background-color: var(--azulescuro);
     align-items: center;
+    padding-left: 12%;
 }
 
 
@@ -17,9 +17,12 @@
     width: 18vw;
     height: 5vw;
     margin-top: 5px;
-    margin-left: 150px;
+    /*margin-left: 150px;*/
     /* padding: 15px; */
 } 
+
+
+
 
 .pesquisa svg {
     display: none;
@@ -40,29 +43,32 @@
     display: none;
 }
 
-.ricardo {
+.perfil {
+    height: 100%;
+    width: 20%;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    padding: 15px;
+    padding: 1%;
     color: var(--branco);
     fill: var(--branco);
 }
 
-.ricardoimg {
+.fotoperfil {
     background: url("../../assets/Ricardo.png") no-repeat;
-    padding: 10px;
-    width: 5vw;
+    width: 6vw;
     height: 10vh;
+
 }
 
 
 
-.ricardo p {
+.perfil p {
     padding-right: 9px;
     font-weight: 600;
 }
 
-.ricardo a {
+.perfil a {
     padding-right: 9px;
     font-weight: 600;
     color: var(--branco);
