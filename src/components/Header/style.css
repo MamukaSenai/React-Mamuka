@@ -1,6 +1,6 @@
 
 .topo {
-    height: 13.1vh;
+    height: 12vh;
     width: 100vw;
     /*position: fixed;*/
     display: flex;
@@ -45,7 +45,7 @@
 
 .perfil {
     height: 100%;
-    width: 20%;
+    width: 15.5vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -77,11 +77,11 @@
 
 
 
-/* Quando a resolução for menor que 1200px esconde o campo de busca */
+/* Quando a resolução for menor que 1200px esconde o campo de busca 
 @media screen and (max-width: 800px) 
 {
     .a {
         display: none;
     }
 
-}
+}*/
