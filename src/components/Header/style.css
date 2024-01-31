@@ -45,9 +45,9 @@
 
 .perfil {
     height: 100%;
-    width: 15.5vw;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
     align-items: center;
     padding: 1%;
     color: var(--branco);
