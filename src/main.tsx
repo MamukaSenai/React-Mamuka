@@ -18,7 +18,7 @@ import CadastroInfosCorporativas from './pages/Administrador/CadastroInfosCorpor
 import CadastroInfosConclusao from './pages/Administrador/CadastroInfosConclusão'
 import DesenvolvedorPerfil from '../src/pages/Desenvolvedor/Perfil/index'
 import DesenvolvedorLogin from './pages/Desenvolvedor/Login'
-import DesenvolvedorDemandas from './pages/Desenvolvedor/Demandas'
+import DesenvolvedorDemandas from './pages/Desenvolvedor/Tarefas'
 import Dashboard from './pages/Gestor/Dashboard'
 import Administradorperfil from './pages/Administrador/Perfil'
 import DesenvolvedorDemandas2 from './pages/Desenvolvedor/Demandas teste'
@@ -33,6 +33,7 @@ import Login2 from './pages/Administrador/Login2'
 import VisualizarTarefa from './pages/Administrador/VisualizarTarefa'
 import CadastroProjeto from './pages/Administrador/CadastroProjeto'
 import CadastroTarefa from './pages/Administrador/CadastroTarefa'
+import Tarefas from './pages/Desenvolvedor/Tarefas'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -63,8 +64,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         
 
         {/* PAGINAS DE DEV */}
-        <Route path="devdemandas" element={< DesenvolvedorDemandas />} />
-        <Route path="devdemandas2" element={< DesenvolvedorDemandas2 />} />
+        <Route path="tarefas" element={< Tarefas />} />
+        {/* <Route path="devdemandas2" element={< DesenvolvedorDemandas2 />} /> */}
         <Route path="devlogin" element={<DesenvolvedorLogin />} />
         <Route path="devperfil" element={<DesenvolvedorPerfil />} />
         {/* PAGINAS DE GESTOR */}
