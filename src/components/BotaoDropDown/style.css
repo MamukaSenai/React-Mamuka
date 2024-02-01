@@ -48,7 +48,7 @@
 
 .menuTesteConteudo {
     height:100vh;
-    width: 8vw;
+    width: 10vw;
     background-color: rgba(0,0,0,0.35);
     box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
     /* border: #fff solid 2px; */
@@ -80,7 +80,7 @@
 
 
 /* Quando a resolução for menor que 1200px esconde o campo de busca */
-@media screen and (max-width: 1200px) 
+/* @media screen and (max-width: 1200px) 
 {
     #menuGeral {
         padding-left: 50px;
@@ -92,6 +92,15 @@
         text-align: center; 
         padding-left: 50px;
         padding-right: 50px; 
+    }
+
+} */
+
+@media screen and (max-width: 1224px) 
+{
+    .menuTesteConteudo {
+        height: 100vh;
+        width: vw;
     }
 
 }

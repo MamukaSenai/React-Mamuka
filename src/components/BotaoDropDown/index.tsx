@@ -94,11 +94,11 @@ export default function BotaoDropDown() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Link to="devdemandas"  
+                <Link to="tarefas"  
                 className={classNames(
                   active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                   'block px-4 py-2 text-sm'
-                )}>Demandas
+                )}>Tarefas
                 </Link>
                 
               )}
@@ -131,7 +131,7 @@ export default function BotaoDropDown() {
                 className={classNames(
                   active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                   'block px-4 py-2 text-sm'
-                )}>Criar Demandas
+                )}>Criar Tarefas
                 </Link>
                 
               )}
