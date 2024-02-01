@@ -199,3 +199,36 @@
         justify-content: right;
     }
 }
+
+@media screen and (max-width:573px){
+    .fotoperfil{
+        width: 15vw;
+        height: 10vh;
+
+    }
+}
+
+
+@media screen and (max-width:460px){
+    .fotoperfil{
+        width: 12vw;
+        height: 10vh;
+        display: none;
+    }
+
+    .perfil {
+        height: 100%;
+        width: 14%;
+    }
+
+    .teste {
+        padding-left: 43%;
+    }
+
+}
+
+@media screen and (max-width:397px){
+    .teste{
+        padding-left: 47%;
+    }
+}
