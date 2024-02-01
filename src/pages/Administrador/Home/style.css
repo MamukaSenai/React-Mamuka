@@ -99,27 +99,23 @@ main
         align-items: center;
     } */
 
-
-
-    
-
 /* Main */
 
 /* Quando a resolução for menor que 820px esconde o campo de busca */
-/* @media screen and (max-width: 820px) 
+@media screen and (max-width: 820px) 
 {
 
-     MAIN 
+    /* MAIN */
     .conteudo
     {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column; resolução a baixo de 820 muda as div para colunas 
+        flex-direction: column; /*resolução a baixo de 820 muda as div para colunas */
     }
 
 
-} */
+}
 
 
 /* Quando a resolução for menor que 760px esconde o campo de busca */

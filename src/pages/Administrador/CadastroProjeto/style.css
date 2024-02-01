@@ -33,10 +33,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     color: var(--cinzaclaro);
     margin: 3% 0;
-    padding-left: 1.9%;
-    padding-right: 1.9%;
 }
 
 .main_cadastro h1 {
@@ -116,7 +115,6 @@
 
 .main_cadastro .cad_box_input>input {
     width: 100%;
-    
     border-radius: 20px;
     border: 1px solid #b5b5b5;
     background: linear-gradient(136deg, #ffffff1a 0%, #ffffff0b 100%);
@@ -153,7 +151,6 @@
 
 #dataInicio,#dataConclusao{
     font-size: 15px;
-
 }
 
 #responsavel{
@@ -167,9 +164,3 @@
     margin-top: 30px;
 }
 
-
-/* @media screen and (max-width: 565px) {
-    #h1 {
-        font-size: 10px;
-    }
-} */
