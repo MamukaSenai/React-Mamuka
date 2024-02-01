@@ -2,6 +2,7 @@ import './style.css';
 import React, { useState, useEffect } from 'react';
 import api from "../../../utils/api"
 import axios from 'axios';
+import { reverse } from 'dns';
 
 
 
@@ -11,10 +12,11 @@ interface UserData {
   data_inicio: string;
   data_conclusao: string;
   status_projeto: string;
-  responsavel: string;
+  gestor: any;
 }
 
 export default function GestorProjetos() {
+
 
   
   const [dados, setDados] = useState<UserData[]>([]);
@@ -43,17 +45,22 @@ export default function GestorProjetos() {
         return '';
     }
   };
-
+  
   const filtrarDados = () => {
     return dados.filter(item =>
       item.status_projeto.toLowerCase().includes(filtroStatus.toLowerCase()) &&
       (item.nome_projeto.toLowerCase().includes(filtroTermo.toLowerCase()) ||
-        item.responsavel.toLowerCase().includes(filtroTermo.toLowerCase()))
+      item.gestor && item.gestor.nome.toLowerCase().includes(filtroTermo.toLowerCase()))
     );
   };
 
   const dadosFiltrados = filtrarDados();
 
+  console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+  console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+  console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+  console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+  console.log(dados)
 
   return (
     <div>
@@ -81,9 +88,9 @@ export default function GestorProjetos() {
       <table className='tabela-geral-projetos'>
         <thead className='header-tabela-projetos'>
           <tr>
-            <th>ID</th>
             <th>Projeto</th>
-            <th>Cronograma</th>
+            <th>Data inicial</th>
+            <th>Data Final</th>
             <th>Status</th>
             <th>Responsável</th>
           </tr>
@@ -91,15 +98,18 @@ export default function GestorProjetos() {
         <tbody className='corpo-tabela-projetos'>
           {dadosFiltrados.map(item => (
             <tr key={item.id}>
-              <td>{item.id}</td>
               <td>{item.nome_projeto}</td>
-              <td>{item.data_inicio} - {item.data_conclusao}</td>
+              <td>{(item.data_conclusao).slice(0,10)}</td>
+              <td>{(item.data_inicio).slice(0,10)}</td>
               <td className={getStatusClassName(item. status_projeto)}>{item. status_projeto}</td>
-              <td>{item.responsavel}</td>
+              <td>{item.gestor && item.gestor.nome}</td>
             </tr>
           ))}
         </tbody>
       </table>
     </div>
+
+    
   );
 }
+

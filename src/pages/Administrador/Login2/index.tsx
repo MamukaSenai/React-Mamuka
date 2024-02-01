@@ -12,6 +12,7 @@ function Login2() {
     const [ email, setEmail ] = useState<string>("")
     const [ senha, setSenha ] = useState<string>("")
     const [ idUsuario, setUsuario ] = useState<string>("")
+    
     function fazerLogin(event: any) {
         event.preventDefault()
 
