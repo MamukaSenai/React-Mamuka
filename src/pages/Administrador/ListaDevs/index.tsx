@@ -92,7 +92,7 @@ export default function ListaDevs() {
                         <div className="wrapper_form">
                             <label htmlFor="busca">Procurar Usuarios</label>
                             <div className="campo-label">
-                                <input type="search" name="campo-busca" id="busca" placeholder="Buscar de Usuarios" onChange={retornoDevsGeral} />
+                                <input type="search" name="campo-busca" id="busca" placeholder="Busca de Usuarios" onChange={retornoDevsGeral} />
                                 <button type="submit">Buscar</button>
                             </div>
                         </div>

@@ -213,3 +213,87 @@ main#lista-devs {
     background-color: white;
     color: var(--azulP);
 }
+
+
+@media screen and (max-width:806px) {
+    #lista-devs h1{
+        font-size: 6vw;
+    }
+
+    .campo-label button{
+        font-size: medium;
+    }
+
+
+}
+
+
+@media screen and (max-width:681px) {
+    .campo-label input{
+        width: 65%;
+    }
+
+    .wrapper_form label{
+        font-size: 4.2vw;
+    }
+
+    /* .campo-label input{
+        font-size: 3vw;
+    }
+
+    .campo-label button{
+        font-size: 2.5vw;
+    } */
+
+    .campo-label button{
+        font-size: medium;
+    }
+}
+
+
+@media screen and (max-width:628px) {
+
+    .campo-label input{
+        font-size: 3vw;
+    }
+
+    .campo-label button{
+        font-size: medium;
+    }
+}
+
+
+@media screen and (max-width:512px) {
+    /* .campo-label input{
+        width: 65%;
+    }
+
+    .wrapper_form label{
+        font-size: 4.2vw;
+    } */
+
+    .campo-label input{
+        font-size: 3vw;
+    }
+
+    .campo-label button{
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width:445px){
+    .campo-label{
+        
+        
+    }
+}
+
+@media screen and (max-width:375px){
+    .campo-label input{
+        padding-right: 2%;
+    }
+
+}
+
+
+
