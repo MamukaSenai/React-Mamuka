@@ -14,9 +14,11 @@
 
 .logo .teste {
     /* background: url("../../assets/Logo.png") no-repeat; */
-    width: 18vw;
-    height: 5vw;
-    margin-top: 5px;
+    /* width: 18vw; */
+    height: 55px;
+    /* margin-top: 5px; */
+    display: flex;
+    align-items: center;
     /*margin-left: 150px;*/
     /* padding: 15px; */
 } 
@@ -45,7 +47,7 @@
 
 .perfil {
     height: 100%;
-    width: 100%;
+    width: 23%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -85,3 +87,115 @@
     }
 
 }*/
+
+@media screen and (max-width:1062px){
+    .perfil{
+        height: 100%;
+        width: 23%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:958px){
+    .perfil{
+        height: 100%;
+        width: 26%;
+    }
+}
+
+@media screen and (max-width:933px){
+    .fotoperfil{
+        width: 7vw;
+        height: 10vh;
+
+    }
+}
+
+@media screen and (max-width:857px){
+    .perfil{
+        height: 100%;
+        width: 27%;
+    }
+}
+
+@media screen and (max-width:808px){
+    .perfil{
+        height: 100%;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:790px){
+    .fotoperfil{
+        width: 9vw;
+        height: 10vh;
+
+    }
+}
+
+@media screen and (max-width:725px){
+    .perfil{
+        height: 100%;
+        width: 34%;
+    }
+}
+
+@media screen and (max-width:625px){
+    .perfil{
+        height: 100%;
+        width: 39%;
+    }
+}
+
+@media screen and (max-width:620px){
+    .fotoperfil{
+        width: 12vw;
+        height: 10vh;
+
+    }
+}
+
+
+@media screen and (max-width:552px){
+    .perfil{
+        height: 100%;
+        width: 43%;
+    }
+}
+
+@media screen and (max-width:1092px){
+    .teste{
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width:963px){
+    .teste{
+        padding-left: 14%;
+    }
+}
+
+@media screen and (max-width:853px){
+    .teste{
+        padding-left: 27%;
+    }
+}
+
+@media screen and (max-width:586px){
+    .teste{
+        padding-left: 33%;
+    }
+}
+
+@media screen and (max-width:586px){
+    .perfil a{
+        display: none;
+        width: 25%;
+    }
+
+    .perfil{
+        display: flex;
+        justify-content: right;
+    }
+}
