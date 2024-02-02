@@ -111,7 +111,7 @@ main
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column; resolução a baixo de 820 muda as div para colunas 
+        flex-direction: column;/* resolução a baixo de 820 muda as div para colunas */
     }
 
     .imgCadastro
