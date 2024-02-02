@@ -9,10 +9,6 @@ import mamuca from "../src/assets/Logo.png"
 
 
 
-
-
-
-
 function GestorLogin() {
     
     return (

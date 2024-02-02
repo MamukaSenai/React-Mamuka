@@ -22,7 +22,7 @@ function Home() {
 <main>
         <div className="conteudo">
                 <div className="cadastro">
-                    <img src={Cadastro} alt="cadastro" />
+                    <img className="imgCadastro" src={Cadastro} alt="cadastro" />
                         <Link to="cadastro/usuario" className="button">
                           {/* <a href="#" className="button">
                             {" "}
@@ -34,7 +34,7 @@ function Home() {
 
 
                 <div className="consulta">
-                    <img src={Consulta} alt="consulta" />
+                    <img className="imgConsulta" src={Consulta} alt="consulta" />
                         <Link to="listadevs" className="button">
                           {/* <a href="" className="button">
                             {" "}
