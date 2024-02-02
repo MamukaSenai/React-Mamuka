@@ -48,7 +48,7 @@
 
 .menuTesteConteudo {
     height:100vh;
-    width: 10vw;
+    width: 15vw;
     background-color: rgba(0,0,0,0.35);
     box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
     /* border: #fff solid 2px; */
@@ -57,9 +57,10 @@
     display: flex; 
     flex-direction: column;
     /* justify-content: space-between; */
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
-
+    padding-left: 2%;
+    padding-right: 2%;
     
     
 }
@@ -96,11 +97,32 @@
 
 } */
 
-@media screen and (max-width: 1224px) 
+
+/* NOVA RESPONSIVIDADE */
+
+/* @media screen and (max-width: 1224px) 
 {
     .menuTesteConteudo {
         height: 100vh;
-        width: vw;
+        width: 10vw;
     }
 
 }
+
+@media screen and (max-width: 1040px) 
+{
+    .menuTesteConteudo {
+        height: 100vh;
+        width: 12vw;
+    }
+
+}
+
+@media screen and (max-width: 851px) 
+{
+    .menuTesteConteudo {
+        height: 100vh;
+        width: 17vw;
+    }
+
+} */
