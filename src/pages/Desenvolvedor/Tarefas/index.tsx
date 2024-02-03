@@ -52,7 +52,7 @@ export default function Tarefas() {
 
   return (
     <div>
-      <div className='filtro-status-tarefa'>
+      <div className='filtro-status-tarefa' id='filtro-da-tarefa'>
          <label>Filtrar por Status:</label>
       <select
         value={filtroStatus}
