@@ -21,10 +21,9 @@ function Home() {
 
       <main id="right_home">
         <section id="Home">
-          <section className="right">
             <div className="conteudo">
               <div className="cadastro">
-                <img src={Cadastro} alt="cadastro" />
+                <img className="imgcadastro" src={Cadastro} alt="cadastro" />
                 <Link to="admpessoais" className="button">
                   {/* <a href="#" className="button">
                     {" "}
@@ -35,7 +34,7 @@ function Home() {
                 
               </div>
               <div className="consulta">
-                <img src={Consulta} alt="consulta" />
+                <img className="imgconsulta" src={Consulta} alt="consulta" />
                 <Link to="admconsulta" className="button">
                   {/* <a href="" className="button">
                     {" "}
@@ -46,7 +45,6 @@ function Home() {
                 
               </div>
             </div>
-          </section>
         </section>
 
       </main>

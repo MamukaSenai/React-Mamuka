@@ -1,38 +1,42 @@
 #right_home {
     display: flex;
     flex-direction:column-reverse;
-    
 }
+
 
 #Home {
     display: flex;
     justify-content: center;
-    margin-right: 40vh;
+    /* margin-right: 40vh; */
+    padding: 0;
 }
 
 
 #Home .conteudo {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100vh;
-    width: 100vw;
-    margin-left: 121px;
-    margin-right: 131px;
+    width: 100%;
+
+    /* margin-left: 131px;
+    margin-right: 121px; */
 }
 
+
 #Home .cadastro, .consulta {
-    width: 40%;
+    /* width: 40%; */
     display: flex;
     align-items: center;
     flex-direction: column;
-
-
+    margin: 5%;
+    width: 30%;
 }
 
 
 #Home .button {
     background-color: var(--azulescuro);
-    margin: 50px auto;
+    /* margin: 50px auto; */
     border-radius: 10px;
     height: 3vh;
     padding: 15px;
@@ -41,5 +45,156 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+}
 
+#Home .imgcadastro {
+    width: 100%;
+}
+
+#Home .imgconsulta {
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width:1000px){
+
+    #Home .conteudo {
+        height: 100%; 
+        flex-direction: column;
+        display: flex;
+        align-items: center;   
+        justify-content: center;
+        padding: 4%;
+    }
+
+    #Home .imgcadastro,  .imgconsulta{
+        width: 80%; 
+        height: 80%; 
+    }
+
+    #Home .button {
+
+        /* background-color: var(--azulescuro); */
+        /* margin: 50px auto; */
+        border-radius: 10px;
+        height: 3vh;
+        /* width: 40vw; */
+        padding: 15px 10px;
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        /* display: initial; */
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:900px){
+  
+    #Home .imgcadastro{
+        width: 80%; 
+        height: 80%; 
+    }
+ 
+    #Home .imgconsulta{
+        width: 80%; 
+        height: 80%; 
+    }
+
+    #Home .button {
+        height: 4vh;
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width:800px){
+ 
+    #Home .imgcadastro{
+        width: 90%; 
+        height: 90%; 
+    }
+
+    #Home .imgconsulta{
+        width: 90%; 
+        height: 90%; 
+    }
+    
+    #Home .button {
+        height: 4vh;
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width:700px){
+ 
+    #Home .imgcadastro{
+        width: 100%; 
+        height: 100%; 
+    }
+
+    #Home .imgconsulta{
+        width: 100%; 
+        height: 100%; 
+    }
+
+    #Home .button {
+        height: 4vh;
+        width: 45vw;
+    }
+}
+
+@media screen and (max-width:600px){
+ 
+    #Home .imgcadastro{
+        width: 120%; 
+        height: 120%; 
+    }
+
+    #Home .imgconsulta{
+        width: 120%; 
+        height: 120%; 
+    }
+
+    #Home .button {
+        height: 4vh;
+        width: 55vw;
+    }
+}
+    
+@media screen and (max-width:500px){
+ 
+    #Home .imgcadastro{
+        width: 130%; 
+        height: 130%; 
+    }
+
+    #Home .imgconsulta{
+        width: 130%; 
+        height: 130%; 
+    }
+
+    #Home .button {
+        height: 4vh;
+        width: 65vw;
+    }
+}
+
+@media screen and (max-width:400px){
+ 
+    #Home .imgcadastro{
+        width: 150%; 
+        height: 150%; 
+    }
+
+    #Home .imgconsulta{
+        width: 150%; 
+        height: 150%; 
+    }
+
+    #Home .button {
+        height: 4vh;
+        width: 80vw;
+    }
 }
