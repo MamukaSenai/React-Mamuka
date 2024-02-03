@@ -64,7 +64,9 @@
 // };
 
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { useEffect, useState } from 'react';
 import { Pie } from 'react-chartjs-2';
+import api from '../../utils/api';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -73,6 +75,8 @@ var options = {
     maintainAspectRatio: false,
 };
 
+
+  
 var data = {
     labels: ['Cancelado', 'Em Andamento', 'Concluidos', 'Não alocados'],
     datasets: [
@@ -98,6 +102,26 @@ var data = {
     ],
 };
 
+interface UserData {
+    id: number;
+    nome_projeto: string;
+    data_inicio: string;
+    data_conclusao: string;
+    status_projeto: string;
+    gestor: any;
+  }
+  
 export default function Pies() {
+    useEffect(() => {
+        api.get('/projetos')
+          .then(response => {
+            setDados(response.data);
+          })
+          .catch(error => {
+            console.error("A conexão falhou =/", error);
+          });
+      }, []);
+      
+      const [dados, setDados] = useState<UserData[]>([]);
     return <Pie data={data} options={options} />
 }
