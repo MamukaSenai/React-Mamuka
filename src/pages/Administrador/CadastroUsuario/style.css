@@ -1,5 +1,5 @@
 /* MAIN */
-.main_cadastro {
+.main_cadastroUsuario {
     /* background:
         linear-gradient(180deg, #060821 0%, #06082120 25%, #0608218f 80%, #060821 100%),
         url("../../assets/images/background_login.png"); */
@@ -15,14 +15,14 @@
     margin-top: 120vh;
 } */
 
-.main_cadastro .container_cad {
+.main_cadastroUsuario .container_cad {
     display: flex;
     justify-content: center;
     align-items: center;
     /* margin-top: 1vw; */
 }
 
-.main_cadastro .cad_conteudo {
+.main_cadastroUsuario .cad_conteudo {
     background: linear-gradient(114.61deg, #ffffff0d 1.08%, #ffffff1e 99.26%);
     box-shadow: 30px 30px 60px #00000080;
     border: 1px solid var(--cinzaclaro);
@@ -33,18 +33,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3% 1.5%;
+    padding-top: 1%;
+    padding-bottom: 1.5%;
     color: var(--cinzaclaro);
-    margin: 3% 0;
+    margin-left: 6%;
+    margin-right: 6%;
+    
 }
 
-.main_cadastro h1 {
+.main_cadastroUsuario h1 {
     /* font-family: var(--font1); */
     font-size: 40px;
     text-align: center;
 }
 
-.main_cadastro hr {
+.main_cadastroUsuario hr {
     margin: 0px auto;
     width: 80%;
     height: 4px;
@@ -53,19 +56,19 @@
     border-radius: 50%;
 }
 
-.main_cadastro .cad_linha_checkbox {
+.main_cadastroUsuario .cad_linha_checkbox {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin: 20px 0;
 }
 
-.main_cadastro .cad_container_checkbox {
+.main_cadastroUsuario .cad_container_checkbox {
     width: 43px;
     position: relative;
 }
 
-.main_cadastro .cad_box_checkbox {
+.main_cadastroUsuario .cad_box_checkbox {
     width: 100%;
     height: 24px;
     /* background-color: #ffffff20; */
@@ -76,13 +79,13 @@
 
 .cad_checkbox:checked~.cad_box_checkbox {}
 
-.main_cadastro .cad_checkbox {
+.main_cadastroUsuario .cad_checkbox {
     display: none;
     /* position: absolute;
     left: -100vw; */
 }
 
-.main_cadastro .cad_label {
+.main_cadastroUsuario .cad_label {
     width: 20px;
     height: 20px;
     display: block;
@@ -97,12 +100,12 @@
     transition: cubic-bezier(0.895, 0.07, 0.685, 0.68);
 }
 
-.main_cadastro .cad_checkbox:checked {
+.main_cadastroUsuario .cad_checkbox:checked {
     /* margin-bottom: 100px; */
 
 }
 
-.main_cadastro .cad_checkbox:checked+.cad_label {
+.main_cadastroUsuario .cad_checkbox:checked+.cad_label {
     left: 21px;
     background-color: var(--azulClaro);
 }
@@ -114,7 +117,7 @@
     
 }
 
-.main_cadastro .cad_formulario {
+.main_cadastroUsuario .cad_formulario {
     width: 95%;
     max-width: 665px;
     display: flex;
@@ -123,37 +126,45 @@
     /* font-family: var(--font2); */
 }
 
-.main_cadastro .cad_linha1_input,
-.main_cadastro .cad_linha2_input {
+.main_cadastroUsuario .cad_linha1_input,
+.main_cadastroUsuario .cad_linha2_input {
     display: flex;
     margin: 15px 0;
     justify-content: space-between;
     gap: 10%
 }
 
-.main_cadastro .cad_linha1_input>div:nth-child(1),
-.main_cadastro .cad_linha2_input>div:nth-child(2) {
+.main_cadastroUsuario .cad_linha1_input>div:nth-child(1),
+.main_cadastroUsuario .cad_linha2_input>div:nth-child(2) {
     flex: 1;
 }
 
-.main_cadastro .cad_linha1_input>div:nth-child(2),
-.main_cadastro .cad_linha2_input>div:nth-child(1) {
+.main_cadastroUsuario .cad_linha1_input>div:nth-child(2),
+.main_cadastroUsuario .cad_linha2_input>div:nth-child(1) {
     flex: 2;
 }
 
-.main_cadastro .cad_box_input {
+.main_cadastroUsuario .cad_box_input {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 15px 0;
 }
 
-.main_cadastro label {
+#dataNascimento{
+    font-size: 12px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.main_cadastroUsuario label {
     font-size: 16px;
 }
 
-.main_cadastro .cad_box_input2>input,
-.main_cadastro .cad_box_input>input {
+ 
+
+.main_cadastroUsuario .cad_box_input2>input,
+.main_cadastroUsuario .cad_box_input>input {
     width: 100%;
     padding: 8px;
     border-radius: 20px;
@@ -165,36 +176,36 @@
     font-size: 10px;
 }
 
-.main_cadastro #cad_select_skill:focus-visible,
-.main_cadastro .cad_box_input2>input:focus-visible,
-.main_cadastro .cad_box_input>input:focus-visible {
+.main_cadastroUsuario #cad_select_skill:focus-visible,
+.main_cadastroUsuario .cad_box_input2>input:focus-visible,
+.main_cadastroUsuario .cad_box_input>input:focus-visible {
     outline: 2px solid var(--azulClaro);
 }
 
 /* Cor de fundo do autocomplete */
-.main_cadastro input:-webkit-autofill {
+.main_cadastroUsuario input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px #524569 inset;
 }
 
 /* Cor do texto do autocomplete */
-.main_cadastro input:-webkit-autofill {
+.main_cadastroUsuario input:-webkit-autofill {
     -webkit-text-fill-color: var(--cinzaclaro);
 }
 
-.main_cadastro .cad_box_input2>input::placeholder,
-.main_cadastro .cad_box_input>input::placeholder {
+.main_cadastroUsuario .cad_box_input2>input::placeholder,
+.main_cadastroUsuario .cad_box_input>input::placeholder {
     color: var(--cinzaclaro);
     font-size: 15px;
 }
 
-.main_cadastro .cad_formulario>span {
+.main_cadastroUsuario .cad_formulario>span {
     /* font-family: var(--font1); */
     font-size: 30px;
     text-align: center;
     margin-top: 30px;
 }
 
-.main_cadastro .cad_hard_skill>span {
+.main_cadastroUsuario .cad_hard_skill>span {
     /* font-family: var(--font1); */
     font-size: 1.875em;
     text-align: center;
@@ -202,11 +213,11 @@
 
 }
 
-.main_cadastro .cad_uf {
+.main_cadastroUsuario .cad_uf {
     text-transform: uppercase;
 }
 
-.main_cadastro .cad_hard_skill {
+.main_cadastroUsuario .cad_hard_skill {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -222,19 +233,19 @@
     /* transition: .3s height cubic-bezier(0.895, 0.07, 0.685, 0.68); */
 }
 
-.main_cadastro .cad_checkbox:checked~.cad_hard_skill {
+.main_cadastroUsuario .cad_checkbox:checked~.cad_hard_skill {
     /* transition-delay: 1S; */
     /* height: 300px; */
     /* font-size: 16px; */
     display: flex;
 }
 
-.main_cadastro .cad_linha_select {
+.main_cadastroUsuario .cad_linha_select {
     display: flex;
     gap: 10%;
 }
 
-.main_cadastro #cad_select_skill {
+.main_cadastroUsuario #cad_select_skill {
     flex: 2;
     padding: 8px;
     border-radius: 20px;
@@ -246,13 +257,13 @@
     font-size: 16px;
 }
 
-.main_cadastro #cad_select_skill option {
+.main_cadastroUsuario #cad_select_skill option {
     /* appearance: none; */
     background-color: #454158;
     /* background: linear-gradient(136deg, #ffffff1a 0%, #ffffff0b 100%); */
 }
 
-.main_cadastro #cad_btn_inserir {
+.main_cadastroUsuario #cad_btn_inserir {
     flex: .8;
     font-size: 18px;
     color: var(--branco);
@@ -265,14 +276,14 @@
     cursor: pointer;
 }
 
-.main_cadastro #cad_lista_skills {
+.main_cadastroUsuario #cad_lista_skills {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     padding: 5% 0;
 }
 
-.main_cadastro .cad_item_skill {
+.main_cadastroUsuario .cad_item_skill {
     border: 1px solid #b5b5b5;
     background: var(--branco);
     color: var(--azulP);
@@ -284,7 +295,7 @@
     gap: 10px;
 }
 
-.main_cadastro .cad_item_excluir {
+.main_cadastroUsuario .cad_item_excluir {
     background: none;
     border: none;
     display: flex;
@@ -292,17 +303,17 @@
     cursor: pointer;
 }
 
-.main_cadastro .cad_item_excluir:hover {
+.main_cadastroUsuario .cad_item_excluir:hover {
     scale: 1.1;
     filter: drop-shadow(0 0 2px var(--azul));
 }
 
-.main_cadastro .cad_item_excluir svg {
+.main_cadastroUsuario .cad_item_excluir svg {
     fill: var(--rosa);
     height: 16px;
 }
 
-.main_cadastro .cad_botao {
+.main_cadastroUsuario .cad_botao {
     align-self: center;
     /* font-family: var(--font1); */
     color: var(--branco);
@@ -315,6 +326,149 @@
     /* background: linear-gradient(0deg, #00000040, rgba(0, 0, 0, 0.25)), linear-gradient(92.23deg, #FF398F -25.96%, #17BBFF 126.83%); */
     background-color: var(--azulescuro);
     border: none;
-    /* margin-top: 1%; */
+    margin-top: 1%; 
     cursor: pointer;
+}
+@media screen and (max-width:816px){
+    .main_cadastroUsuario .cad_conteudo{
+        margin-top: 1%;
+    }
+}
+
+@media screen and (max-width:630px){
+
+    .main_cadastroUsuario .card_form {
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+    }
+
+    .main_cadastroUsuario .cad_conteudo{
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width:522px){
+    #cad_box_inputCadastro #dataNascimento{
+        font-size: 13px;
+    }
+
+    #cad_box_inputCadastro>label{
+        font-size: 15px;
+    }
+    #cad_box_inputCadastro>input{
+        font-size: 9px;
+    }
+
+    .main_cadastroUsuario .cad_conteudo{
+        margin-top: 3%;
+    }
+    
+}
+
+@media screen and (max-width:489px){
+    #cad_box_inputCadastro>label{
+        font-size: 14.5px;
+    }
+    #cad_box_inputCadastro #dataNascimento{
+        font-size: 12.5px;
+    }
+
+}
+
+@media screen and (max-width:473px){
+    #cad_box_inputCadastro #dataNascimento{
+        font-size: 12.5px;
+    }
+    #cad_box_inputCadastro>label{
+        font-size: 14px;
+    }
+    .main_cadastroUsuario .cad_conteudo{
+        margin-top: 3.5%;
+    }
+
+
+
+}
+
+@media screen and (max-width:457px){
+    #cad_box_inputCadastro #dataNascimento{
+        font-size: 12px;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+    #cad_box_inputCadastro>label{
+        font-size: 13px;
+    }
+    .main_cadastroUsuario h1{
+        font-size: 37px;
+    }
+    .main_cadastroUsuario .cad_botao{
+        font-size: 16px;
+    }
+    
+
+}
+
+@media screen and (max-width:427px){
+    #cad_box_inputCadastro #dataNascimento{
+        font-size: 10px;
+        
+    }
+    #cad_box_inputCadastro>label{
+        font-size: 13px;
+    } 
+    
+    #cad_box_inputCadastro>input{
+        font-size: 7px;
+    }
+    .main_cadastroUsuario .cad_conteudo{
+        margin-top: 4%;
+    }
+
+}
+@media screen and (max-width:410px){
+    #cad_box_inputCadastro #dataNascimento{
+
+        
+    }
+    #cad_box_inputCadastro>label{
+
+    } 
+    
+    #cad_box_inputCadastro>input{
+        padding-right: 0;
+  
+    }
+
+    .main_cadastroUsuario .cad_conteudo{
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:399px){
+    .main_cadastroUsuario .cad_conteudo{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
+@media screen and (max-width:389px){
+    .main_cadastroUsuario .cad_conteudo{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+@media screen and (max-width:381px){
+    .main_cadastroUsuario .cad_conteudo{
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+}
+@media screen and (max-width:377px){
+    .main_cadastroUsuario .cad_conteudo{
+        margin-left: 2.3%;
+        margin-right: 2.3%;
+    }
 }

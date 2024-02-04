@@ -119,60 +119,60 @@ export default function CadastroUsuario(props: any) {
 
 
     return (
-        <main className="main_cadastro">
-            <div className="container_cad">
+        <main className="main_cadastroUsuario">
+            <div className="container_cad" id="container_cad_CaUsuario">
                 <div className="cad_conteudo">
                     <h1>Cadastro</h1>
                     <hr />
                     <form onSubmit={cadastrarUsuario} className="cad_formulario" method="POST">
                         <div className="card_box_org">
-                            <div className="card_form">
-                                    <div className="cad_box_input">
+                            <div className="card_form" >
+                                    < div className="cad_box_input" id="cad_box_inputCadastro">
                                         <label htmlFor="nome">Nome Completo:</label>
                                         <input
                                             type="text"
                                             id="nome"
                                             onChange={(event) => { setNome(event.target.value) }}
-                                            placeholder="Digite aqui seu nome:"
+                                            placeholder="Digite aqui"
                                             required
                                         />
                                     </div>
-                                    <div className="cad_box_input">
+                                    < div className="cad_box_input" id="cad_box_inputCadastro">
                                         <label htmlFor="email">E-mail:</label>
                                         <input
                                             type="email"
                                             id="email"
                                             onChange={(event) => { setEmail(event.target.value) }}
-                                            placeholder="Digite aqui seu e-mail:"
+                                            placeholder="Digite aqui"
                                             required
                                         />
                                     </div>
-                                    <div className="cad_box_input">
+                                    < div className="cad_box_input" id="cad_box_inputCadastro">
                                         <label htmlFor="senha">Senha:</label>
                                         <input
                                             type="password"
                                             id="senha"
                                             onChange={(event) => { setSenha(event.target.value) }}
-                                            placeholder="Digite aqui sua senha:"
+                                            placeholder="Digite aqui"
                                             required
                                         />
                                     </div>
                                     
                             </div>
 
-                            <div className="card_form">
-                                    <div className="cad_box_input">
+                            <div className="card_form" >
+                                    < div className="cad_box_input" id="cad_box_inputCadastro">
                                         <label htmlFor="cpf">CPF:</label>
                                         <input
                                             type="text"
                                             id="cpf"
                                             onChange={(event) => { setCpf(event.target.value) }}
-                                            placeholder="Digite aqui seu cpf:"
+                                            placeholder="Digite aqui"
                                             required
                                         />
                                     </div>
-                                    <div className="cad_box_input">
-                                        <label htmlFor="data_nascimento">Data de nascimento:</label>
+                                    < div className="cad_box_input" id="cad_box_inputCadastro">
+                                        <label htmlFor="dataNascimento">Nascimento:</label>
                                         <input
                                             type="date"
                                             id="dataNascimento"
@@ -181,23 +181,32 @@ export default function CadastroUsuario(props: any) {
                                             required
                                         />
                                     </div>
-                                    <div className="cad_box_input">
+                                    < div className="cad_box_input" id="cad_box_inputCadastro">
                                         <label htmlFor="departamento">Departamento:</label>
                                         <input
                                             type="text"
                                             id="departamento"
                                             onChange={(event) => { setDepartamento(event.target.value) }}
-                                            placeholder="Digite aqui seu departamento:"
+                                            placeholder="Digite aqui"
                                             required
                                         />
                                     </div>
-                                    
+                                    < div className="cad_box_input" id="cad_box_inputCadastro">
+                                        <label htmlFor="responsavel">Responsável:</label>
+                                        <input
+                                            type="text"
+                                            id="responsavel"
+                                            onChange={(event) => { setResponsavel(event.target.value) }}
+                                            placeholder="Digite aqui"
+                                            required
+                                        />
+                                    </div> 
                                     
                                     
                             </div>
 
-                            <div className="card_form">
-                                    {/* <div className="cad_box_input">
+                            <div className="card_form" >
+                                    {/* < div className="cad_box_input" id="cad_box_inputCadastro">
                                             <label htmlFor="tipo_usuario">Tipo de Usuário:</label>
                                             <input
                                                 type="text"
@@ -207,51 +216,37 @@ export default function CadastroUsuario(props: any) {
                                                 required
                                             />
                                     </div> */}
-                                    <div className="cad_box_input">
+                                    < div className="cad_box_input" id="cad_box_inputCadastro">
                                             <label htmlFor="perfil">Perfil:</label>
                                             <input
                                                 type="text"
                                                 id="perfil"
                                                 onChange={(event) => { setPerfil(event.target.value) }}
-                                                placeholder="Digite seu Perfil:"
+                                                placeholder="Digite aqui"
                                                 required
                                             />
                                     </div>
-                                    <div className="cad_box_input">
+                                    < div className="cad_box_input" id="cad_box_inputCadastro">
                                         <label htmlFor="cargo">Cargo:</label>
                                         <input
                                             type="text"
                                             id="cargo"
                                             onChange={(event) => { setCargo(event.target.value) }}
-                                            placeholder="Digite aqui seu cargo:"
+                                            placeholder="Digite aqui"
                                             required
                                         />
                                     </div>
-                            </div>
-
-                            <div className="card_form">
-                                <div className="cad_box_input">
-                                            <label htmlFor="status_atividade">Status:</label>
-                                            <input
-                                                type="text"
-                                                id="status_atividade"
-                                                onChange={(event) => { setStatusAtividade(event.target.value) }}
-                                                placeholder="Digite aqui o status:"
-                                                required
-                                            />
-                                </div>
-                                <div className="cad_box_input">
-                                        <label htmlFor="responsavel">Responsável:</label>
+                                    < div className="cad_box_input" id="cad_box_inputCadastro">
+                                        <label htmlFor="status_atividade">Status:</label>
                                         <input
                                             type="text"
-                                            id="responsavel"
-                                            onChange={(event) => { setResponsavel(event.target.value) }}
-                                            placeholder="Digite aqui seu responsável:"
+                                            id="status_atividade"
+                                            onChange={(event) => { setStatusAtividade(event.target.value) }}
+                                            placeholder="Digite aqui"
                                             required
-                                        />
-                                 </div>
+                                         />
+                                    </div>
                             </div>
-
                             
                                 {/* <div className="cad_box_input">
                                     <label htmlFor="foto">Foto:</label>
