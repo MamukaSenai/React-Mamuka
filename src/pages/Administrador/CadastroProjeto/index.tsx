@@ -74,8 +74,8 @@ export default function CadastroProjeto(props: any) {
                     <form onSubmit={cadastrarProjeto} className="cad_formulario" method="POST">
                         <div className="card_box_org">
                             
-                            <div className="card_form">
-                                    <div className="cad_box_input">
+                            <div className="card_form" id="formprojeto">
+                                    <div className="cad_box_input" id="cardForm">
                                         <label htmlFor="nomeProjeto">Nome do Projeto:</label>
                                         <input
                                             type="text"
@@ -86,8 +86,8 @@ export default function CadastroProjeto(props: any) {
                                             required
                                         />
                                     </div>
-                                    <div className="cad_box_input">
-                                        <label htmlFor="statusProjeto">Status do Projeto:</label>
+                                    <div className="cad_box_input" id="cardForm">
+                                        <label htmlFor="statusProjeto">Status:</label>
                                         <input
                                             type="text"
                                             id="statusProjeto"
@@ -99,8 +99,8 @@ export default function CadastroProjeto(props: any) {
                                     </div>     
                             </div>
 
-                            <div className="card_form">
-                                    <div className="cad_box_input">
+                            <div className="card_form" id="formprojeto">
+                                    <div className="cad_box_input" >
                                         <label htmlFor="dataInicio">Data de inicio:</label>
                                         <input
                                             type="date"
@@ -110,8 +110,8 @@ export default function CadastroProjeto(props: any) {
                                             required
                                         />
                                     </div>
-                                    <div className="cad_box_input">
-                                        <label htmlFor="dataConclusao">Data de conclusão::</label>
+                                    <div className="cad_box_input" >
+                                        <label htmlFor="dataConclusao">Data de conclusão:</label>
                                         <input
                                             type="date"
                                             id="dataConclusao"
@@ -120,8 +120,8 @@ export default function CadastroProjeto(props: any) {
                                             required
                                         />
                                     </div>
-                                    <div className="cad_box_input">
-                                        <label htmlFor="responsavel">Nome do responsavel:</label>
+                                    <div className="cad_box_input" id="cardForm">
+                                        <label htmlFor="responsavel">Responsável:</label>
                                         <input
                                             type="text"
                                             id="responsavel"
@@ -136,7 +136,7 @@ export default function CadastroProjeto(props: any) {
                             </div>
            
                         </div>
-                        <button type="submit" className="cad_botao">Cadastrar</button>
+                        <button type="submit" className="cad_botao" >Cadastrar</button>
                     </form>
                 </div>
             </div>

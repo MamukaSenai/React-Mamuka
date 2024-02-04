@@ -15,11 +15,13 @@
     margin-top: 120vh;
 } */
 
-.main_cadastro .container_cad {
+.main_cadastro .container_cad  {
     display: flex;
     justify-content: center;
     align-items: center;
     /* margin-top: 1vw; */
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .main_cadastro .cad_conteudo {
@@ -28,6 +30,7 @@
     border: 1px solid var(--cinzaclaro);
     backdrop-filter: blur(10px);
     border-radius: 20px;
+    height: 10%;
     width: 100%;
     max-width: 783px;
     display: flex;
@@ -36,6 +39,7 @@
     padding: 21px 0;
     color: var(--cinzaclaro);
     margin: 3% 0;
+
 }
 
 .main_cadastro h1 {
@@ -318,3 +322,78 @@
     /* margin-top: 1%; */
     cursor: pointer;
 }
+
+
+@media screen and (max-width:1025px){
+    .main_cadastro .cad_conteudo{
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    #data_inicio,#data_conclusao{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width:993px){
+    .main_cadastro .cad_conteudo{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+}
+
+
+@media screen and (max-width:495px){
+    .card_form{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+    /* #formtarefa label{
+        
+    }*/
+}
+
+
+@media screen and (max-width:469px){
+    .card_form{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+
+
+}
+@media screen and (max-width:425px){
+
+    #formtarefa label {
+        font-size: 14.5px;
+    }
+
+
+}
+@media screen and (max-width:401px){
+
+    #formtarefa label {
+        font-size: 14px;
+    }
+
+
+}
+@media screen and (max-width:395px){
+
+    #formtarefa label {
+        font-size: 13.5px;
+    }
+
+
+    #cardForm input{
+        font-size: 9px;
+    }
+}
+@media screen and (max-width:384px){
+
+    #cardForm input{
+        font-size: 8.9px;
+    }
+}
+

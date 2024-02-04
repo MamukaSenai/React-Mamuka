@@ -164,3 +164,69 @@
     margin-top: 30px;
 }
 
+@media screen and (max-width:495px){
+    .card_form{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+    /* #formprojeto label{
+        
+    }*/
+}
+@media screen and (max-width:469px){
+    .card_form{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+}
+@media screen and (max-width:469px){
+    .card_form{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+
+
+}
+@media screen and (max-width:425px){
+
+    #formprojeto label {
+        font-size: 14.5px;
+    }
+
+    #dataInicio,#dataConclusao{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:401px){
+
+    #formprojeto label {
+        font-size: 14px;
+    }
+
+    #dataInicio,#dataConclusao{
+        font-size: 13.5px;
+    }
+}
+@media screen and (max-width:395px){
+
+    #formprojeto label {
+        font-size: 13.5px;
+    }
+
+    #dataInicio,#dataConclusao{
+        font-size: 13px;
+    }
+
+    #cardForm input{
+        font-size: 9px;
+    }
+}
+@media screen and (max-width:384px){
+
+    #cardForm input{
+        font-size: 8.9px;
+    }
+}

@@ -59,30 +59,30 @@ export default function CadastroProjeto(props: any) {
                     <form onSubmit={cadastrarProjeto} className="cad_formulario" method="POST">
                         <div className="card_box_org">
                             
-                            <div className="card_form">
-                                    <div className="cad_box_input">
+                            <div className="card_form" id="formtarefa">
+                                    <div className="cad_box_input" id="cardForm">
                                         <label htmlFor="nome_tarefa">Nome da Tarefa:</label>
                                         <input
                                             type="text"
                                             id="nome_tarefa"
                                             onChange={(event) => { setNome_tarefa(event.target.value) }}
-                                            placeholder="Digite aqui o nome do projeto:"
+                                            placeholder="Digite aqui"
                                             required
                                         />
                                     </div>
-                                    <div className="cad_box_input">
-                                        <label htmlFor="status_tarefa">Status da Tarefa:</label>
+                                    <div className="cad_box_input" id="cardForm">
+                                        <label htmlFor="status_tarefa">Status:</label>
                                         <input
                                             type="text"
                                             id="status_tarefa"
                                             onChange={(event) => { setStatus_tarefa(event.target.value) }}
-                                            placeholder="Digite aqui o status do projeto:"
+                                            placeholder="Digite aqui"
                                             required
                                         />
                                     </div>     
                             </div>
 
-                            <div className="card_form">
+                            <div className="card_form" id="formtarefa">
                                     <div className="cad_box_input">
                                         <label htmlFor="data_inicio">Data de inicio:</label>
                                         <input
@@ -94,7 +94,7 @@ export default function CadastroProjeto(props: any) {
                                         />
                                     </div>
                                     <div className="cad_box_input">
-                                        <label htmlFor="data_conclusao">Data de conclusão::</label>
+                                        <label htmlFor="data_conclusao">Data de conclusão:</label>
                                         <input
                                             type="date"
                                             id="data_conclusao"
