@@ -38,6 +38,7 @@
     color: var(--cinzaclaro);
     margin-left: 6%;
     margin-right: 6%;
+    margin-top: 5%;
     
 }
 
@@ -110,7 +111,7 @@
     background-color: var(--azulClaro);
 }
 
-.card_box_org {
+#card_box_orgCadastroUsuario {
     
     display: flex;
     justify-content: space-between;
@@ -329,9 +330,16 @@
     margin-top: 1%; 
     cursor: pointer;
 }
+
+@media screen and (max-width:1056px){
+    .main_cadastroUsuario .cad_conteudo{
+        margin-top: 6%;
+    }
+}
+
 @media screen and (max-width:816px){
     .main_cadastroUsuario .cad_conteudo{
-        margin-top: 1%;
+        margin-top: 7%;
     }
 }
 
@@ -343,7 +351,7 @@
     }
 
     .main_cadastroUsuario .cad_conteudo{
-        margin-top: 2%;
+        margin-top: 8%;
     }
 }
 
@@ -360,7 +368,7 @@
     }
 
     .main_cadastroUsuario .cad_conteudo{
-        margin-top: 3%;
+        margin-top: 9%;
     }
     
 }
@@ -383,7 +391,7 @@
         font-size: 14px;
     }
     .main_cadastroUsuario .cad_conteudo{
-        margin-top: 3.5%;
+        margin-top: 11%;
     }
 
 
@@ -421,9 +429,9 @@
     #cad_box_inputCadastro>input{
         font-size: 7px;
     }
-    .main_cadastroUsuario .cad_conteudo{
+    /* .main_cadastroUsuario .cad_conteudo{
         margin-top: 4%;
-    }
+    } */
 
 }
 @media screen and (max-width:410px){

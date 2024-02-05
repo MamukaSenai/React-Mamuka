@@ -125,8 +125,8 @@ export default function CadastroUsuario(props: any) {
                     <h1>Cadastro</h1>
                     <hr />
                     <form onSubmit={cadastrarUsuario} className="cad_formulario" method="POST">
-                        <div className="card_box_org">
-                            <div className="card_form" >
+                        <div className="card_box_org" id="card_box_orgCadastroUsuario">
+                            <div className="card_form" id="">
                                     < div className="cad_box_input" id="cad_box_inputCadastro">
                                         <label htmlFor="nome">Nome Completo:</label>
                                         <input
