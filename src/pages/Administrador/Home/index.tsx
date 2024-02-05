@@ -21,25 +21,19 @@ function Home() {
 
       <main id="right_home">
         <section id="Home">
+           {/* <div className="conteudo" id="conteudo_Home"> */}
             <div className="conteudo">
               <div className="cadastro">
                 <img className="imgcadastro" src={Cadastro} alt="cadastro" />
-                <Link to="admpessoais" className="button">
-                  {/* <a href="#" className="button">
-                    {" "}
-                    Cadastre os usuários
-                  </a> */}
+
+                <Link to="cadastro/usuario" className="button">
                   Cadastre os usuários
                 </Link>
                 
               </div>
               <div className="consulta">
                 <img className="imgconsulta" src={Consulta} alt="consulta" />
-                <Link to="admconsulta" className="button">
-                  {/* <a href="" className="button">
-                    {" "}
-                    Consulte usuários cadastrados
-                  </a> */}
+                  <Link to="listadevs" className="button">
                   Consulte usuários cadastrados
                 </Link>
                 
