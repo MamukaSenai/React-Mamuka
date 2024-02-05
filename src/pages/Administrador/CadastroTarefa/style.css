@@ -159,7 +159,8 @@
 .main_cadastro .cad_box_input2>input,
 .main_cadastro .cad_box_input>input {
     width: 100%;
-    padding: 8px;
+    height: 38px;
+    padding: 8px 20px 10px 8px;
     border-radius: 20px;
     border: 1px solid #b5b5b5;
     background: linear-gradient(136deg, #ffffff1a 0%, #ffffff0b 100%);
@@ -167,6 +168,10 @@
     backdrop-filter: blur(15px);
     color: var(--cinzaclaro);
     font-size: 10px;
+}
+#data_inicio,
+#data_conclusao{
+    font-size: 14px;
 }
 
 .main_cadastro #cad_select_skill:focus-visible,
@@ -330,7 +335,7 @@
         margin-right: 6%;
     }
     #data_inicio,#data_conclusao{
-        font-size: 11px;
+        font-size: 14px;
     }
 }
 @media screen and (max-width:993px){
@@ -371,6 +376,14 @@
 
 
 }
+@media screen and (max-width:409px){
+
+    #data_inicio,#data_conclusao{
+        font-size: 13px;
+    }
+
+
+}
 @media screen and (max-width:401px){
 
     #formtarefa label {
@@ -388,6 +401,10 @@
 
     #cardForm input{
         font-size: 9px;
+    }
+
+    #data_inicio,#data_conclusao{
+        font-size: 12.7px;
     }
 }
 @media screen and (max-width:384px){
