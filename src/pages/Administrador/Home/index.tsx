@@ -19,35 +19,37 @@ function Home() {
   return (
     <>
 
-<main>
-        <div className="conteudo">
-                <div className="cadastro">
-                    <img className="imgCadastro" src={Cadastro} alt="cadastro" />
-                        <Link to="cadastro/usuario" className="button">
-                          {/* <a href="#" className="button">
-                            {" "}
-                            Cadastre os usuários
-                          </a> */}
-                          Cadastre os usuários
-                        </Link>
-                </div>
-
-
-                <div className="consulta">
-                    <img className="imgConsulta" src={Consulta} alt="consulta" />
-                        <Link to="listadevs" className="button">
-                          {/* <a href="" className="button">
-                            {" "}
-                            Consulte usuários cadastrados
-                          </a> */}
-                          Consulte usuários cadastrados
-                        </Link>
-                </div>
-
-        </div>
+      <main id="right_home">
+        <section id="Home">
+            <div className="conteudo">
+              <div className="cadastro">
+                <img className="imgcadastro" src={Cadastro} alt="cadastro" />
+                <Link to="admpessoais" className="button">
+                  {/* <a href="#" className="button">
+                    {" "}
+                    Cadastre os usuários
+                  </a> */}
+                  Cadastre os usuários
+                </Link>
+                
+              </div>
+              <div className="consulta">
+                <img className="imgconsulta" src={Consulta} alt="consulta" />
+                <Link to="admconsulta" className="button">
+                  {/* <a href="" className="button">
+                    {" "}
+                    Consulte usuários cadastrados
+                  </a> */}
+                  Consulte usuários cadastrados
+                </Link>
+                
+              </div>
+            </div>
+        </section>
 
       </main>
     </>
+
 
   )
 
