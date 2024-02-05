@@ -14,7 +14,8 @@ main#lista-devs {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-left: 10%;
+    margin-right: 10%;
     
 }
 
@@ -212,4 +213,176 @@ main#lista-devs {
     border-radius: 20px;
     background-color: white;
     color: var(--azulP);
+}
+
+@media screen and (max-width: 827px) {
+    .campo-label button{
+        width: 29%;
+    }
+}
+@media screen and (max-width: 801px) {
+    .campo-label button{
+        width: 28%;
+    }
+}
+@media screen and (max-width: 763px) {
+    .campo-label button{
+        width: 27%;
+    }
+}
+@media screen and (max-width: 725px) {
+    .campo-label button{
+        width: 26%;
+    }
+}
+@media screen and (max-width: 695px) {
+    .campo-label button{
+        width: 25%;
+    }
+}
+@media screen and (max-width: 668px) {
+    .campo-label button{
+        width: 24%;
+    }
+    .campo-label input{
+        height: 10vh;
+        width: 65%;
+    }
+}
+@media screen and (max-width: 656px) {
+    .wrapper_form label{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 647px) {
+    .campo-label button{
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 637px) {
+    .wrapper_form label{
+        font-size: 25.5px;
+    }
+    #lista-devs h1{
+        font-size: 48px;
+    }
+}
+@media screen and (max-width: 614px) {
+    #lista-devs h1{
+        font-size: 46px;
+    }
+    .wrapper_form label{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 583px) {
+    .campo-label input{
+        padding: 5% 5% 5% 8%;
+        font-size: 15px;
+    }
+    .wrapper_form label{
+        font-size: 23px;
+    }
+    .campo-label button{
+        font-size: 12.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 549px) {
+    #lista-devs h1{
+        font-size: 42px;
+    }
+    .wrapper_form label{
+        font-size: 22px;
+        padding-bottom: 0;
+        margin-top: 3%;
+    }
+    .campo-label input {
+        height: 9.5vh;
+        font-size: 14px;
+        padding: 5% 5% 5% 6%;
+    }
+    .campo-label button{
+        width: 75px;
+    }
+}
+@media screen and (max-width: 516px) {
+    #lista-devs h1{
+        font-size: 39px;
+    }
+    .wrapper_form label{
+        font-size: 21px;
+        margin-top: 4%;
+    }
+    .campo-label button{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #lista-devs h1{
+        font-size: 37px;
+    }
+    .wrapper_form label{
+        font-size: 20px;
+        margin-top: 4%;
+    }
+    .campo-label input {
+        font-size: 13px;
+    }
+
+}
+@media screen and (max-width: 476px) {
+    .container_lista_devs{
+        margin-left: 9.5%;
+        margin-right: 9.5%;
+    }
+
+}
+@media screen and (max-width: 460px) {
+    .container_lista_devs{
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+}
+@media screen and (max-width: 444px) {
+    .container_lista_devs{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media screen and (max-width: 434px) {
+    .campo-label input{
+        height: 8.7vh;
+    }
+}
+@media screen and (max-width: 416px) {
+    .wrapper_form label{
+        font-size: 19.5px;
+        margin-top: 6%;
+    }
+    #lista-devs h1{
+        font-size: 34px;
+    }
+}
+@media screen and (max-width: 402px) {
+    .wrapper_form label{
+        font-size: 18.5px;
+        margin-top: 7.5%;
+    }
+}
+@media screen and (max-width: 410px) {
+    .wrapper_form label{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 382px) {
+    .wrapper_form label{
+        font-size: 17.5px;
+    }
+    #lista-devs h1{
+        font-size: 32.5px;
+    }
 }
