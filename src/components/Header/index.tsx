@@ -34,7 +34,7 @@ export default function Header(){
                   <div className="fotoperfil">
                   </div>
                   {/*<p>Ricardo Souza</p>*/}
-                  <Link to="/devperfil" className="a">
+                  <Link to="/perfil/:idUsuario" className="a">
                     {/* <a href="#">
                       Ricardo Souza
                     </a>  */}
