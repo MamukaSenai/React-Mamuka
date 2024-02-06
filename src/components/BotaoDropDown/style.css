@@ -19,7 +19,8 @@
 #conteudoMenu {
     position: fixed;
     background-color: rgba(0,0,0,0.35);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1px);
+    z-index: 1;
 }
 
 
