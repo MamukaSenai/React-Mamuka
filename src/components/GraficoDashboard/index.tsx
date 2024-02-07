@@ -63,65 +63,106 @@
 //   config: config,
 // };
 
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { useEffect, useState } from 'react';
-import { Pie } from 'react-chartjs-2';
-import api from '../../utils/api';
+// import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 
-ChartJS.register(ArcElement, Tooltip, Legend);
-
-var options = {
-    responsive : true,
-    maintainAspectRatio: false,
-};
-
+import React, { Component } from "react";
+import Chart from "react-apexcharts";
 
   
-var data = {
-    labels: ['Cancelado', 'Em Andamento', 'Concluidos', 'Não alocados'],
-    datasets: [
-        {
-            label: 'Projetos',
-            data: [3, 43, 10, 13],
-            backgroundColor: [
-                '#E44358',
-                '#FFCB00',
-                // 'rgba(54, 162, 235, 0.2)',
-                '#00CA72',
-                '#DBDBDB',
-            ],
-            borderColor: [
-                '#E44358',
-                '#FFCB00',
-                // 'rgba(54, 162, 235, 1)',
-                '#00CA72',
-                '#DBDBDB',
-            ],
-            borderWidth: 1,
-        },
-    ],
-};
+export default class Donut extends Component {
 
-interface UserData {
-    id: number;
-    nome_projeto: string;
-    data_inicio: string;
-    data_conclusao: string;
-    status_projeto: string;
-    gestor: any;
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      options: {
+        plotOptions:{
+            pie:{
+                donut:{
+                    show: true,
+                    // name: {
+                    //     "Projetos"
+                    // }
+                    // value: {
+                    // }
+                }
+            }
+        }
+      },
+      series: [80, 55, 41, 17, 15],
+      chartOptions: {
+    //   labels: ['A', 'B', 'C', 'E', 'D']
+      }
+    }
   }
-  
-export default function Pies() {
-    useEffect(() => {
-        api.get('/projetos')
-          .then(response => {
-            setDados(response.data);
-          })
-          .catch(error => {
-            console.error("A conexão falhou =/", error);
-          });
-      }, []);
-      
-      const [dados, setDados] = useState<UserData[]>([]);
-    return <Pie data={data} options={options} />
+
+  render() {
+
+    return (
+      <div className="donut">
+        <Chart options={this.state.options} series={this.state.series} type="donut" width="380" />
+      </div>
+    );
+  }
 }
+
+
+
+// ChartJS.register(ArcElement, Tooltip, Legend);
+
+// var options = {
+//     responsive : true,
+//     maintainAspectRatio: false,
+// };
+
+
+  
+// var data = {
+//     labels: ['Cancelado', 'Em Andamento', 'Concluidos', 'Não alocados'],
+//     datasets: [
+//         {
+//             label: 'Projetos',
+//             data: [3, 43, 10, 13],
+//             backgroundColor: [
+//                 '#E44358',
+//                 '#FFCB00',
+//                 // 'rgba(54, 162, 235, 0.2)',
+//                 '#00CA72',
+//                 '#DBDBDB',
+//             ],
+//             borderColor: [
+//                 '#E44358',
+//                 '#FFCB00',
+//                 // 'rgba(54, 162, 235, 1)',
+//                 '#00CA72',
+//                 '#DBDBDB',
+//             ],
+//             borderWidth: 1,
+//         },
+//     ],
+// };
+
+// interface UserData {
+//     id: number;
+//     nome_projeto: string;
+//     data_inicio: string;
+//     data_conclusao: string;
+//     status_projeto: string;
+//     gestor: any;
+//   }
+  
+// export default function Pies() {
+//     useEffect(() => {
+//         api.get('/projetos')
+//           .then(response => {
+//             setDados(response.data);
+//           })
+//           .catch(error => {
+//             console.error("A conexão falhou =/", error);
+//           });
+//       }, []);
+      
+//       const [dados, setDados] = useState<UserData[]>([]);
+//     return <Pie data={data} options={options} />
+// }
+

@@ -56,12 +56,6 @@ export default function GestorProjetos() {
 
   const dadosFiltrados = filtrarDados();
 
-  console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
-  console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
-  console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
-  console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
-  console.log(dados)
-
   return (
     <div>
       <div className='filtro-projeto-responsavel'>
