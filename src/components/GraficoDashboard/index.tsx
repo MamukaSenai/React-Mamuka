@@ -1,168 +1,32 @@
-//  import Chart from "chart.js/auto";
-//  import { Pie } from "react-chartjs-2";
-// {/* <Pie data={...} /> */}
-
-// // TESTANDO CODIGO DE TUTORIAIS DE TERCEIROS
-
-// // const labels = ["January", "February", "March", "April", "May", "June"];
-// // const data = {
-// //   labels: labels,
-// //   datasets: [
-// //     {
-// //       label: "My First dataset",
-// //       backgroundColor: "rgb(255, 99, 132)",
-// //       borderColor: "rgb(0,0,255)",
-// //       data: [0, 10, 5, 2, 20, 30, 45],
-// //     },
-// //   ],
-// // };
-
-// const PieChart = () => {
-//     return (
-//       <div>
-//         <Pie data={data} />
-//       </div>
-//     );
-//   };
-
-
-//   export default PieChart;
-
-
-
-// // TESTANDO CODIGO DIRETAMENTE DO CHART.JS
-//   // <block:setup:1>
-// const data = {
-//   labels: [
-//     'Red',
-//     'Blue',
-//     'Yellow'
-//   ],
-//   datasets: [{
-//     label: 'My First Dataset',
-//     data: [300, 50, 100],
-//     backgroundColor: [
-//       'rgb(255, 99, 132)',
-//       'rgb(54, 162, 235)',
-//       'rgb(255, 205, 86)'
-//     ],
-//     hoverOffset: 4
-//   }]
-// };
-// // </block:setup>
-
-// // <block:config:0>
-// const config = {
-//   type: 'pie',
-//   data: data,
-// };
-// // </block:config>
-
-// module.exports = {
-//   actions: [],
-//   config: config,
-// };
-
-// import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-
-import React, { Component } from "react";
+import { useEffect, useState } from "react";
 import Chart from "react-apexcharts";
 
-  
-export default class Donut extends Component {
-
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      options: {
-        plotOptions:{
-            pie:{
-                donut:{
-                    show: true,
-                    // name: {
-                    //     "Projetos"
-                    // }
-                    // value: {
-                    // }
-                }
-            }
-        }
-      },
-      series: [80, 55, 41, 17, 15],
-      chartOptions: {
-    //   labels: ['A', 'B', 'C', 'E', 'D']
-      }
-    }
-  }
-
-  render() {
-
-    return (
-      <div className="donut">
-        <Chart options={this.state.options} series={this.state.series} type="donut" width="380" />
-      </div>
-    );
-  }
+interface Props {
+  listaProjetos : Array<any>
 }
 
+const Donut = ( {listaProjetos} : Props ) => {
+  const [options, setOptions] = useState<any>({ labels : [] })
+  const [series, setSeries] = useState<any>([])
+
+  useEffect(() => {
+    let testea : any = []
+    let testeb : any = []
+    listaProjetos.forEach((a) => {
+      // options.xaxis.categories.push( a.ano )
+      testea.push( a.status )
+      testeb.push( a.contagem )
+    }); 
+    setOptions({ ... options, labels : testea })
+    setSeries(testeb)
+  }, [listaProjetos])
 
 
-// ChartJS.register(ArcElement, Tooltip, Legend);
+  return (
+    <div className="donut">
+      <Chart options={options} series={series} type="donut" width="380" />
+    </div>
+  );
+}
 
-// var options = {
-//     responsive : true,
-//     maintainAspectRatio: false,
-// };
-
-
-  
-// var data = {
-//     labels: ['Cancelado', 'Em Andamento', 'Concluidos', 'Não alocados'],
-//     datasets: [
-//         {
-//             label: 'Projetos',
-//             data: [3, 43, 10, 13],
-//             backgroundColor: [
-//                 '#E44358',
-//                 '#FFCB00',
-//                 // 'rgba(54, 162, 235, 0.2)',
-//                 '#00CA72',
-//                 '#DBDBDB',
-//             ],
-//             borderColor: [
-//                 '#E44358',
-//                 '#FFCB00',
-//                 // 'rgba(54, 162, 235, 1)',
-//                 '#00CA72',
-//                 '#DBDBDB',
-//             ],
-//             borderWidth: 1,
-//         },
-//     ],
-// };
-
-// interface UserData {
-//     id: number;
-//     nome_projeto: string;
-//     data_inicio: string;
-//     data_conclusao: string;
-//     status_projeto: string;
-//     gestor: any;
-//   }
-  
-// export default function Pies() {
-//     useEffect(() => {
-//         api.get('/projetos')
-//           .then(response => {
-//             setDados(response.data);
-//           })
-//           .catch(error => {
-//             console.error("A conexão falhou =/", error);
-//           });
-//       }, []);
-      
-//       const [dados, setDados] = useState<UserData[]>([]);
-//     return <Pie data={data} options={options} />
-// }
-
+export default Donut
