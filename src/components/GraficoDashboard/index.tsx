@@ -6,8 +6,9 @@ interface Props {
 }
 
 const Donut = ( {listaProjetos} : Props ) => {
-  const [options, setOptions] = useState<any>({ labels : [] })
+  const [options, setOptions] = useState<any>({ labels : [], colors:['#FFCB00', '#E44358', '#00CA72']})
   const [series, setSeries] = useState<any>([])
+  
 
   useEffect(() => {
     let testea : any = []
@@ -19,10 +20,15 @@ const Donut = ( {listaProjetos} : Props ) => {
     }); 
     setOptions({ ... options, labels : testea })
     setSeries(testeb)
+    
+    console.log(listaProjetos);
+    
   }, [listaProjetos])
 
+  
 
   return (
+    
     <div className="donut">
       <Chart options={options} series={series} type="donut" width="380" />
     </div>

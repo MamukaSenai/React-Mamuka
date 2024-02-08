@@ -3,6 +3,7 @@ import Donut  from "../../../components/GraficoDashboard";
 import "./style.css"
 
 import api from "../../../utils/api";
+import Barras from "../../../components/BarrasDashboard";
 
 export default function Dashboard() {
   const [dados, setDados] = useState<any[]>([]);
@@ -38,10 +39,13 @@ export default function Dashboard() {
   return (
     <>
       <div className="alinhamentogeral">
-        
+      <div className="graficobarras configconteudo">
+          <Barras listaProjetos={ dados } />
+        </div>
         <div className="graficopizza configconteudo">
           <Donut listaProjetos={ dados } />
         </div>
+        
       </div>
     </>
   );
