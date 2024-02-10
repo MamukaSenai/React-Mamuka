@@ -19,12 +19,13 @@ export default function Dashboard() {
 
   const fetchProjetos = async () => {
     try {
-      const response = await api.get('/projetos');
+      const response = await api.get(`/projetos/${idUsuario}`);
       const projetos = response.data;
 
-      const nomesProjetos = projetos.map((projeto: any) => projeto.nome);
+      const nomesProjetos = projetos.map((projeto: any) => projeto.nome_projeto && projeto.id);
 
       setDados2(nomesProjetos)
+      
     } catch (error) {
       console.error("Erro ao buscar projetos:", error);
     }
@@ -60,18 +61,22 @@ export default function Dashboard() {
     <>
       <div className="alinhamentogeral">
 
-          {/* <label htmlFor="ProjetoSelect">Selecione um projeto</label>
+        <div>
+
+
+          {/* <label htmlFor="ProjetoSelect">Selecione um projeto</label> */}
           <select id="projetoSelect">
             <option value="">Selecione um projeto</option>
-            {dados.map((projeto, index) => (
-              <option key={index} value={projeto}>{projeto}</option>
+            {dados2.map((projeto: any) => (
+              <option key={projeto.id} value={projeto.id}>{projeto}</option>
               ))}
-          </select> */}
+          </select>
         
 
 
         <div className="graficobarras configconteudo">
           <Barras listaTarefas={dados} />
+        </div>
         </div>
         
         <div className="graficopizza configconteudo">
