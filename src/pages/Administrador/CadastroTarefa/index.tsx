@@ -9,7 +9,7 @@ import api from "../../../utils/api";
 
 
 
-export default function CadastroProjeto(props: any) {
+export default function CadastroTarefa(props: any) {
 
 
     const [nome_tarefa, setNome_tarefa] = useState<string>("");
@@ -21,7 +21,7 @@ export default function CadastroProjeto(props: any) {
     function cadastrarProjeto(event: any) {
         event.preventDefault();
 
-        console.log("odosdnfisdnfisdjfn");
+        console.log("Função CadastroTarefa");
         
 
         //só utiliza formData quando tiver arquivos 
@@ -37,13 +37,12 @@ export default function CadastroProjeto(props: any) {
         formData.append("data_conclusao", data_conclusao);
 
 
-        console.log("chamadaaa API");
+        console.log("chamada da API");
         
 
         api.post("/tarefas", formData).then((response) => {
             console.log(response)
-            alert("Projeto criado com sucesso! 😊🤗")
-            // Navegação para login
+            alert("Tarefa criada com sucesso! 😊🤗")
         }).catch((error) => {
             console.log(error)
         })
