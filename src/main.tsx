@@ -45,7 +45,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Routes>
         {/* As paginas de login vao ter header e aside? - Se nao, como retirar o aside e o header? */}
         {/* PAGINAS DE ADM */}
-        <Route path="/" element={<Home />} />
+        <Route path="home" element={<Home />} />
         <Route path="admconclusao" element={<CadastroInfosConclusao />} />
         <Route path="admcorporativas" element={<CadastroInfosCorporativas />} />
         <Route path="admpessoais" element={<CadastroInfosPessoais />} />
@@ -57,7 +57,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='perfil/:idUsuario' element={<PerfilUsuario />} />
         <Route path='cadastro/usuario' element={<CadastroUsuario />} />
         {/* <Route path='login' element={< Login />} /> */}
-        <Route path='login' element={< Login2 />} />
+        <Route path='/' element={< Login2 />} />
         <Route path='visualizartarefa' element={< VisualizarTarefa />} />
         <Route path='cadastro/projeto' element={< CadastroProjeto />} />
         <Route path='cadastro/tarefa' element={< CadastroTarefa />} />

@@ -9,7 +9,7 @@ export default function Header(){
               <div className="logo">
                 {/* <a href="../administrador_home/administrador_home.html"> */}
                   {/* <div className="teste"></div> */}
-                  <Link to="/">
+                  <Link to="/home">
                     <img src={Logo} className="teste" />
                   </Link>
                   

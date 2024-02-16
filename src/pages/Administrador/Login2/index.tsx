@@ -11,15 +11,15 @@ function Login2() {
 
     const [ email, setEmail ] = useState<string>("")
     const [ senha, setSenha ] = useState<string>("")
-    // const [ idUsuario, setUsuario ] = useState<string>("")
+    const [ idUsuario, setidUsuario ] = useState<string>("")
     
     function fazerLogin(event: any) {
         event.preventDefault()
 
         const usuario: object = {
             email: email,
-            senha: senha
-            // id_usuario: idUsuario
+            senha: senha,
+            idUsuario: idUsuario
         }
 
         api.post("/login", usuario).then( (response) => {
@@ -27,7 +27,7 @@ function Login2() {
 
             secureLocalStorage.setItem("user", response.data)
             
-            navigate("/" /*+ response.data.idUsuario*/)
+            navigate("/home" /* + response.data.idUsuario*/)
 
             // Recarrega a página
             navigate(0)            
