@@ -10,8 +10,11 @@ export default function Dashboard() {
   const [projetos, setProjetos] = useState([]);
   const [projetoSelecionado, setProjetoSelecionado] = useState("");
   const [dados2, setDados2] = useState<any[]>([]);
-
+  // const [idUsuario, setIdUsuario] = useState<string>("");
+  var usuario = localStorage.getItem("idUsuario");
   useEffect(() => {
+    // setIdUsuario(aaa);
+    // console.log(localStorage.getItem("idUsuario"))
     BuscarProjetos();
     fetchProjetos();
 
@@ -19,10 +22,10 @@ export default function Dashboard() {
 
   const fetchProjetos = async () => {
     try {
-      const response = await api.get(`/projetos/${idUsuario}`);
+      const response = await api.get(`/projetos/gestor/${usuario}`);
       const projetos = response.data;
 
-      const nomesProjetos = projetos.map((projeto: any) => projeto.nome_projeto && projeto.id);
+      const nomesProjetos = projetos.map((projeto: any) => projeto.nome_projeto);
 
       setDados2(nomesProjetos)
       

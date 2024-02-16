@@ -1,5 +1,5 @@
 import api from "../../../utils/api"
-import secureLocalStorage from "react-secure-storage";
+// import secureLocalStorage from "react-secure-storage";
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom"
@@ -23,13 +23,16 @@ function Login2() {
         }
 
         api.post("/login", usuario).then( (response) => {
-            console.log(response.data.idUsuario)
+            // console.log(response.data.idUsuario)
+            
 
-            secureLocalStorage.setItem("user", response.data)
+           localStorage.setItem("idUsuario", response.data.idUsuario)
+
+            // console.log(localStorage.getItem("idUsuario"))
             
             navigate("/home" /* + response.data.idUsuario*/)
 
-            // Recarrega a página
+            // // Recarrega a página
             navigate(0)            
         })
     }

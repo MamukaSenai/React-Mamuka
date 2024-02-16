@@ -27,6 +27,7 @@ const Barras = ({ listaTarefas }: Props) => {
     listaTarefas.forEach((projeto) => {
       categories.push(projeto.status);
       data.push(projeto.contagem);
+      
     });
 
     setOptions({
