@@ -3,9 +3,10 @@ import Chart from "react-apexcharts";
 
 interface Props {
   listaTarefas: Array<any>;
+  projeto : string
 }
 
-const Barras = ({ listaTarefas }: Props) => {
+const Barras = ({ listaTarefas, projeto }: Props) => {
   const [options, setOptions] = useState<any>({
     plotOptions: {
       bar: {
