@@ -7,8 +7,8 @@ import Barras from "../../../components/BarrasDashboard";
 
 export default function Dashboard() {
   const [projetoSelect, setProjetoSelect] = useState<any>({ })
-
   const [dados, setDados] = useState<any[]>([]);
+  const [dadosTarefas, setDadosTarefas] = useState<any[]>([]);
   const [projetos, setProjetos] = useState([]);
   const [projetoSelecionado, setProjetoSelecionado] = useState("");
   const [dados2, setDados2] = useState<any[]>([{}]);
@@ -19,8 +19,10 @@ export default function Dashboard() {
     // console.log(localStorage.getItem("idUsuario"))
     BuscarProjetos();
     fetchProjetos();
-
   }, []);
+  useEffect(() => {
+    BuscarTarefas();
+  }, [projetoSelect]);
 
   const fetchProjetos = async () => {
     try {
@@ -37,7 +39,7 @@ export default function Dashboard() {
   };
 
 
-
+//esse é o metodo para buscar projetos para o grafico de pizza
   const BuscarProjetos = async () => {
     await api.get('/projetos')
       .then(response => {
@@ -65,19 +67,31 @@ export default function Dashboard() {
 
   }
 
+  //metodo de buscar tarefas para o grafico de barras
   const BuscarTarefas = async () => {
-    await api.get('/projetos')
+    await api.get(`/tarefas/projeto/${projetoSelect}`)
     .then(response => {
-      const filterData = [...dados]
+      const filterDataTarefa: any = []
 
       response.data.forEach((objtarefa: any) => {
-        var indexNomeResponsavel = filterData.findIndex(x => x.nome == objtarefa.nome)
+        var indexNomeResponsavel = filterDataTarefa.findIndex(x => x.id == objtarefa.dev.id)
 
 
-        if() {
-          
+        if(indexNomeResponsavel == -1) {
+          filterDataTarefa.push({
+            id: objtarefa.dev.id,
+            nome: objtarefa.dev.nome,
+            contagem: 1
+          });
+
+        }else {
+          filterDataTarefa[indexNomeResponsavel].contagem += 1
         }
+
+        
+        
       })
+      setDadosTarefas(filterDataTarefa)
     }
       )
   }
@@ -102,7 +116,7 @@ export default function Dashboard() {
 
 
         <div className="graficobarras configconteudo">
-          <Barras listaTarefas={dados} projeto={projetoSelect}/>
+          <Barras listaTarefas={dadosTarefas}/>
         </div>
         </div>
         

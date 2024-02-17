@@ -3,10 +3,9 @@ import Chart from "react-apexcharts";
 
 interface Props {
   listaTarefas: Array<any>;
-  projeto : string
 }
 
-const Barras = ({ listaTarefas, projeto }: Props) => {
+const Barras = ({ listaTarefas}: Props) => {
   const [options, setOptions] = useState<any>({
     plotOptions: {
       bar: {
@@ -26,7 +25,7 @@ const Barras = ({ listaTarefas, projeto }: Props) => {
     let data: any = [];
 
     listaTarefas.forEach((projeto) => {
-      categories.push(projeto.status);
+      categories.push(projeto.nome);
       data.push(projeto.contagem);
       
     });

@@ -35,18 +35,27 @@ export default function CadastroProjeto(props: any) {
         
 
         //só utiliza formData quando tiver arquivos 
-        const formData = new FormData();
+        // const formData = new FormData();
+        const formData = {
+            
+                "id_gestor": localStorage.getItem("idUsuario"),
+                "nome_projeto": nome_projeto,
+                "status_projeto": status_projeto,
+                "data_inicio": data_inicio,
+                "data_conclusao": data_conclusao
+            
+        };
 
         //A chave da função do append() precisa ser o mesmo nome_projeto do atributo que api retorna
        
         //formData.append("id_gestor", id_gestor);
-        formData.append("nome_projeto", nome_projeto);
-        formData.append("status_projeto", status_projeto);
+        // formData.append("nome_projeto", nome_projeto);
+        // formData.append("status_projeto", status_projeto);
         
         // formData.append("data_inicio", data_inicio);
         // formData.append("data_conclusao", data_conclusao);
-        formData.append("data_inicio", data_inicio);
-        formData.append("data_conclusao", data_conclusao);
+        // formData.append("data_inicio", data_inicio);
+        // formData.append("data_conclusao", data_conclusao);
         //formData.append("responsavel", responsavel);
 
 

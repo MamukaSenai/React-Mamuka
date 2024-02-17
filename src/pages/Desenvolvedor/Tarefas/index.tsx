@@ -1,6 +1,7 @@
 import './style.css';
 import React, { useEffect, useState } from 'react';
 import api from '../../../utils/api';
+import moment from 'moment';
 
 interface UserData {
   id: number;
@@ -81,8 +82,10 @@ export default function Tarefas() {
             <tr key={item.id}>
               {/* <td>{item.grupo}</td> */}
               <td>{item.nome_tarefa}</td>
-              <td>{(item.data_conclusao).slice(0,10)}</td>
-              <td>{(item.data_inicio).slice(0,10)}</td>
+              {/* <td>{(item.data_conclusao).slice(0,10)}</td>
+              <td>{(item.data_inicio).slice(0,10)}</td> */}
+              <td>{moment(item.data_inicio).format("DD/MM/YYYY")}</td>
+              <td>{moment(item.data_conclusao).format("DD/MM/YYYY")}</td>
               <td className={getStatusClassName(item.status_tarefa)}>{item.status_tarefa}</td>
               <td>{item.dev && item.dev.nome}</td>
             </tr>
