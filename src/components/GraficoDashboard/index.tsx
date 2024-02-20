@@ -29,8 +29,8 @@ const Donut = ( {listaProjetos} : Props ) => {
 
   return (
     
-    <div className="donut">
-      <Chart options={options} series={series} type="donut" width="380" />
+    <div className="donut" id="donut_dash">
+      <Chart options={options} series={series} type="donut" width="130%" />
     </div>
   );
 }

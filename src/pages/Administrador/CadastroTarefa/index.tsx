@@ -70,15 +70,7 @@ export default function CadastroTarefa(props: any) {
 
                         <div className="card_box_org">
 
-                        {/* SELECT PARA BUSCAR PROJETOS */}
-                        <select id="projetoSelect" onChangeCapture={e => setProjetoSelect(e.target.value)}>
-                        <option value="">Selecione um projeto</option>
-                        {
-                            dados2.map(projeto => (
-                                <option key={projeto.id} value={projeto.id}>{projeto.nome_projeto}</option>
-                            ))
-                        }
-                    </select>
+
                     
                             <div className="card_form" id="formtarefa">
                                 <div className="cad_box_input" id="cardForm">
@@ -124,6 +116,16 @@ export default function CadastroTarefa(props: any) {
                                         required
                                     />
                                 </div>
+
+                                {/* SELECT PARA BUSCAR PROJETOS */}
+                                <select className="cad_box_input" id="projetoSelect_cadastroTarefa" onChangeCapture={e => setProjetoSelect(e.target.value)}>
+                                <option value="">Selecione</option>
+                                {
+                                    dados2.map(projeto => (
+                                        <option key={projeto.id} value={projeto.id}>{projeto.nome_projeto}</option>
+                                    ))
+                                }
+                                </select>
 
 
 

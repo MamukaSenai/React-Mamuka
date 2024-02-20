@@ -98,27 +98,25 @@ export default function Dashboard() {
 
   return (
     <>
-      <div className="alinhamentogeral">
 
-        <div>
-
-
-          {/* <label htmlFor="ProjetoSelect">Selecione um projeto</label> */}
-          <select id="projetoSelect" onChangeCapture={ e => setProjetoSelect(e.target.value) }>
-            <option value="">Selecione um projeto</option>
+      <div className="alinhamento_projetoSelect">
+        {/* <label htmlFor="ProjetoSelect">Selecione um projeto</label> */}
+        <select id="projetoSelect_Dashboard" onChangeCapture={ e => setProjetoSelect(e.target.value) }>
+            <option value="">Selecione</option>
             {
               dados2.map( projeto => (
                 <option key={projeto.id} value={projeto.id}>{projeto.nome_projeto}</option>
               ))
             }
-          </select>
-        
+        </select>
+      </div>
 
+      <div className="alinhamentogeral">
 
         <div className="graficobarras configconteudo">
           <Barras listaTarefas={dadosTarefas}/>
         </div>
-        </div>
+      
         
         <div className="graficopizza configconteudo">
           <Donut listaProjetos={dados} />

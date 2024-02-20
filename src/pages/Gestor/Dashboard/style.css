@@ -1,6 +1,6 @@
 .alinhamentogeral{
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
 }
 
@@ -25,16 +25,22 @@
     margin: 20px;
 } 
 
-#projetoSelect {
+#alinhamento_projetoSelect{
+    width: 20vw;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+#projetoSelect_Dashboard {
+    display: flex;
+    margin-left: 8%;
+    /* /* flex-direction: column; */
+  
     /* padding-left: 30px; */
     /* padding-top: 30px; */
     /* padding-top: 20px; */
     /* height: 7vh; */
-    width: 30%;
+    width: 8%;
     border-radius: 7px;
     border: solid 1px;
     text-indent: 5px;
