@@ -77,7 +77,7 @@ export default function ListaDevs() {
 
 
     useEffect(() => {
-        document.title = "VSConnect - Lista devs"
+        document.title = "Mamuka"
         // listarUsuarios()
     }, [])
 
